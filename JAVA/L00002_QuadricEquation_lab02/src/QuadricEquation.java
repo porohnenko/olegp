@@ -18,13 +18,13 @@ public class QuadricEquation {
         // TODO code application logic here
         if (args.length < 3) {
             System.out.println("There is not enough parameters...");
-        }else{
+        } else {
             int a = Integer.valueOf(args[0]);
             int b = Integer.valueOf(args[1]);
             int c = Integer.valueOf(args[2]);
-            
-            System.out.println(Equation.solve(a,b,c));
+
+            System.out.println(Equation.solve(a, b, c));
         }
     }
-    
+
 }
