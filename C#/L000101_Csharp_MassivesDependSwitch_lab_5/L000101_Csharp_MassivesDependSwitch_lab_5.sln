@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C# Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L000101_Csharp_MassivesDependSwitch_lab_5", "L000101_Csharp_MassivesDependSwitch_lab_5\L000101_Csharp_MassivesDependSwitch_lab_5.csproj", "{190E187E-2708-4D53-A4CB-F81537921D3A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{190E187E-2708-4D53-A4CB-F81537921D3A}.Debug|x86.ActiveCfg = Debug|x86
+		{190E187E-2708-4D53-A4CB-F81537921D3A}.Debug|x86.Build.0 = Debug|x86
+		{190E187E-2708-4D53-A4CB-F81537921D3A}.Release|x86.ActiveCfg = Release|x86
+		{190E187E-2708-4D53-A4CB-F81537921D3A}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,16 @@
+C:\Users\olegp\AppData\Local\Temporary Projects\L000102_Csharp_Enums_lab_6\bin\Debug\L000102_Csharp_Enums_lab_6.exe
+C:\Users\olegp\AppData\Local\Temporary Projects\L000102_Csharp_Enums_lab_6\bin\Debug\L000102_Csharp_Enums_lab_6.pdb
+C:\Users\olegp\AppData\Local\Temporary Projects\L000102_Csharp_Enums_lab_6\obj\x86\Debug\L000102_Csharp_Enums_lab_6.Form1.resources
+C:\Users\olegp\AppData\Local\Temporary Projects\L000102_Csharp_Enums_lab_6\obj\x86\Debug\L000102_Csharp_Enums_lab_6.Form2.resources
+C:\Users\olegp\AppData\Local\Temporary Projects\L000102_Csharp_Enums_lab_6\obj\x86\Debug\L000102_Csharp_Enums_lab_6.Properties.Resources.resources
+C:\Users\olegp\AppData\Local\Temporary Projects\L000102_Csharp_Enums_lab_6\obj\x86\Debug\L000102_Csharp_Enums_lab_6.csproj.GenerateResource.Cache
+C:\Users\olegp\AppData\Local\Temporary Projects\L000102_Csharp_Enums_lab_6\obj\x86\Debug\L000102_Csharp_Enums_lab_6.exe
+C:\Users\olegp\AppData\Local\Temporary Projects\L000102_Csharp_Enums_lab_6\obj\x86\Debug\L000102_Csharp_Enums_lab_6.pdb
+D:\MY\C#\L000102_Csharp_Enums_lab_6\L000102_Csharp_Enums_lab_6\obj\x86\Debug\L000102_Csharp_Enums_lab_6.exe
+D:\MY\C#\L000102_Csharp_Enums_lab_6\L000102_Csharp_Enums_lab_6\obj\x86\Debug\L000102_Csharp_Enums_lab_6.pdb
+D:\MY\C#\L000102_Csharp_Enums_lab_6\L000102_Csharp_Enums_lab_6\obj\x86\Debug\L000102_Csharp_Enums_lab_6.Form1.resources
+D:\MY\C#\L000102_Csharp_Enums_lab_6\L000102_Csharp_Enums_lab_6\obj\x86\Debug\L000102_Csharp_Enums_lab_6.Form2.resources
+D:\MY\C#\L000102_Csharp_Enums_lab_6\L000102_Csharp_Enums_lab_6\obj\x86\Debug\L000102_Csharp_Enums_lab_6.Properties.Resources.resources
+D:\MY\C#\L000102_Csharp_Enums_lab_6\L000102_Csharp_Enums_lab_6\obj\x86\Debug\L000102_Csharp_Enums_lab_6.csproj.GenerateResource.Cache
+D:\MY\C#\L000102_Csharp_Enums_lab_6\L000102_Csharp_Enums_lab_6\bin\Debug\L000102_Csharp_Enums_lab_6.exe
+D:\MY\C#\L000102_Csharp_Enums_lab_6\L000102_Csharp_Enums_lab_6\bin\Debug\L000102_Csharp_Enums_lab_6.pdb

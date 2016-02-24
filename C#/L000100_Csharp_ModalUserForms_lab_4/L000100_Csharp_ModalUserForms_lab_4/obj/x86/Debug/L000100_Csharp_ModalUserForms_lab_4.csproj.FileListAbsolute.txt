@@ -1,0 +1,8 @@
+D:\MY\C#\L000100_Csharp_ModalUserForms_lab_4\L000100_Csharp_ModalUserForms_lab_4\obj\x86\Debug\L000100_Csharp_ModalUserForms_lab_4.Form1.resources
+D:\MY\C#\L000100_Csharp_ModalUserForms_lab_4\L000100_Csharp_ModalUserForms_lab_4\obj\x86\Debug\L000100_Csharp_ModalUserForms_lab_4.Properties.Resources.resources
+D:\MY\C#\L000100_Csharp_ModalUserForms_lab_4\L000100_Csharp_ModalUserForms_lab_4\obj\x86\Debug\L000100_Csharp_ModalUserForms_lab_4.Form2.resources
+D:\MY\C#\L000100_Csharp_ModalUserForms_lab_4\L000100_Csharp_ModalUserForms_lab_4\obj\x86\Debug\L000100_Csharp_ModalUserForms_lab_4.csproj.GenerateResource.Cache
+D:\MY\C#\L000100_Csharp_ModalUserForms_lab_4\L000100_Csharp_ModalUserForms_lab_4\bin\Debug\L000100_Csharp_ModalUserForms_lab_4.exe
+D:\MY\C#\L000100_Csharp_ModalUserForms_lab_4\L000100_Csharp_ModalUserForms_lab_4\bin\Debug\L000100_Csharp_ModalUserForms_lab_4.pdb
+D:\MY\C#\L000100_Csharp_ModalUserForms_lab_4\L000100_Csharp_ModalUserForms_lab_4\obj\x86\Debug\L000100_Csharp_ModalUserForms_lab_4.exe
+D:\MY\C#\L000100_Csharp_ModalUserForms_lab_4\L000100_Csharp_ModalUserForms_lab_4\obj\x86\Debug\L000100_Csharp_ModalUserForms_lab_4.pdb
