@@ -14,3 +14,5 @@ D:\MY\C#\L000102_Csharp_Enums_lab_6\L000102_Csharp_Enums_lab_6\obj\x86\Debug\L00
 D:\MY\C#\L000102_Csharp_Enums_lab_6\L000102_Csharp_Enums_lab_6\obj\x86\Debug\L000102_Csharp_Enums_lab_6.csproj.GenerateResource.Cache
 D:\MY\C#\L000102_Csharp_Enums_lab_6\L000102_Csharp_Enums_lab_6\bin\Debug\L000102_Csharp_Enums_lab_6.exe
 D:\MY\C#\L000102_Csharp_Enums_lab_6\L000102_Csharp_Enums_lab_6\bin\Debug\L000102_Csharp_Enums_lab_6.pdb
+D:\MY\Git\C#\L000102_Csharp_Enums_lab_6\L000102_Csharp_Enums_lab_6\obj\x86\Debug\L000102_Csharp_Enums_lab_6.exe
+D:\MY\Git\C#\L000102_Csharp_Enums_lab_6\L000102_Csharp_Enums_lab_6\obj\x86\Debug\L000102_Csharp_Enums_lab_6.pdb
