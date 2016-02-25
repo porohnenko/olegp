@@ -1,0 +1,8 @@
+D:\MY\C#\L000105_Csharp_RegularExpressions_Taimer_lab_7\obj\x86\Debug\L000105_Csharp_RegularExpressions_Taimer_lab_7.Form1.resources
+D:\MY\C#\L000105_Csharp_RegularExpressions_Taimer_lab_7\obj\x86\Debug\L000105_Csharp_RegularExpressions_Taimer_lab_7.Form2.resources
+D:\MY\C#\L000105_Csharp_RegularExpressions_Taimer_lab_7\obj\x86\Debug\L000105_Csharp_RegularExpressions_Taimer_lab_7.Properties.Resources.resources
+D:\MY\C#\L000105_Csharp_RegularExpressions_Taimer_lab_7\obj\x86\Debug\L000105_Csharp_RegularExpressions_Taimer_lab_7.csproj.GenerateResource.Cache
+D:\MY\C#\L000105_Csharp_RegularExpressions_Taimer_lab_7\bin\Debug\L000105_Csharp_RegularExpressions_Taimer_lab_7.exe
+D:\MY\C#\L000105_Csharp_RegularExpressions_Taimer_lab_7\bin\Debug\L000105_Csharp_RegularExpressions_Taimer_lab_7.pdb
+D:\MY\C#\L000105_Csharp_RegularExpressions_Taimer_lab_7\obj\x86\Debug\L000105_Csharp_RegularExpressions_Taimer_lab_7.exe
+D:\MY\C#\L000105_Csharp_RegularExpressions_Taimer_lab_7\obj\x86\Debug\L000105_Csharp_RegularExpressions_Taimer_lab_7.pdb
