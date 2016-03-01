@@ -39,7 +39,7 @@ namespace L000105_lab_7_individual
         {
             this.Close();
         }
-       
+
         private void button4_Click(object sender, EventArgs e)
         {
             //Алгоритм фильтрации
@@ -64,7 +64,7 @@ namespace L000105_lab_7_individual
                 filestream = ofn1.OpenFile();
                 memorystream.Position = 0;
                 //сохраняем в поток содержимое richTextBox2
-                richTextBox2.SaveFile(memorystream,RichTextBoxStreamType.PlainText);
+                richTextBox2.SaveFile(memorystream, RichTextBoxStreamType.PlainText);
                 //переносим в файл информацию и закрываем поток
                 memorystream.WriteTo(filestream);
                 filestream.Close();
