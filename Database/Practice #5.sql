@@ -4,14 +4,14 @@ select* from [Student]
 select* from [Progress]
 select distinct IDReport,PIN from  [Progress]
 
-select [Mark] Отметка from [Progress]
-select distinct [Mark] Отметка from [Progress]
+select [Mark] Ћв¬ҐвЄ  from [Progress]
+select distinct [Mark] Ћв¬ҐвЄ  from [Progress]
 
 --Multi select
 ----------------------------------------------------
-SELECT StName ФИО, Student.NRecordBook [№ зачётки],
-             NameReport [Вид отчётности],NameSubject [Название предмета],
-             TeachName [Преподаватель], Mark Оценка
+SELECT StName ”€Ћ, Student.NRecordBook [ь § зсвЄЁ],
+             NameReport [‚Ё¤ ®взсв­®бвЁ],NameSubject [Ќ §ў ­ЁҐ ЇаҐ¤¬Ґв ],
+             TeachName [ЏаҐЇ®¤ ў вҐ«м], Mark ЋжҐ­Є 
  FROM Progress   JOIN Student
 		ON Student.NRecordBook=Progress.NRecordBook
                               JOIN Report 
