@@ -38,11 +38,12 @@
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.Location = new System.Drawing.Point(12, 14);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Open";
+            this.button1.Text = "Open file";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -54,13 +55,14 @@
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.Size = new System.Drawing.Size(680, 258);
             this.richTextBox2.TabIndex = 2;
-            this.richTextBox2.Text = "";
+            this.richTextBox2.Text = "Field for html text...";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(618, 330);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button2.Location = new System.Drawing.Point(618, 327);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(74, 23);
+            this.button2.Size = new System.Drawing.Size(74, 29);
             this.button2.TabIndex = 3;
             this.button2.Text = "Exit";
             this.button2.UseVisualStyleBackColor = true;
@@ -68,9 +70,10 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(524, 330);
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button3.Location = new System.Drawing.Point(524, 327);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(75, 29);
             this.button3.TabIndex = 4;
             this.button3.Text = "Save";
             this.button3.UseVisualStyleBackColor = true;
@@ -87,9 +90,10 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(13, 330);
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button4.Location = new System.Drawing.Point(13, 327);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(87, 23);
+            this.button4.Size = new System.Drawing.Size(87, 29);
             this.button4.TabIndex = 6;
             this.button4.Text = "Filter tags";
             this.button4.UseVisualStyleBackColor = true;
