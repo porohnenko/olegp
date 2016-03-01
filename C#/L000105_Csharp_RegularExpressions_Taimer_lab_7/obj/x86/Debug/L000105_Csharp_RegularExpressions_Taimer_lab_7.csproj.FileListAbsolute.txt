@@ -6,3 +6,5 @@ D:\MY\C#\L000105_Csharp_RegularExpressions_Taimer_lab_7\bin\Debug\L000105_Csharp
 D:\MY\C#\L000105_Csharp_RegularExpressions_Taimer_lab_7\bin\Debug\L000105_Csharp_RegularExpressions_Taimer_lab_7.pdb
 D:\MY\C#\L000105_Csharp_RegularExpressions_Taimer_lab_7\obj\x86\Debug\L000105_Csharp_RegularExpressions_Taimer_lab_7.exe
 D:\MY\C#\L000105_Csharp_RegularExpressions_Taimer_lab_7\obj\x86\Debug\L000105_Csharp_RegularExpressions_Taimer_lab_7.pdb
+D:\MY\Git\C#\L000105_Csharp_RegularExpressions_Taimer_lab_7\obj\x86\Debug\L000105_Csharp_RegularExpressions_Taimer_lab_7.exe
+D:\MY\Git\C#\L000105_Csharp_RegularExpressions_Taimer_lab_7\obj\x86\Debug\L000105_Csharp_RegularExpressions_Taimer_lab_7.pdb

@@ -1,0 +1,14 @@
+C:\Users\olegp\AppData\Local\Temporary Projects\L000105_lab_7_individual\obj\x86\Debug\L000105_lab_7_individual.Form1.resources
+C:\Users\olegp\AppData\Local\Temporary Projects\L000105_lab_7_individual\obj\x86\Debug\L000105_lab_7_individual.Properties.Resources.resources
+C:\Users\olegp\AppData\Local\Temporary Projects\L000105_lab_7_individual\obj\x86\Debug\L000105_lab_7_individual.csproj.GenerateResource.Cache
+C:\Users\olegp\AppData\Local\Temporary Projects\L000105_lab_7_individual\bin\Debug\L000105_lab_7_individual.exe
+C:\Users\olegp\AppData\Local\Temporary Projects\L000105_lab_7_individual\bin\Debug\L000105_lab_7_individual.pdb
+C:\Users\olegp\AppData\Local\Temporary Projects\L000105_lab_7_individual\obj\x86\Debug\L000105_lab_7_individual.exe
+C:\Users\olegp\AppData\Local\Temporary Projects\L000105_lab_7_individual\obj\x86\Debug\L000105_lab_7_individual.pdb
+D:\MY\Git\C#\L000105_lab_7_individual\obj\x86\Debug\L000105_lab_7_individual.exe
+D:\MY\Git\C#\L000105_lab_7_individual\obj\x86\Debug\L000105_lab_7_individual.pdb
+D:\MY\Git\C#\L000105_lab_7_individual\bin\Debug\L000105_lab_7_individual.exe
+D:\MY\Git\C#\L000105_lab_7_individual\bin\Debug\L000105_lab_7_individual.pdb
+D:\MY\Git\C#\L000105_lab_7_individual\obj\x86\Debug\L000105_lab_7_individual.Form1.resources
+D:\MY\Git\C#\L000105_lab_7_individual\obj\x86\Debug\L000105_lab_7_individual.Properties.Resources.resources
+D:\MY\Git\C#\L000105_lab_7_individual\obj\x86\Debug\L000105_lab_7_individual.csproj.GenerateResource.Cache
