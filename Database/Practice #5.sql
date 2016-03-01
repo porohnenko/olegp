@@ -1,17 +1,17 @@
---Single select
+﻿--Single select
 ----------------------------------------------------
 select* from [Student]
 select* from [Progress]
 select distinct IDReport,PIN from  [Progress]
 
-select [Mark] �⬥⪠ from [Progress]
-select distinct [Mark] �⬥⪠ from [Progress]
+select [Mark] Отметка from [Progress]
+select distinct [Mark] Отметка from [Progress]
 
 --Multi select
 ----------------------------------------------------
-SELECT StName ���, Student.NRecordBook [� ����⪨],
-             NameReport [��� ����⭮��],NameSubject [�������� �।���],
-             TeachName [�९�����⥫�], Mark �業��
+SELECT StName ФИО, Student.NRecordBook [№ зачётки],
+             NameReport [Вид отчётности],NameSubject [Название предмета],
+             TeachName [Преподаватель], Mark Оценка
  FROM Progress   JOIN Student
 		ON Student.NRecordBook=Progress.NRecordBook
                               JOIN Report 
