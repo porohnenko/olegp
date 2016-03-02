@@ -15,7 +15,7 @@ namespace L000104_Csharp_PrototypeData_DropDownList_lab_8
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Form2());
         }
     }
 }
