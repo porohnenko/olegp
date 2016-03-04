@@ -93,7 +93,11 @@ namespace L000104_lab_8_individual
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult result = MessageBox.Show("Do you want to exit programm?", "Warning!!!", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
