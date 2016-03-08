@@ -1,0 +1,14 @@
+C:\Users\olegp\AppData\Local\Temporary Projects\L000106_lab_9\bin\Debug\L000106_lab_9.exe
+C:\Users\olegp\AppData\Local\Temporary Projects\L000106_lab_9\bin\Debug\L000106_lab_9.pdb
+C:\Users\olegp\AppData\Local\Temporary Projects\L000106_lab_9\obj\x86\Debug\L000106_lab_9.Form1.resources
+C:\Users\olegp\AppData\Local\Temporary Projects\L000106_lab_9\obj\x86\Debug\L000106_lab_9.Properties.Resources.resources
+C:\Users\olegp\AppData\Local\Temporary Projects\L000106_lab_9\obj\x86\Debug\L000106_lab_9.csproj.GenerateResource.Cache
+C:\Users\olegp\AppData\Local\Temporary Projects\L000106_lab_9\obj\x86\Debug\L000106_lab_9.exe
+C:\Users\olegp\AppData\Local\Temporary Projects\L000106_lab_9\obj\x86\Debug\L000106_lab_9.pdb
+D:\MY\Git\C#\L000106_lab_9\obj\x86\Debug\L000106_lab_9.exe
+D:\MY\Git\C#\L000106_lab_9\obj\x86\Debug\L000106_lab_9.pdb
+D:\MY\Git\C#\L000106_lab_9\bin\Debug\L000106_lab_9.exe
+D:\MY\Git\C#\L000106_lab_9\bin\Debug\L000106_lab_9.pdb
+D:\MY\Git\C#\L000106_lab_9\obj\x86\Debug\L000106_lab_9.Form1.resources
+D:\MY\Git\C#\L000106_lab_9\obj\x86\Debug\L000106_lab_9.Properties.Resources.resources
+D:\MY\Git\C#\L000106_lab_9\obj\x86\Debug\L000106_lab_9.csproj.GenerateResource.Cache
