@@ -24,16 +24,6 @@ namespace L000106_lab_9
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button3_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Do you want to exit programm?", "Warning!!!", MessageBoxButtons.YesNo);
@@ -50,11 +40,11 @@ namespace L000106_lab_9
             this.listBox1.Items.Add("Украина");
             this.listBox1.Items.Add("Польша");
             PL[0] = 207600; CH[0] = 9675000; ST[0] = "Минск";
-            PL[1] = 17075000; CH[1] = 139000000; ST[1] = "Киев";
+            PL[1] = 603628; CH[1] = 42928900; ST[1] = "Киев";
             PL[2] = 313000; CH[2] = 35400000; ST[2] = "Варшава";
             this.listBox1.SelectedIndex = 1;
             Numb = 1;
-            int K = 1;
+            int K = 0;
             textBox1.Text = Convert.ToString(PL[K]);
             textBox2.Text = Convert.ToString(CH[K]);
             textBox3.Text = String.Format("{0,5:f2}", CH[K] / PL[K]);

@@ -82,7 +82,7 @@
             this.label1.Size = new System.Drawing.Size(35, 15);
             this.label1.TabIndex = 3;
             this.label1.Text = "Area";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            
             // 
             // label2
             // 
@@ -123,7 +123,7 @@
             this.button2.TabIndex = 7;
             this.button2.Text = "Add";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            
             // 
             // textBox4
             // 
