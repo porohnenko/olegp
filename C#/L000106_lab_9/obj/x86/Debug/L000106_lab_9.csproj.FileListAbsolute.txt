@@ -12,3 +12,4 @@ D:\MY\Git\C#\L000106_lab_9\bin\Debug\L000106_lab_9.pdb
 D:\MY\Git\C#\L000106_lab_9\obj\x86\Debug\L000106_lab_9.Form1.resources
 D:\MY\Git\C#\L000106_lab_9\obj\x86\Debug\L000106_lab_9.Properties.Resources.resources
 D:\MY\Git\C#\L000106_lab_9\obj\x86\Debug\L000106_lab_9.csproj.GenerateResource.Cache
+D:\MY\Git\C#\L000106_lab_9\obj\x86\Debug\L000106_lab_9.csprojResolveAssemblyReference.cache

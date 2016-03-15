@@ -17,7 +17,7 @@ namespace L000106_lab_9
         float[] LT = new float[Kol];
         string[] ST = new string[Kol];
         int Numb;
-        bool KOD;
+        //bool KOD;
 
         public Form1()
         {
@@ -42,7 +42,7 @@ namespace L000106_lab_9
             PL[0] = 207600; CH[0] = 9675000; ST[0] = "Минск";
             PL[1] = 603628; CH[1] = 42928900; ST[1] = "Киев";
             PL[2] = 313000; CH[2] = 35400000; ST[2] = "Варшава";
-            this.listBox1.SelectedIndex = 1;
+            this.listBox1.SelectedIndex = 0;
             Numb = 1;
             int K = 0;
             textBox1.Text = Convert.ToString(PL[K]);
@@ -108,6 +108,23 @@ namespace L000106_lab_9
         private void listBox1_KeyUp(object sender, KeyEventArgs e)
         {
             if (e.Alt && e.KeyCode == Keys.Z) { MessageBox.Show("Нажата Alt+Z"); e.Handled = true; }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string st;
+            st = textBox4.Text;
+            listBox1.Items.Add(st);
+
+            
+
+            PL[0] = 207600; CH[0] = 9675000; ST[0] = "Минск";
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Remove(listBox1.SelectedItem);
         }
     }
 }
