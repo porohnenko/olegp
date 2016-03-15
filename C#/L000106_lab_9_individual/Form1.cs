@@ -42,52 +42,57 @@ namespace L000106_lab_9_individual
 
         private void button3_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Do you want to exit program?", "Warning!!!", MessageBoxButtons.YesNo);
+            DialogResult result = MessageBox.Show("Do you want to exit program?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
             if (result == DialogResult.Yes)
             {
                 this.Close();
             }
         }
 
+        //Button "Generate"
         private void button1_Click(object sender, EventArgs e)
         {
-            if (radioButton1.Checked)
+            if (radioButton1.Checked || radioButton2.Checked || radioButton3.Checked)
             {
-                if (textBox1.Text == null)
+                if (radioButton1.Checked)
                 {
-                    MessageBox.Show("Please, enter all fields!");
+                    if (textBox1.Text == "")
+                    {
+                        DialogResult result = MessageBox.Show("Please, enter all fields!", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else
+                    {
+                        textBox2.Text = Convert.ToString(FirstEquation(Convert.ToInt16(textBox1.Text)));
+                    }
                 }
-                else
+
+                if (radioButton2.Checked)
                 {
-                    string M = Convert.ToString(FirstEquation(Convert.ToInt16(textBox1.Text)));
-                    textBox2.Text = M;
+                    if (textBox1.Text == "")
+                    {
+                        DialogResult result = MessageBox.Show("Please, enter all fields!", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else
+                    {
+                        textBox2.Text = Convert.ToString(SecondEquation(Convert.ToInt16(textBox1.Text)));
+                    }
+                }
+
+                if (radioButton3.Checked)
+                {
+                    if (textBox1.Text == "" || textBox3.Text == "")
+                    {
+                        DialogResult result = MessageBox.Show("Please, enter all fields!", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else
+                    {
+                        textBox2.Text = Convert.ToString(ThirdEquation(Convert.ToInt16(textBox1.Text), Convert.ToInt16(textBox3.Text)));
+                    }
                 }
             }
-
-            if (radioButton2.Checked)
+            else
             {
-                if (textBox1.Text == null)
-                {
-                    MessageBox.Show("Please, enter all fields!");
-                }
-                else
-                {
-                    string N = Convert.ToString(SecondEquation(Convert.ToInt16(textBox1.Text)));
-                    textBox2.Text = N;
-                }
-            }
-
-            if (radioButton3.Checked)
-            {
-                if (textBox2.Text == null || textBox1.Text == null)
-                {
-                    MessageBox.Show("Please, enter all fields!");
-                }
-                else
-                {
-                    string P = Convert.ToString(ThirdEquation(Convert.ToInt16(textBox1.Text), Convert.ToInt16(textBox3.Text)));
-                    textBox2.Text = P;
-                }
+                DialogResult result = MessageBox.Show("Please, select equation and enter all fields!", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -98,10 +103,11 @@ namespace L000106_lab_9_individual
 
             textBox1.Clear();
             textBox2.Clear();
-            textBox3.Clear();
-            /*textBox1.Text = "";
-            textBox2.Text = "";
-            textBox3.Text = "";*/
+            if (textBox3.ReadOnly == false)
+            {
+                textBox3.Clear();
+            }
+
             textBox3.Text = "not use in this equation...";
             textBox3.ForeColor = Color.DarkSlateGray;
             textBox3.ReadOnly = true;
@@ -111,10 +117,12 @@ namespace L000106_lab_9_individual
         {
             textBox1.Clear();
             textBox2.Clear();
-            textBox3.Clear();
-            /*textBox1.Text = "";
-            textBox2.Text = "";
-            textBox3.Text = "";*/
+
+            if (textBox3.ReadOnly == false)
+            {
+                textBox3.Clear();
+            }
+
             textBox3.Text = "not use in this equation...";
             textBox3.ForeColor = Color.DarkSlateGray;
             textBox3.ReadOnly = true;
@@ -122,7 +130,7 @@ namespace L000106_lab_9_individual
 
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
-            textBox3.Text = "";
+            textBox3.Clear();
             textBox3.ReadOnly = false;
             textBox3.ForeColor = Color.Black;
         }
@@ -130,12 +138,12 @@ namespace L000106_lab_9_individual
         //Button "Clear"
         private void button2_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "";
-            textBox2.Text = "";
+            textBox1.Clear();
+            textBox2.Clear();
 
             if (textBox3.ReadOnly == false)
             {
-                textBox3.Text = "";
+                textBox3.Clear();
             }
         }
     }
