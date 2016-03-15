@@ -1,11 +1,11 @@
 ﻿select TeachName
-	from [Teacher] where TeachName like '%[a][r]%'
+	from [Teacher] where TeachName like '%AR%'
 	
 select TeachName
-	from [Teacher] where TeachName like '%[H][]%'
+	from [Teacher] where TeachName like '%H[ ]%'
 	
 select StName
-	from [Student] where StName like '%[E][]%'
+	from [Student] where StName like '%B[^ ]%'
 
 ----------------------------------------------------------------------------------
 --Задание 3
