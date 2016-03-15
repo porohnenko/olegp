@@ -53,7 +53,7 @@ namespace L000106_lab_9_individual
         {
             if (radioButton1.Checked)
             {
-                if (textBox1.Text == "")
+                if (textBox1.Text == null)
                 {
                     MessageBox.Show("Please, enter all fields!");
                 }
@@ -66,7 +66,7 @@ namespace L000106_lab_9_individual
 
             if (radioButton2.Checked)
             {
-                if (textBox1.Text == "")
+                if (textBox1.Text == null)
                 {
                     MessageBox.Show("Please, enter all fields!");
                 }
@@ -79,7 +79,7 @@ namespace L000106_lab_9_individual
 
             if (radioButton3.Checked)
             {
-                if (textBox2.Text == "")
+                if (textBox2.Text == null || textBox1.Text == null)
                 {
                     MessageBox.Show("Please, enter all fields!");
                 }
@@ -93,9 +93,15 @@ namespace L000106_lab_9_individual
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            textBox1.Text = "";
+            ToolTip t = new ToolTip();
+            t.SetToolTip(textBox1, "Введите число из диапазона -26 ... 26");
+
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
+            /*textBox1.Text = "";
             textBox2.Text = "";
-            textBox3.Text = "";
+            textBox3.Text = "";*/
             textBox3.Text = "not use in this equation...";
             textBox3.ForeColor = Color.DarkSlateGray;
             textBox3.ReadOnly = true;
@@ -103,9 +109,12 @@ namespace L000106_lab_9_individual
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            textBox1.Text = "";
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
+            /*textBox1.Text = "";
             textBox2.Text = "";
-            textBox3.Text = "";
+            textBox3.Text = "";*/
             textBox3.Text = "not use in this equation...";
             textBox3.ForeColor = Color.DarkSlateGray;
             textBox3.ReadOnly = true;
@@ -118,6 +127,7 @@ namespace L000106_lab_9_individual
             textBox3.ForeColor = Color.Black;
         }
 
+        //Button "Clear"
         private void button2_Click(object sender, EventArgs e)
         {
             textBox1.Text = "";

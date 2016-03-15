@@ -5,3 +5,4 @@ D:\MY\Git\C#\L000106_lab_9_individual\obj\x86\Debug\L000106_lab_9_individual.Pro
 D:\MY\Git\C#\L000106_lab_9_individual\obj\x86\Debug\L000106_lab_9_individual.csproj.GenerateResource.Cache
 D:\MY\Git\C#\L000106_lab_9_individual\obj\x86\Debug\L000106_lab_9_individual.exe
 D:\MY\Git\C#\L000106_lab_9_individual\obj\x86\Debug\L000106_lab_9_individual.pdb
+D:\MY\Git\C#\L000106_lab_9_individual\obj\x86\Debug\L000106_lab_9_individual.csprojResolveAssemblyReference.cache

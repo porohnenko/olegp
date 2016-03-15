@@ -10,7 +10,7 @@ namespace L000100_Csharp_ModalUserForms_lab_4_individual
     {
         static void Main(string[] args)
         {            
-            StreamReader data = new StreamReader(@"d:\MY\C#\data.txt", Encoding.GetEncoding(1251));
+            StreamReader data = new StreamReader(@"d:\MY\Git\C#\data.txt", Encoding.GetEncoding(1251));
             string st = data.ReadLine();
             int i;
             Console.WriteLine("Initial line:");
