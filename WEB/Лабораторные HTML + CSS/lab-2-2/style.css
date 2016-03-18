@@ -1,0 +1,162 @@
+﻿* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background: #111;
+    overflow: hidden;
+    font-family: 'Open Sans Condensed', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+
+
+/* Text */
+
+h1,
+h2 {
+    margin: 0;
+    padding: 0;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+}
+
+p {
+    line-height: 1.4;
+    text-shadow: 1px 1px 1px #000;
+}
+
+a,
+a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #40a5c6;
+}
+
+h1 a,
+h1 a:hover,
+h1 a:visited {
+    text-decoration: none;
+}
+
+p a {
+    font-weight: 700;
+}
+
+/* Header */
+
+header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+    padding: 60px;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    margin: -200px 0 0 -200px;
+    text-align: center;
+}
+
+header h1 {
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+    padding: 0 0 10px 0;
+    font-size: 1.7em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+header h1 span {
+    font-weight: 300;
+}
+
+header p {
+    font-family: Cambria, Georgia, serif;
+    font-style: italic;
+}
+
+
+#video_background {
+position: absolute;
+bottom: 0px;
+right: 0px;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -999;
+overflow: hidden;
+
+}
+
+.overlay {
+    position: absolute;
+    background: url(http://www.bkwld.com/img/misc/grid.png) repeat;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -998;
+}
+
+.card .card-content {
+    position: relative;
+    box-sizing: content-box;
+/*     width: auto;
+ */    margin: 2em;
+    padding-left: 2em;
+    padding: 2em;
+    background: rgba(50,50,50,0.8);
+	
+}
+
+.card-content {
+    font-size: 16px;
+    line-height: 15px;
+    line-height: 15px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    /* font-style: italic; */
+}
+
+.subtitle {
+    font-family: 'Verdana';
+    /* color: #fff; */
+    margin-bottom: 35px;
+    font-size: 20px;
+    font color: #77c4bc;
+    font-weight: 300;
+}
+
+.intro-belief {
+    -webkit-font-smoothing: antialiased;
+    font: 400 17px "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #fff;
+    margin: 30px 20 0px;
+    padding: 15px 30px;
+    text-align: left;
+    background: rgba(50,50,50,0);
+    display: inline-block;
+}
+.line {
+    width: 100%;
+    display: block;
+    height: 1px;
+    background: rgba(255,255,255,0.4);
+    margin: 10px 0;
+}
+
+.social-icons li.facebook a {
+    background: #242424 url('/img/global-sec8c63282a.png') 0 -235px no-repeat;
+    background: rgba(36,36,36,0.9) url('/img/global-sec8c63282a.png') 0 -235px no-repeat;
+}

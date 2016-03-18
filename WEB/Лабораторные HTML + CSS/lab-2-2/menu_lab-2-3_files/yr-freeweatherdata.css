@@ -1,0 +1,225 @@
+/*
+Fargekoder for skredfare:
+LITEN       (.low)          #ccff66     (lysegrønn)
+MODERAT     (.moderate)     #ffff00     (gul)
+MARKERT     (.considerable) #fe9900     (oransje)
+STOR        (.high)         #ff0000     (rød)
+MEGET STOR  (.veryhigh)     #ff0000/    (rutemønster)
+*/
+/*
+Fargekoder for skredfare:
+LITEN       (.low)          #ccff66     (lysegrønn)
+MODERAT     (.moderate)     #ffff00     (gul)
+MARKERT     (.considerable) #fe9900     (oransje)
+STOR        (.high)         #ff0000     (rød)
+MEGET STOR  (.veryhigh)     #ff0000/    (rutemønster)
+*/
+* {
+  font-family: Arial, Helvetica, Sans-Serif;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: 11px;
+}
+a {
+  text-decoration: none;
+  color: #0fa2d8;
+}
+a:hover {
+  text-decoration: underline;
+}
+a img {
+  border: none;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.left,
+.right {
+  margin: 10px;
+}
+.box {
+  border: 1px solid #4bbde8;
+  background-color: #f2f4f1;
+}
+#small,
+#large,
+#x-large {
+  margin: 0;
+}
+#small {
+  width: 178px;
+  height: 300px;
+}
+#large {
+  width: 466px;
+  height: 276px;
+}
+#x-large {
+  width: 848px;
+  height: 420px;
+}
+h1 {
+  font-size: 13px;
+  line-height: 13px;
+  padding: 3px 0 6px;
+  margin: 0;
+}
+h1 a {
+  color: #000;
+}
+h1 a:hover {
+  text-decoration: underline;
+}
+#small h1,
+#large h1 {
+  padding-left: 10px;
+}
+.top {
+  background: #48c8f5 url("/grafikk/myr-logo.gif") no-repeat 5px 5px;
+  text-align: right;
+  padding: 0 6px;
+  height: 25px;
+}
+.top a {
+  line-height: 25px;
+  display: block;
+  color: #1d788f;
+}
+.top a:hover {
+  text-decoration: none;
+}
+.top a em {
+  visibility: hidden;
+}
+.content {
+  border-top: 1px solid #fff;
+  overflow: hidden;
+}
+#x-large .content {
+  padding-left: 10px;
+}
+.forecast-wrapper {
+  padding-top: 2px;
+  float: left;
+}
+.forecast-wrapper h4 {
+  display: none;
+  margin: 0 0 3px 16px;
+  font-size: 11px;
+}
+.forecast-box {
+  border: 2px solid #ccd2ce;
+  margin-left: 8px;
+  background: #fff;
+  height: 128px;
+  width: 158px;
+}
+.forecast-box h3 {
+  font-weight: bold;
+  overflow: hidden;
+  color: #7a8180;
+  margin: 3px 2px 0 4px;
+  font-size: 11px;
+  line-height: 13px;
+  height: 26px;
+  text-align: left;
+}
+.forecast-box h3 * {
+  color: #7a8180;
+  font-style: normal;
+  font-weight: normal;
+}
+.forecast-box h3 em {
+  display: block;
+}
+.forecast-box table {
+  border-collapse: collapse;
+  background: #f2f4f1;
+  margin: 3px 0;
+  width: 100%;
+}
+.forecast-box td {
+  text-align: center;
+  width: 33%;
+}
+.forecast-box .plus,
+.forecast-box .minus {
+  font-size: 20px;
+  padding-left: 3px;
+  font-weight: bold;
+}
+.forecast-box td.plus,
+.forecast-box td.minus,
+.forecast-box td.wind {
+  border-left: 2px solid #fff;
+  color: #0280d9;
+}
+.forecast-box td.plus {
+  color: #f01c1c;
+}
+.forecast-box p {
+  padding: 4px;
+}
+#large .forecast-box {
+  margin-left: 10px;
+  width: 138px;
+}
+.meteogram img {
+  margin: 4px auto 4px auto;
+}
+ul {
+  list-style-type: disc;
+  padding-left: 14px;
+  color: #b5b5aa;
+}
+#small ul {
+  border-bottom: 1px solid #e3e4e3;
+  padding: 0 0 4px 22px;
+  margin-top: 10px;
+}
+#small ul #search {
+  border-top: 1px solid #fff;
+  padding: 5px 0 5px 6px;
+  margin-bottom: 8px;
+  width: auto;
+}
+#search {
+  padding: 4px 0 0 0;
+  width: 200px;
+}
+#search label {
+  font-weight: bold;
+  line-height: 20px;
+  display: block;
+  clear: both;
+}
+#search input#place {
+  border: 1px solid #4bbde8;
+  line-height: 20px;
+  width: 120px;
+  height: 20px;
+  float: left;
+}
+#search input#querybutton {
+  background-image: url("//fil.nrk.no/contentfile/web/bgimages/special/weather/jsversion/button.gif");
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 22px;
+  font-weight: bold;
+  margin: 0 0 0 4px;
+  font-size: 12px;
+  cursor: pointer;
+  color: #536a7e;
+  height: 22px;
+  border: none;
+  width: 40px;
+  float: left;
+}
+#search input#querybutton:hover {
+  color: #212d2c;
+}
