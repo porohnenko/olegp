@@ -1,0 +1,10 @@
+D:\MY\Git\C#\L000108_lab_11\bin\Debug\L000108_lab_11.exe
+D:\MY\Git\C#\L000108_lab_11\bin\Debug\L000108_lab_11.pdb
+D:\MY\Git\C#\L000108_lab_11\obj\x86\Debug\L000108_lab_11.Form1.resources
+D:\MY\Git\C#\L000108_lab_11\obj\x86\Debug\L000108_lab_11.Properties.Resources.resources
+D:\MY\Git\C#\L000108_lab_11\obj\x86\Debug\L000108_lab_11.csproj.GenerateResource.Cache
+D:\MY\Git\C#\L000108_lab_11\obj\x86\Debug\L000108_lab_11.exe
+D:\MY\Git\C#\L000108_lab_11\obj\x86\Debug\L000108_lab_11.pdb
+D:\MY\Git\C#\L000108_lab_11\bin\Debug\AxInterop.Microsoft.Vbe.Interop.Forms.dll
+D:\MY\Git\C#\L000108_lab_11\obj\x86\Debug\AxInterop.Microsoft.Vbe.Interop.Forms.dll
+D:\MY\Git\C#\L000108_lab_11\obj\x86\Debug\L000108_lab_11.csproj.ResolveComReference.cache

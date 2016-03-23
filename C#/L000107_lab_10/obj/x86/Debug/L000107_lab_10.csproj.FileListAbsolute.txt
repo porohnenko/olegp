@@ -5,3 +5,4 @@ D:\MY\Git\C#\L000107_lab_10\bin\Debug\L000107_lab_10.exe
 D:\MY\Git\C#\L000107_lab_10\bin\Debug\L000107_lab_10.pdb
 D:\MY\Git\C#\L000107_lab_10\obj\x86\Debug\L000107_lab_10.exe
 D:\MY\Git\C#\L000107_lab_10\obj\x86\Debug\L000107_lab_10.pdb
+D:\MY\Git\C#\L000107_lab_10\obj\x86\Debug\L000107_lab_10.csprojResolveAssemblyReference.cache
