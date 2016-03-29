@@ -5,15 +5,11 @@
  */
 
 /**
- * @date 24.02.2016
+ *
  * @author olegp
- * @version 1.0
  */
-public class QuadricEquation {
-
-    /**
-     * @param args the command line arguments
-     */
+public class НовыйClass {
+    
     public static void main(String args[]) {
         // TODO code application logic here
             byte b  = 127;
@@ -22,5 +18,3 @@ public class QuadricEquation {
             System.out.printf("%d",b);
     }
 }
-
-
