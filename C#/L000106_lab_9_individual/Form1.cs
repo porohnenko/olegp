@@ -16,8 +16,8 @@ namespace L000106_lab_9_individual
     {
         public double FirstEquation(int x)
         {
-            double y = (4 + Math.Pow(x, 4) * Math.Pow(Math.Sin(x), 2) + Math.Exp(Math.Pow(x, 2))) /
-                       (Math.Pow(x, 3) + Math.Log(Math.Pow(x, 2) + 4)) + Math.Abs(Math.Pow(x, 3));
+            double y = (double)((4 + Math.Pow(x, 4) * Math.Pow(Math.Sin(x), 2) + Math.Exp(Math.Pow(x, 2))) /
+                       (Math.Pow(x, 3) + Math.Log(Math.Pow(x, 2) + 4)) + Math.Abs(Math.Pow(x, 3)));
             return y;
         }
 
@@ -30,10 +30,13 @@ namespace L000106_lab_9_individual
 
         public double ThirdEquation(int x, int z)
         {
+
             double y = Math.Log(Math.Pow(x, 2) + 1) * (x / 3 + z) / ((Math.Pow(Math.Cos(z), 2) + Math.Pow(Math.Cos(x), 2)) *
                        (Math.Pow(x, 3) + Math.Pow(z, 2))) + (x + z) * Math.Exp(z - x) / (Math.Pow(z, 2) * Math.Pow(x, 3));
+            //double y = 256 / x + 564 / z;
             return y;
         }
+
 
         public Form1()
         {
@@ -49,9 +52,24 @@ namespace L000106_lab_9_individual
             }
         }
 
-        //Button "Generate"
+        /*public void DivZeroChecker(double fun,string txtBox3)
+        {
+            try
+            {
+                textBox = Convert.ToString(fun);
+            }
+            catch (DivideByZeroException)
+            {
+                DialogResult result = MessageBox.Show("Sorry, divide by zero!", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }*/
+
+
+        //Button "Calculate"
         private void button1_Click(object sender, EventArgs e)
         {
+            int a = Convert.ToInt16(textBox1.Text);
+            int c = Convert.ToInt16(textBox3.Text);
             if (radioButton1.Checked || radioButton2.Checked || radioButton3.Checked)
             {
                 if (radioButton1.Checked)
@@ -62,7 +80,23 @@ namespace L000106_lab_9_individual
                     }
                     else
                     {
-                        textBox2.Text = Convert.ToString(FirstEquation(Convert.ToInt16(textBox1.Text)));
+                        try
+                        {
+                            FirstEquation(a);
+                            textBox2.Text = Convert.ToString(FirstEquation(a));
+
+                        }
+                        catch (DivideByZeroException)
+                        {
+                            DialogResult result = MessageBox.Show("Sorry, divide by zero!", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
+                        finally
+                        {
+                            if (double.IsInfinity(FirstEquation(a)))
+                            {
+                                DialogResult result = MessageBox.Show("Sorry, divide by zero!", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            }
+                        }
                     }
                 }
 
@@ -74,7 +108,25 @@ namespace L000106_lab_9_individual
                     }
                     else
                     {
-                        textBox2.Text = Convert.ToString(SecondEquation(Convert.ToInt16(textBox1.Text)));
+                        try
+                        {
+                            SecondEquation(a);
+                            textBox2.Text = Convert.ToString(SecondEquation(a));
+
+                        }
+                        catch (DivideByZeroException)
+                        {
+                            DialogResult result = MessageBox.Show("Sorry, divide by zero!", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
+                        finally
+                        {
+                            if (double.IsInfinity(SecondEquation(a)))
+                            {
+                                DialogResult result = MessageBox.Show("Sorry, divide by zero!", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            }
+                        }
+
+
                     }
                 }
 
@@ -86,7 +138,26 @@ namespace L000106_lab_9_individual
                     }
                     else
                     {
-                        textBox2.Text = Convert.ToString(ThirdEquation(Convert.ToInt16(textBox1.Text), Convert.ToInt16(textBox3.Text)));
+                        try
+                        {
+                            ThirdEquation(a, c);
+                            textBox2.Text = Convert.ToString(ThirdEquation(a, c));
+
+                        }
+                        catch (DivideByZeroException)
+                        {
+                            DialogResult result = MessageBox.Show("Sorry, divide by zero!", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
+                        finally
+                        {
+                            if (double.IsInfinity(ThirdEquation(a, c)))
+                            {
+                                textBox2.Text = "divide by zero!";
+                                textBox2.ForeColor = Color.DarkSlateGray;
+                                textBox2.ReadOnly = true;
+                                DialogResult result = MessageBox.Show("Sorry, divide by zero!", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            }
+                        }
                     }
                 }
             }
@@ -130,7 +201,7 @@ namespace L000106_lab_9_individual
 
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
-            textBox3.Clear();
+            //textBox3.Clear();
             textBox3.ReadOnly = false;
             textBox3.ForeColor = Color.Black;
         }
