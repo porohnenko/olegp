@@ -68,10 +68,9 @@ namespace L000106_lab_9_individual
         //Button "Calculate"
         private void button1_Click(object sender, EventArgs e)
         {
-            int a = Convert.ToInt16(textBox1.Text);
-            int c = Convert.ToInt16(textBox3.Text);
             if (radioButton1.Checked || radioButton2.Checked || radioButton3.Checked)
             {
+                int a = Convert.ToInt16(textBox1.Text);
                 if (radioButton1.Checked)
                 {
                     if (textBox1.Text == "")
@@ -138,6 +137,7 @@ namespace L000106_lab_9_individual
                     }
                     else
                     {
+                        int c = Convert.ToInt16(textBox3.Text);
                         try
                         {
                             ThirdEquation(a, c);
