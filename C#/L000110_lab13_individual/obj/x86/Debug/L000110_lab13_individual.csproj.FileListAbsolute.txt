@@ -1,0 +1,7 @@
+D:\MY\Git\C#\L000110_lab13_individual\bin\Debug\L000110_lab13_individual.exe
+D:\MY\Git\C#\L000110_lab13_individual\bin\Debug\L000110_lab13_individual.pdb
+D:\MY\Git\C#\L000110_lab13_individual\obj\x86\Debug\L000110_lab13_individual.Form1.resources
+D:\MY\Git\C#\L000110_lab13_individual\obj\x86\Debug\L000110_lab13_individual.Properties.Resources.resources
+D:\MY\Git\C#\L000110_lab13_individual\obj\x86\Debug\L000110_lab13_individual.csproj.GenerateResource.Cache
+D:\MY\Git\C#\L000110_lab13_individual\obj\x86\Debug\L000110_lab13_individual.exe
+D:\MY\Git\C#\L000110_lab13_individual\obj\x86\Debug\L000110_lab13_individual.pdb
