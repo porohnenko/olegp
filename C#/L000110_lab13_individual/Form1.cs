@@ -124,24 +124,95 @@ namespace L000110_lab13_individual
                 textBox6.Text = Convert.ToString(y2);
                 textBox14.Text = "+";
             }
-        }
 
+            if (y2 == 0)
+            {
+                textBox6.Clear();
+                textBox14.Clear();
+                textBox15.Clear();
+                textBox6.BackColor = Color.LightCyan;
+                textBox14.BackColor = Color.LightCyan;
+                textBox15.BackColor = Color.LightCyan;
+            }
+        }
         private void button2_Click_1(object sender, EventArgs e)
         {
-            textBox1.Text = "";
-            textBox2.Text = "";
-            textBox3.Text = "";
-            textBox4.Text = "";
-            textBox5.Text = "";
-            textBox6.Text = "";
-            textBox7.Text = "";
-            textBox8.Text = "";
-            textBox9.Text = "";
-            textBox10.Text = "";
-            textBox11.Text = "";
-            textBox12.Text = "";
-            textBox13.Text = "";
-            textBox14.Text = "";
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
+            textBox4.Clear();
+            textBox5.Clear();
+            textBox6.Clear();
+            textBox7.Clear();
+            textBox8.Clear();
+            textBox9.Clear();
+            textBox10.Clear();
+            textBox11.Clear();
+            textBox12.Clear();
+            textBox13.Clear();
+            textBox14.Clear();
+            textBox5.BackColor = Color.Moccasin;
+            textBox6.BackColor = Color.Moccasin;
+            textBox13.BackColor = Color.Moccasin;
+            textBox14.BackColor = Color.Moccasin;
+            textBox15.BackColor = Color.Moccasin;
+            textBox15.Text = "·i";
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            textBox5.Clear();
+            textBox6.Clear();
+            textBox13.Clear();
+            textBox14.Clear();
+            textBox5.BackColor = Color.Moccasin;
+            textBox6.BackColor = Color.Moccasin;
+            textBox13.BackColor = Color.Moccasin;
+            textBox14.BackColor = Color.Moccasin;
+            textBox15.BackColor = Color.Moccasin;
+            textBox15.Text = "·i";
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            textBox5.Clear();
+            textBox6.Clear();
+            textBox13.Clear();
+            textBox14.Clear();
+            textBox5.BackColor = Color.Moccasin;
+            textBox6.BackColor = Color.Moccasin;
+            textBox13.BackColor = Color.Moccasin;
+            textBox14.BackColor = Color.Moccasin;
+            textBox15.BackColor = Color.Moccasin;
+            textBox15.Text = "·i";
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            textBox5.Clear();
+            textBox6.Clear();
+            textBox13.Clear();
+            textBox14.Clear();
+            textBox5.BackColor = Color.Moccasin;
+            textBox6.BackColor = Color.Moccasin;
+            textBox13.BackColor = Color.Moccasin;
+            textBox14.BackColor = Color.Moccasin;
+            textBox15.BackColor = Color.Moccasin;
+            textBox15.Text = "·i";
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+            textBox5.Clear();
+            textBox6.Clear();
+            textBox13.Clear();
+            textBox14.Clear();
+            textBox5.BackColor = Color.Moccasin;
+            textBox6.BackColor = Color.Moccasin;
+            textBox13.BackColor = Color.Moccasin;
+            textBox14.BackColor = Color.Moccasin;
+            textBox15.BackColor = Color.Moccasin;
+            textBox15.Text = "·i";
         }
     }
 }
