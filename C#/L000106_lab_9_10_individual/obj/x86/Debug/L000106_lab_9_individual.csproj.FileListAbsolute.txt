@@ -6,3 +6,5 @@ D:\MY\Git\C#\L000106_lab_9_individual\obj\x86\Debug\L000106_lab_9_individual.csp
 D:\MY\Git\C#\L000106_lab_9_individual\obj\x86\Debug\L000106_lab_9_individual.exe
 D:\MY\Git\C#\L000106_lab_9_individual\obj\x86\Debug\L000106_lab_9_individual.pdb
 D:\MY\Git\C#\L000106_lab_9_individual\obj\x86\Debug\L000106_lab_9_individual.csprojResolveAssemblyReference.cache
+D:\MY\Git\C#\L000106_lab_9_10_individual\obj\x86\Debug\L000106_lab_9_individual.exe
+D:\MY\Git\C#\L000106_lab_9_10_individual\obj\x86\Debug\L000106_lab_9_individual.pdb
