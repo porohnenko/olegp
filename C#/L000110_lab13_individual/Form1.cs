@@ -83,22 +83,47 @@ namespace L000110_lab13_individual
             //calculate b*b
             int B1 = Bmult.MultMinus(NumB[0], NumB[0], NumB[1], NumB[1]);
             int B2 = Bmult.MultPlus(NumB[0], NumB[0], NumB[1], NumB[1]);
+            textBox7.Text = Convert.ToString(B1);
+            textBox8.Text = Convert.ToString(B2);
 
             //calculate a-b*b
             int ABminus1 = ABdif.Dif1(NumA[0], B1);         //a2
             int ABminus2 = ABdif.Dif2(NumA[1], B2);         //b2
+            textBox9.Text = Convert.ToString(ABminus1);
+            textBox10.Text = Convert.ToString(ABminus2);
 
             //calculate a+b
             int ABplus1 = ABsum.Summ1(NumA[0], NumB[0]);    //a1
             int ABplus2 = ABsum.Summ2(NumA[1], NumB[1]);    //b1
+            textBox11.Text = Convert.ToString(ABplus1);
+            textBox12.Text = Convert.ToString(ABplus2);
 
             //calculate y
             int y1 = Y.MultMinus(ABplus1, ABminus1, ABplus2, ABminus2);
-            int y2 = Y.MultPlus(ABplus2, ABminus2, ABminus1, ABplus2);  //int B = a1 * b2 + a2 * b1;
+            int y2 = Y.MultPlus(ABplus1, ABminus1, ABplus2, ABminus2);  //int B = a1 * b2 + a2 * b1;
 
-            textBox5.Text = Convert.ToString(y1);
-            textBox6.Text = Convert.ToString(y2);
+            if (y1 < 0)
+            {
+                textBox5.Text = Convert.ToString(Math.Abs(y1));
+                textBox13.BackColor = Color.Moccasin;
+                textBox13.Text = "-";
+            }
+            else
+            {
+                textBox5.Text = Convert.ToString(y1);
+                textBox13.BackColor = Color.LightCyan;
+            }
 
+            if (y2 < 0)
+            {
+                textBox6.Text = Convert.ToString(Math.Abs(y2));
+                textBox14.Text = "-";
+            }
+            else
+            {
+                textBox6.Text = Convert.ToString(y2);
+                textBox14.Text = "+";
+            }
         }
 
         private void button2_Click_1(object sender, EventArgs e)
@@ -109,6 +134,14 @@ namespace L000110_lab13_individual
             textBox4.Text = "";
             textBox5.Text = "";
             textBox6.Text = "";
+            textBox7.Text = "";
+            textBox8.Text = "";
+            textBox9.Text = "";
+            textBox10.Text = "";
+            textBox11.Text = "";
+            textBox12.Text = "";
+            textBox13.Text = "";
+            textBox14.Text = "";
         }
     }
 }
