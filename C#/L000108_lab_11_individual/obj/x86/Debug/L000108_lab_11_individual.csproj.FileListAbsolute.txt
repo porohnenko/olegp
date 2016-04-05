@@ -1,0 +1,14 @@
+C:\Users\olegp\AppData\Local\Temporary Projects\L000108_lab_11_individual\bin\Debug\L000108_lab_11_individual.exe
+C:\Users\olegp\AppData\Local\Temporary Projects\L000108_lab_11_individual\bin\Debug\L000108_lab_11_individual.pdb
+C:\Users\olegp\AppData\Local\Temporary Projects\L000108_lab_11_individual\obj\x86\Debug\L000108_lab_11_individual.Properties.Resources.resources
+C:\Users\olegp\AppData\Local\Temporary Projects\L000108_lab_11_individual\obj\x86\Debug\L000108_lab_11_individual.csproj.GenerateResource.Cache
+C:\Users\olegp\AppData\Local\Temporary Projects\L000108_lab_11_individual\obj\x86\Debug\L000108_lab_11_individual.exe
+C:\Users\olegp\AppData\Local\Temporary Projects\L000108_lab_11_individual\obj\x86\Debug\L000108_lab_11_individual.pdb
+C:\Users\olegp\AppData\Local\Temporary Projects\L000108_lab_11_individual\obj\x86\Debug\L000108_lab_11_individual.Form1.resources
+D:\MY\Git\C#\L000108_lab_11_individual\obj\x86\Debug\L000108_lab_11_individual.exe
+D:\MY\Git\C#\L000108_lab_11_individual\obj\x86\Debug\L000108_lab_11_individual.pdb
+D:\MY\Git\C#\L000108_lab_11_individual\obj\x86\Debug\L000108_lab_11_individual.Properties.Resources.resources
+D:\MY\Git\C#\L000108_lab_11_individual\obj\x86\Debug\L000108_lab_11_individual.csproj.GenerateResource.Cache
+D:\MY\Git\C#\L000108_lab_11_individual\bin\Debug\L000108_lab_11_individual.exe
+D:\MY\Git\C#\L000108_lab_11_individual\bin\Debug\L000108_lab_11_individual.pdb
+D:\MY\Git\C#\L000108_lab_11_individual\obj\x86\Debug\L000108_lab_11_individual.Num.resources

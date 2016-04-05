@@ -72,21 +72,21 @@ namespace L000108_lab_11
 
         private void Form1_Activated(object sender, EventArgs e)
         {
-            /*comboBox2.Items.Add("Иванов И.И.");
+            comboBox2.Items.Add("Иванов И.И.");
             comboBox2.Items.Add("Петров П.П.");
             comboBox2.Items.Add("Сидоров С.С.");
             comboBox2.Items.Add("Яковлев Я.Я.");
-            comboBox2.SelectedIndex = 0;*/
+            comboBox2.SelectedIndex = 0;
             for (int i = 0; i < 12; i++)
                 for (int j = 0; j < 50; j++)
                 {
                     OKL[i, j] = 1200000; PRP[i, j] = 30;
                 }
             axTabStrip1.Tabs.Clear();
-            axTabStrip1.Tabs.Add("янв"); axTabStrip1.Tabs.Add("фев"); axTabStrip1.Tabs.Add("март");
-            axTabStrip1.Tabs.Add("апр"); axTabStrip1.Tabs.Add("май"); axTabStrip1.Tabs.Add("июнь");
-            axTabStrip1.Tabs.Add("июль"); axTabStrip1.Tabs.Add("авг"); axTabStrip1.Tabs.Add("сен");
-            axTabStrip1.Tabs.Add("окт"); axTabStrip1.Tabs.Add("ноя"); axTabStrip1.Tabs.Add("дек");
+            axTabStrip1.Tabs.Add("JAN"); axTabStrip1.Tabs.Add("FEB"); axTabStrip1.Tabs.Add("MAR");
+            axTabStrip1.Tabs.Add("APR"); axTabStrip1.Tabs.Add("MAY"); axTabStrip1.Tabs.Add("JUN");
+            axTabStrip1.Tabs.Add("JUL"); axTabStrip1.Tabs.Add("AUG"); axTabStrip1.Tabs.Add("SEP");
+            axTabStrip1.Tabs.Add("OCT"); axTabStrip1.Tabs.Add("NOV"); axTabStrip1.Tabs.Add("DEC");
             axTabStrip1.Value = 0;
             UST(0, 0);
 
