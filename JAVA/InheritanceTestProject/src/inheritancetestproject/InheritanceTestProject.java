@@ -3,20 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package inheritancetestproject;
 
 /**
- * @date 24.02.2016
- * @author Oleg Porohnenko
- * @version 1.0
+ *
+ * @author olegp
  */
-public class DataTypes {
+public class InheritanceTestProject {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        DataTypeTester.intTesting();
+        Student st = new Leader("olegp","4545645");
     }
-    
+
 }

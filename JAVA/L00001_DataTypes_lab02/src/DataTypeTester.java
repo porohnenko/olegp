@@ -6,7 +6,7 @@
 
 /**
  * @date 24.02.2016
- * @author olegp
+ * @author Oleg Porohnenko
  * @version 1.0
  */
 public class DataTypeTester {
@@ -55,4 +55,3 @@ public class DataTypeTester {
     }
 }
 
-public class wer 

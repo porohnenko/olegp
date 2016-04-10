@@ -31,7 +31,7 @@ select [StName]
 	where ST.NRecordBook = P.NRecordBook and ST.IDGroup = G.IDGroup
 	and (select AVG(Mark) from Progress P1, Student ST1
 					where ST1.NRecordBook = P.NRecordBook and ST1.NRecordBook = P1.NRecordBook)
-	>
+	=
 	(select AVG(Mark) from Progress P2, Student ST2
 					where ST2.IDGroup = ST.IDGroup and ST2.NRecordBook = P2.NRecordBook)
 
@@ -41,13 +41,33 @@ select [StName]
 -- которым они сдавали экзамены.
 
 select [StName], [NameSubject]
-	from Student ST, Subjects S, Progress P, UPlan U
-	where ST.NRecordBook = P.NRecordBook and S.IDSubject = P.IDSubject
-	and Mark > 9
-	and U.NTerm = 1
+	from Student ST, Subjects S, Progress P, Report R
+	where ST.NRecordBook = P.NRecordBook and S.IDSubject = P.IDSubject and P.IDReport = R.IDReport
+	and Mark > 8
+	--and U.NTerm = 1
+-----------------------------------------------------------------------------------------
+-- Задание 5
+--Вывести все названия видов отчетности и названия дисциплин по тем
+--дисциплинам, по которым не было получено ни одной отличной оценки.
+select NameReport, s.NameSubject
+	from Progress p, Subjects s, Report r
+	where p.IDSubject = s.IDSubject and p.IDReport = r.IDReport
+	and s.NameSubject NOT IN (select s.NameSubject from Progress p, Subjects s
+	where p.IDSubject = s.IDSubject and p.Mark >= 9 group by s.NameSubject)
+	group by s.NameSubject, r.NameReport;
+-----------------------------------------------------------------------------------------
+-- Задание 6
+--Используя операторы над множествами, вывести имена всех студентов,
+--которые сдали экзамен по дисциплине Проектирование баз данных или по
+--дисциплине Организация баз данных.
+select [StName],[NameReport],[NameSubject]
+	from Progress P, Subjects S, Student St,Report R
+	where P.IDReport = R.IDReport
+	and P.NRecordBook = St.NRecordBook
+	and P.IDSubject = S.IDSubject
+	and R.NameReport like 'Testing'
+	and S.NameSubject in ('Database')
 	
-
-
 
 
 

@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
  *
  * @author olegp
@@ -21,7 +15,8 @@ public class Equation {
             if (D > 0) {
                 double x1 = (-b + Math.sqrt(D)) / 2.0 / a;
                 double x2 = (-b - Math.sqrt(D)) / 2.0 / a;
-                resultMsg = "There are two roots of eqation: x1 = " + x1 + " , x2 = " + x2;
+                resultMsg = "There are two roots of eqation: x1 = " + x1 
+                        + " , x2 = " + x2;
             } else if (D == 0) {
                 double x = -b / 2.0 / a;
                 resultMsg = "There is only one root of equation: x = " + x;
