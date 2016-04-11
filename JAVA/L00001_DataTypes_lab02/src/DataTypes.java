@@ -7,16 +7,18 @@
 /**
  * @date 24.02.2016
  * @author Oleg Porohnenko
+ * @group PV1-15PO
  * @version 1.0
  */
 public class DataTypes {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
-        DataTypeTester.intTesting();
+        
+        //DataTypeTester.byteTesting();
+        //DataTypeTester.shortTesting();  
+        //DataTypeTester.intTesting();
+        DataTypeTester.floatTesting();
+        //DataTypeTester.doubleTesting();
     }
-    
+
 }
