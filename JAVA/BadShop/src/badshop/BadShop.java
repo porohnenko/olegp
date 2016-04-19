@@ -10,12 +10,13 @@ import model.entity.Bread;
 import model.entity.Milk;
 import model.entity.Orange;
 import model.entity.Ponchik;
-import shopAssistance
+import model.logic.shopAssistance;
 
 /**
  *
  * @author olegp
  */
+
 public class BadShop {
 
     /**
@@ -37,7 +38,9 @@ public class BadShop {
         basket.add(o);
         basket.add(p);
 
-        System.out.println(m);
+        double price = shopAssistance.calcTotalPrice(basket);
+        System.out.println(basket);
+        System.out.println("Price: " + price);
     }
 
 }
