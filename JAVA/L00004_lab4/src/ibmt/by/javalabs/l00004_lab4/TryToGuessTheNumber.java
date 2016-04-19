@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ibmt.by.javalabs.l00004_lab4;
 
 import ibmt.by.javalabs.l00004_lab4.randomiser.randomNum;
@@ -19,7 +14,7 @@ public class TryToGuessTheNumber {
 
     public static void main(String[] args) {
         System.out.println("\tGame 'Try to Guess the Number'!!!");
-        System.out.println("*****************************************************");
+        System.out.println("***********************************************");
         System.out.println("\nInsert range of numbers between min and max: ");
         System.out.println("\nmin: ");
 
@@ -33,27 +28,28 @@ public class TryToGuessTheNumber {
 
         int number = randomNum.randomNum(i, j);
 
-        System.out.println("You have 5 attempts to guess the number! Good luck!");
+        System.out.println("You have 5 attempts to guess the number! Good l"
+                + "uck!");
         System.out.println("Ok! Please, enter your number: ");
+
+        Scanner sc1 = new Scanner(System.in);
+        userNum = sc1.nextInt();
 
         for (int k = 0; k < 5; k++) {
 
-            Scanner sc1 = new Scanner(System.in);
-            userNum = sc1.nextInt();
-            sc1.close();
             if (number > userNum) {
-                System.out.println("Your number is less than the hidden number!");
+                System.out.println("Your number is less than the hidden "
+                        + "number!");
             }
             if (number < userNum) {
-                System.out.println("Your number is greater than the hidden number!");
+                System.out.println("Your number is greater than the hidden "
+                        + "number!");
             }
             if (number == userNum) {
-                System.out.println("Congratulations ! You guessed the number !");
+                System.out.println("Congratulations ! You guessed the "
+                        + "number !");
             }
         }
+        sc1.close();
     }
-    /*if (i > j) {
-                System.out.println("First number is greater than the second!Try again!");*/
-}
-
 }
