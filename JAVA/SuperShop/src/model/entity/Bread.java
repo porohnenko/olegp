@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package model.entity;
 
 import model.entity.abs.Product;
@@ -11,23 +6,15 @@ import model.entity.abs.Product;
  *
  * @author olegp
  */
-public class Bread extends Product{
-    private double price;
+public class Bread extends Product {
+
     private String color;
     private boolean fresh;
 
     public Bread(double price, String color, boolean fresh) {
-        this.price = price;
+        super(price);
         this.color = color;
         this.fresh = fresh;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
     }
 
     public String getColor() {
@@ -46,7 +33,9 @@ public class Bread extends Product{
         this.fresh = fresh;
     }
 
-   
-    
-    
+    @Override
+    public String toString() {
+        return "Bread {" + super.toString() + ", color = " + color + ", fresh = " + fresh;
+    }
+
 }

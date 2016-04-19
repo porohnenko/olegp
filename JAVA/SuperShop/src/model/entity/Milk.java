@@ -1,32 +1,20 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package model.entity;
+
+import model.entity.abs.Product;
 
 /**
  *
  * @author olegp
  */
-public class Milk extends Object {
+public class Milk extends Product {
 
-    private double price;
     private double fat;
     private double volume;
 
     public Milk(double price, double fat, double volume) {
-        this.price = price;
+        super(price);
         this.fat = fat;
         this.volume = volume;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
     }
 
     public double getFat() {
@@ -43,6 +31,11 @@ public class Milk extends Object {
 
     public void setVolume(double volume) {
         this.volume = volume;
+    }
+
+    @Override
+    public String toString() {
+        return "Milk {" + super.toString() + ", fat = " + fat + ", volume = " + volume + "}";
     }
 
 }

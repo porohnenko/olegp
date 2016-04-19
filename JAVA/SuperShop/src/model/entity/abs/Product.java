@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package model.entity.abs;
 
 /**
@@ -10,9 +5,11 @@ package model.entity.abs;
  * @author olegp
  */
 public class Product {
+
     private double price;
 
-    public Product() {
+    public Product(double price) {
+        this.price = price;
     }
 
     public double getPrice() {
@@ -25,7 +22,7 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product{" + "price=" + price + '}';
+        return "Product {" + "price = " + price + '}';
     }
-    
+
 }
