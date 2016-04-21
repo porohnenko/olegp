@@ -1,17 +1,20 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package model.entity.abs;
 
 /**
  *
- * @author olegp
+ * @author user
  */
 public class Product {
-
     private double price;
 
     public Product(double price) {
         this.price = price;
     }
-
+   
     public double getPrice() {
         return price;
     }
@@ -22,7 +25,8 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product {" + "price = " + price + '}';
+        return "price=" + price;
     }
-
+    
+    
 }

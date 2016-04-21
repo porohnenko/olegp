@@ -7,10 +7,10 @@ import model.entity.abs.Product;
 public class Basket {
 
     public List<Product> list = new ArrayList<Product>();
-
+   
     public void add(Product p) {
         list.add(p);
-    }
+    }    
 
     @Override
     public String toString() {
@@ -19,6 +19,7 @@ public class Basket {
         for (Product p : list) {
             str += p.toString() + "\n";
         }
+
         return str;
     }
 }

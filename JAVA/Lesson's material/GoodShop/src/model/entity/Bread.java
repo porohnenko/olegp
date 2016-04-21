@@ -1,13 +1,16 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package model.entity;
 
 import model.entity.abs.Product;
 
 /**
  *
- * @author olegp
+ * @author user
  */
 public class Bread extends Product {
-
     private String color;
     private boolean fresh;
 
@@ -16,7 +19,7 @@ public class Bread extends Product {
         this.color = color;
         this.fresh = fresh;
     }
-
+        
     public String getColor() {
         return color;
     }
@@ -35,7 +38,8 @@ public class Bread extends Product {
 
     @Override
     public String toString() {
-        return "Bread {" + super.toString() + ", color = " + color + ", fresh = " + fresh;
+        return "Bread{" + super.toString() + ", color=" + color + ", fresh=" + fresh + '}';
     }
-
+    
+    
 }

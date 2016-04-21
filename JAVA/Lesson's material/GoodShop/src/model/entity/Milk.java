@@ -1,22 +1,25 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package model.entity;
 
 import model.entity.abs.Product;
 
 /**
  *
- * @author olegp
+ * @author user
  */
 public class Milk extends Product {
-
     private double fat;
     private double volume;
-
+   
     public Milk(double price, double fat, double volume) {
         super(price);
         this.fat = fat;
         this.volume = volume;
     }
-
+        
     public double getFat() {
         return fat;
     }
@@ -35,7 +38,6 @@ public class Milk extends Product {
 
     @Override
     public String toString() {
-        return "Milk {" + super.toString() + ", fat = " + fat + ", volume = " + volume + "}";
-    }
-
+        return "Milk{" + super.toString() + ", fat=" + fat + ", volume=" + volume + '}';
+    }   
 }
