@@ -19,8 +19,8 @@ public class GameLogic {
             System.out.println("Your number is lower than the hidden number!");
         } else {
             System.out.println("\n\n********************************************************");
-            System.out.println("Congratulations! You guess the number!");
-            System.out.printf("The hidden number is %d!\n", TryToGuessTheNumber.getHiddenNumber());
+            System.out.println("          Congratulations! You guess the number!");
+            System.out.printf("                 The hidden number is %d!\n", TryToGuessTheNumber.getHiddenNumber());
             return true;
         }
         return false;
