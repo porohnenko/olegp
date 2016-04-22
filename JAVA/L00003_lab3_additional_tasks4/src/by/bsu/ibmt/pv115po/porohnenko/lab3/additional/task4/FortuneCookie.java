@@ -43,7 +43,9 @@ public class FortuneCookie {
             Random rnd = new Random(System.currentTimeMillis());
 
             int selection = rnd.nextInt(15) + 1;
+
             System.out.println("\n\n***********************************************************************");
+
             switch (selection) {
                 case 1:
                     System.out.println(msg1);
