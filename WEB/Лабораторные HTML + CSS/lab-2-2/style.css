@@ -101,7 +101,7 @@ overflow: hidden;
 
 .overlay {
     position: absolute;
-    background: url(http://www.bkwld.com/img/misc/grid.png) repeat;
+    background: url('file://d:\MY\Git\olegp\WEB\Лабораторные HTML + CSS\lab-2-2\css\grid.png';) repeat;
     top: 0;
     left: 0;
     bottom: 0;
