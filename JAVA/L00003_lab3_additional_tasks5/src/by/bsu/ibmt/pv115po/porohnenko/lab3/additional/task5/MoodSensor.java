@@ -1,6 +1,6 @@
 /**
  * Lab work №3. Additional task5
- * Theme:
+ * Theme: Moods Sensor
  * Group: PV1-15PO
  * Author: Oleg Porohnenko
  * Date: Apr 23, 2016
