@@ -15,10 +15,10 @@ import java.util.Random;
 
 public class TryToGuessTheNumber {
 
-    private static int rangeLimit; //user's number upper limit of range   
-    private static int guessNumber; //any user's input number
-    private static int attempt; //user's number of attempt
-    private static int hiddenNumber;
+    private static int rangeLimit;      //user's number upper limit of range   
+    private static int guessNumber;     //any user's input number
+    private static int attempt;         //user's number of attempt
+    private static int hiddenNumber;    //any random number
     private static Random randomNum;
 
     public static void main(String[] args) {
@@ -28,37 +28,52 @@ public class TryToGuessTheNumber {
 
         randomNum = new Random(System.currentTimeMillis());
         inputValues();
-
     }
 
     public static void inputValues() {
-        Scanner scanLimit = new Scanner(System.in);
-        Scanner scanAttempt = new Scanner(System.in);
-        Scanner scanUserNumber = new Scanner(System.in);
-        Scanner scanYN = new Scanner(System.in);
 
         while (true) {
 
             rangeLimit = 0;
             attempt = 0;
 
-            while (rangeLimit == 0) {
+            while (true) {
+                Scanner sc = new Scanner(System.in);
                 System.out.printf("Please, insert upper value of range of numbers: ");
-                if (scanLimit.hasNextInt()) {
-                    rangeLimit = scanLimit.nextInt();
-                } else {
-                    System.out.println("Sorry, insert integer number!");
+                String line = sc.nextLine();
+
+                try {
+                    rangeLimit = Integer.parseInt(line);
+                    if (rangeLimit < 0) {
+                        System.out.println("*****Sorry, you entered must be positive!*****");
+                    } else if (rangeLimit == 0) {
+                        System.out.println("*****Sorry, you entered must be non zero!*****");
+                    } else {
+                        break;
+                    }
+                } catch (NumberFormatException e) {
+                    System.out.println("*****Sorry, you entered is not an integer!*****");
                 }
             }
 
             hiddenNumber = randomNum.nextInt(rangeLimit) + 1;
 
-            while (attempt == 0) {
+            while (true) {
+                Scanner sc = new Scanner(System.in);
                 System.out.print("\nPlease,insert number of your attempts: ");
-                if (scanAttempt.hasNextInt()) {
-                    attempt = scanAttempt.nextInt();
-                } else {
-                    System.out.println("\nSorry, insert integer number!");
+                String line = sc.nextLine();
+
+                try {
+                    attempt = Integer.parseInt(line);
+                    if (attempt < 0) {
+                        System.out.println("*****Sorry, you entered must be positive!*****");
+                    } else if (attempt == 0) {
+                        System.out.println("*****Sorry, you entered must be non zero!*****");
+                    } else {
+                        break;
+                    }
+                } catch (NumberFormatException e) {
+                    System.out.println("*****Sorry, you entered is not an integer!*****");
                 }
             }
 
@@ -69,19 +84,21 @@ public class TryToGuessTheNumber {
 
             for (int i = 0; i < attempt; i++) {
                 System.out.printf("Attempt #%d\n", i + 1);
-                System.out.print("Your number: ");
 
-                if (scanUserNumber.hasNextInt()) {
-                    guessNumber = scanUserNumber.nextInt();
-                } else {
-                    System.out.println("\nSorry, insert correct number!");
+                while (true) {
+                    System.out.print("Your number: ");
+                    Scanner sc = new Scanner(System.in);
+                    String line = sc.nextLine();
+
+                    try {
+                        guessNumber = Integer.parseInt(line);
+                        break;
+                    } catch (NumberFormatException e) {
+                        System.out.println("*****Sorry, you entered is not an integer!*****");
+                    }
                 }
 
-                /*if (getOutOfRange(guessNumber, rangeLimit) == true) {
-                    System.out.printf("Sorry, your input number is out of range 0...%s\n", rangeLimit);
-                }*/
-                
-                if (GameLogic.getGameResult(guessNumber)) {
+                if (GameLogic.getGameResult(guessNumber, rangeLimit)) {
                     System.out.println("********************************************************");
                     System.out.printf("You guessed the number of %d attempts!\n", i + 1);
                     System.out.println("********************************************************");
@@ -90,8 +107,8 @@ public class TryToGuessTheNumber {
                     System.out.println("Remaining attempts: " + (attempt - 1 - i));
                     System.out.println("Try again...\n");
                 }
-                
-                if (i == (attempt-1)) {
+
+                if (i == (attempt - 1)) {
                     System.out.println("********************************************************");
                     System.out.println("                       Game over!");
                     System.out.println("********************************************************");
@@ -99,8 +116,8 @@ public class TryToGuessTheNumber {
             }
 
             System.out.print("\nDo you want to play again? (Y/N?): ");
-
-            if (scanYN.next().equalsIgnoreCase("n")) {
+            Scanner sc = new Scanner(System.in);
+            if (sc.next().equalsIgnoreCase("n")) {
                 break;
             }
         }
@@ -109,12 +126,4 @@ public class TryToGuessTheNumber {
     public static int getHiddenNumber() {
         return hiddenNumber;
     }
-
-    public static boolean getOutOfRange(int val1, int val2) {
-        if (val1 > val2);
-        {
-            return true;
-        }
-    }
-
 }

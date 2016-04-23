@@ -12,11 +12,21 @@ import by.bsu.ibmt.groupPV115PO.porohnenko.game.TryToGuessTheNumber;
 
 public class GameLogic {
 
-    public static boolean getGameResult(int number) {
+    public static boolean getGameResult(int number, int limit) {
+
         if (number > TryToGuessTheNumber.getHiddenNumber()) {
-            System.out.println("Your number is higher than the hidden number!");
+            if ((number - limit) > 0) {
+                System.out.printf("Sorry, your input number is out of range 0...%s\n", limit);
+            } else {
+                System.out.println("*****Your number is higher than the hidden number!*****");
+            }
         } else if (number < TryToGuessTheNumber.getHiddenNumber()) {
-            System.out.println("Your number is lower than the hidden number!");
+
+            if (number < 0) {
+                System.out.printf("Sorry, your input number is out of range 0...%s\n", limit);
+            } else {
+                System.out.println("*****Your number is lower than the hidden number!******");
+            }
         } else {
             System.out.println("\n\n********************************************************");
             System.out.println("          Congratulations! You guess the number!");
