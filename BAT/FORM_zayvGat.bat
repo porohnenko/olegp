@@ -1,53 +1,73 @@
 @Echo ***************************************************************************
 @Echo Create: Oleg Porohnenko
 @Echo Date: 05.02.2016
-@Echo Changes: 18.02.2016
-@Echo Version: 1.08
+@Echo Changes: 21.04.2016
+@Echo Version: 1.12
 @Echo ***************************************************************************
 ping -n 5 -w 1000 192.168.0.40
 @Echo Off
 
-rem copy d:\1mag_zayv\*.arj d:\1mag_zayv\archiv\
+rem copy /y/z d:\1mag_zayv\*.arj d:\1mag_zayv\archiv\
 del d:\1mag_zayv\*.arj
-del d:\1mag_zayv\pochta\1\*.xls
-copy \\192.168.0.40\ostat\mag01\in\zayvka.* d:\1mag_zayv\zayv01.*
-copy \\192.168.0.40\ostat\mag01\in\$\zayav.* d:\1mag_zayv\zayv01_.*
-copy \\192.168.0.40\ostat\mag02\in\zayvka.* d:\1mag_zayv\zayv02.*
-copy \\192.168.0.40\ostat\mag02\in\$\zayav.* d:\1mag_zayv\zayv02_.*
-copy \\192.168.0.40\ostat\mag03\in\zayvka.* d:\1mag_zayv\zayv03.*
-copy \\192.168.0.40\ostat\mag03\in\$\zayav.* d:\1mag_zayv\zayv03_.*
-copy \\192.168.0.40\ostat\mag04\in\zayvka.* d:\1mag_zayv\zayv04.*
-copy \\192.168.0.40\ostat\mag04\in\$\zayav.* d:\1mag_zayv\zayv04_.*
-copy \\192.168.0.40\ostat\mag05\in\zayvka.* d:\1mag_zayv\zayv05.*
-copy \\192.168.0.40\ostat\mag06\in\zayvka.* d:\1mag_zayv\zayv06.*
-copy \\192.168.0.40\ostat\mag06\in\$\zayav.* d:\1mag_zayv\zayv06_.*
-copy \\192.168.0.40\ostat\mag07\in\zayvka.* d:\1mag_zayv\zayv07.*
-copy \\192.168.0.40\ostat\mag07\in\$\zayav.* d:\1mag_zayv\zayv07_.*
-copy \\192.168.0.40\ostat\mag08\in\zayvka.* d:\1mag_zayv\zayv08.*
-copy \\192.168.0.40\ostat\mag08\in\$\zayav.* d:\1mag_zayv\zayv08_.*
-copy \\192.168.0.40\ostat\mag09\in\zayvka.* d:\1mag_zayv\zayv09.*
-copy \\192.168.0.40\ostat\mag09\in\$\zayav.* d:\1mag_zayv\zayv09_.*
-copy \\192.168.0.40\ostat\mag10\in\zayvka.* d:\1mag_zayv\zayv10.*
-copy \\192.168.0.40\ostat\mag10\in\$\zayav.* d:\1mag_zayv\zayv10.*
-copy \\192.168.0.40\ostat\mag11\in\zayvka.* d:\1mag_zayv\zayv11.*
-copy \\192.168.0.40\ostat\mag12\in\zayvka.* d:\1mag_zayv\zayv12.*
-copy \\192.168.0.40\ostat\mag15\in\zayvka.* d:\1mag_zayv\zayv15.*
-copy \\192.168.0.40\ostat\mag15\in\$\zayav.* d:\1mag_zayv\zayv15_.*
-copy \\192.168.0.40\ostat\mag16\in\zayvka.* d:\1mag_zayv\zayv16.*
-copy \\192.168.0.40\ostat\mag16\in\$\zayav.* d:\1mag_zayv\zayv16_.*
-copy \\192.168.0.40\ostat\mag17\in\zayvka.* d:\1mag_zayv\zayv17.*
-copy \\192.168.0.40\ostat\mag17\in\$\zayav.* d:\1mag_zayv\zayv17_.*
-copy \\192.168.0.40\ostat\mag18\in\zayvka.* d:\1mag_zayv\zayv18.*
-copy \\192.168.0.40\ostat\mag18\in\$\zayav.* d:\1mag_zayv\zayv18_.*
-copy \\192.168.0.40\ostat\mag19\in\zayvka.* d:\1mag_zayv\zayv19.*
-copy \\192.168.0.40\ostat\mag20\in\zayvka.* d:\1mag_zayv\zayv20.*
-copy \\192.168.0.40\ostat\mag21\in\zayvka.* d:\1mag_zayv\zayv21.*
-copy \\192.168.0.40\ostat\mag22\in\zayvka.* d:\1mag_zayv\zayv22.*
-copy \\192.168.0.40\ostat\mag22\in\$\zayav.* d:\1mag_zayv\zayv22_.*
-copy \\192.168.0.40\ostat\mag23\in\zayvka.* d:\1mag_zayv\zayv23.*
-copy \\192.168.0.40\ostat\mag23\in\$\zayav.* d:\1mag_zayv\zayv23_.*
-copy \\192.168.0.40\ostat\skl09\in\zayvka.* d:\1mag_zayv\skl09.*
-copy \\192.168.0.40\ostat\skl09\in\$\zayvka.* d:\1mag_zayv\skl09_.*
+del d:\1mag_zayv\pochta\1\*.xls*
+del d:\1mag_zayv\pochta\2\*.xls*
+del d:\1mag_zayv\pochta\3\*.xls*
+del d:\1mag_zayv\pochta\4\*.xls*
+del d:\1mag_zayv\pochta\5\*.xls*
+del d:\1mag_zayv\pochta\6\*.xls*
+del d:\1mag_zayv\pochta\7\*.xls*
+del d:\1mag_zayv\pochta\8\*.xls*
+del d:\1mag_zayv\pochta\9\*.xls*
+del d:\1mag_zayv\pochta\10\*.xls*
+del d:\1mag_zayv\pochta\11\*.xls*
+del d:\1mag_zayv\pochta\12\*.xls*
+del d:\1mag_zayv\pochta\15\*.xls*
+del d:\1mag_zayv\pochta\16\*.xls*
+del d:\1mag_zayv\pochta\17\*.xls*
+del d:\1mag_zayv\pochta\18\*.xls*
+del d:\1mag_zayv\pochta\19\*.xls*
+del d:\1mag_zayv\pochta\20\*.xls*
+del d:\1mag_zayv\pochta\21\*.xls*
+del d:\1mag_zayv\pochta\22\*.xls*
+del d:\1mag_zayv\pochta\23\*.xls*
+copy /y/z \\192.168.0.40\ostat\mag01\in\zayvka.* d:\1mag_zayv\zayv01.*
+copy /y/z \\192.168.0.40\ostat\mag01\in\$\zayav.* d:\1mag_zayv\zayv01_.*
+copy /y/z \\192.168.0.40\ostat\mag02\in\zayvka.* d:\1mag_zayv\zayv02.*
+copy /y/z \\192.168.0.40\ostat\mag02\in\$\zayav.* d:\1mag_zayv\zayv02_.*
+copy /y/z \\192.168.0.40\ostat\mag03\in\zayvka.* d:\1mag_zayv\zayv03.*
+copy /y/z \\192.168.0.40\ostat\mag03\in\$\zayav.* d:\1mag_zayv\zayv03_.*
+copy /y/z \\192.168.0.40\ostat\mag04\in\zayvka.* d:\1mag_zayv\zayv04.*
+copy /y/z \\192.168.0.40\ostat\mag04\in\$\zayav.* d:\1mag_zayv\zayv04_.*
+copy /y/z \\192.168.0.40\ostat\mag05\in\zayvka.* d:\1mag_zayv\zayv05.*
+copy /y/z \\192.168.0.40\ostat\mag06\in\zayvka.* d:\1mag_zayv\zayv06.*
+copy /y/z \\192.168.0.40\ostat\mag06\in\$\zayav.* d:\1mag_zayv\zayv06_.*
+copy /y/z \\192.168.0.40\ostat\mag07\in\zayvka.* d:\1mag_zayv\zayv07.*
+copy /y/z \\192.168.0.40\ostat\mag07\in\$\zayav.* d:\1mag_zayv\zayv07_.*
+copy /y/z \\192.168.0.40\ostat\mag08\in\zayvka.* d:\1mag_zayv\zayv08.*
+copy /y/z \\192.168.0.40\ostat\mag08\in\$\zayav.* d:\1mag_zayv\zayv08_.*
+copy /y/z \\192.168.0.40\ostat\mag09\in\zayvka.* d:\1mag_zayv\zayv09.*
+copy /y/z \\192.168.0.40\ostat\mag09\in\$\zayav.* d:\1mag_zayv\zayv09_.*
+copy /y/z \\192.168.0.40\ostat\mag10\in\zayvka.* d:\1mag_zayv\zayv10.*
+copy /y/z \\192.168.0.40\ostat\mag10\in\$\zayav.* d:\1mag_zayv\zayv10.*
+copy /y/z \\192.168.0.40\ostat\mag11\in\zayvka.* d:\1mag_zayv\zayv11.*
+copy /y/z \\192.168.0.40\ostat\mag12\in\zayvka.* d:\1mag_zayv\zayv12.*
+copy /y/z \\192.168.0.40\ostat\mag15\in\zayvka.* d:\1mag_zayv\zayv15.*
+copy /y/z \\192.168.0.40\ostat\mag15\in\$\zayav.* d:\1mag_zayv\zayv15_.*
+copy /y/z \\192.168.0.40\ostat\mag16\in\zayvka.* d:\1mag_zayv\zayv16.*
+copy /y/z \\192.168.0.40\ostat\mag16\in\$\zayav.* d:\1mag_zayv\zayv16_.*
+copy /y/z \\192.168.0.40\ostat\mag17\in\zayvka.* d:\1mag_zayv\zayv17.*
+copy /y/z \\192.168.0.40\ostat\mag17\in\$\zayav.* d:\1mag_zayv\zayv17_.*
+copy /y/z \\192.168.0.40\ostat\mag18\in\zayvka.* d:\1mag_zayv\zayv18.*
+copy /y/z \\192.168.0.40\ostat\mag18\in\$\zayav.* d:\1mag_zayv\zayv18_.*
+copy /y/z \\192.168.0.40\ostat\mag19\in\zayvka.* d:\1mag_zayv\zayv19.*
+copy /y/z \\192.168.0.40\ostat\mag20\in\zayvka.* d:\1mag_zayv\zayv20.*
+copy /y/z \\192.168.0.40\ostat\mag21\in\zayvka.* d:\1mag_zayv\zayv21.*
+copy /y/z \\192.168.0.40\ostat\mag22\in\zayvka.* d:\1mag_zayv\zayv22.*
+copy /y/z \\192.168.0.40\ostat\mag22\in\$\zayav.* d:\1mag_zayv\zayv22_.*
+copy /y/z \\192.168.0.40\ostat\mag23\in\zayvka.* d:\1mag_zayv\zayv23.*
+copy /y/z \\192.168.0.40\ostat\mag23\in\$\zayav.* d:\1mag_zayv\zayv23_.*
+copy /y/z \\192.168.0.40\ostat\skl09\in\zayvka.* d:\1mag_zayv\skl09.*
+copy /y/z \\192.168.0.40\ostat\skl09\in\$\zayvka.* d:\1mag_zayv\skl09_.*
 
 ping -n 5 -w 1000 192.168.0.40
 
@@ -57,210 +77,182 @@ d:
 cd d:\1mag_zayv
 chcp 1251
 if not exist zayv01.arj goto continue01
-arj e zayv01.arj d:\1mag_zayv\pochta\1
-copy d:\1mag_zayv\pochta\1\ostat3.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag01_skl3.xls
-copy d:\1mag_zayv\pochta\1\ostat5.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag01_skl5.xls
+arj e zayv01.arj d:\1mag_zayv\pochta\1\
+copy /y/z d:\1mag_zayv\pochta\1\ostat3.xls* "\\169.26.9.100\папка обмена\«јя¬ »\mag01_skl3.xls*
+copy /y/z d:\1mag_zayv\pochta\1\ostat5.xls* "\\169.26.9.100\папка обмена\«јя¬ »\mag01_skl5.xls*
 
-del d:\1mag_zayv\pochta\1\*.xls
+del d:\1mag_zayv\pochta\1\*.xls*
 
 :continue01
 if not exist zayv02.arj goto continue02
-arj e zayv02.arj d:\1mag_zayv\pochta\1
-copy d:\1mag_zayv\pochta\1\ostat3.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag02_skl3.xls
-copy d:\1mag_zayv\pochta\1\ostat5.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag02_skl5.xls
+arj e zayv02.arj d:\1mag_zayv\pochta\2\
+copy /y/z d:\1mag_zayv\pochta\2\ostat3.xls* "\\169.26.9.100\папка обмена\«јя¬ »\mag02_skl3.xls*
+copy /y/z d:\1mag_zayv\pochta\2\ostat5.xls* "\\169.26.9.100\папка обмена\«јя¬ »\mag02_skl5.xls*
 
-del d:\1mag_zayv\pochta\1\*.xls
+del d:\1mag_zayv\pochta\2\*.xls*
 
 :continue02
 if not exist zayv03.arj goto continue03
-arj e zayv03.arj d:\1mag_zayv\pochta\1
-copy d:\1mag_zayv\pochta\1\ostat3.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag03_skl3.xls
-copy d:\1mag_zayv\pochta\1\ostat5.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag03_skl5.xls
+arj e zayv03.arj d:\1mag_zayv\pochta\3\
+copy /y/z d:\1mag_zayv\pochta\3\ostat3.xls* "\\169.26.9.100\папка обмена\«јя¬ »\mag03_skl3.xls*
+copy /y/z d:\1mag_zayv\pochta\3\ostat5.xls* "\\169.26.9.100\папка обмена\«јя¬ »\mag03_skl5.xls*
 
-del d:\1mag_zayv\pochta\1\*.xls	
+del d:\1mag_zayv\pochta\3\*.xls*	
 
 :continue03
 if not exist zayv04.arj goto continue04
-arj e zayv04.arj d:\1mag_zayv\pochta\1
-copy d:\1mag_zayv\pochta\1\ostat3.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag04_skl3.xls
-copy d:\1mag_zayv\pochta\1\ostat5.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag04_skl5.xls
+arj e zayv04.arj d:\1mag_zayv\pochta\4\
+copy /y/z d:\1mag_zayv\pochta\4\ostat3.xls* "\\169.26.9.100\папка обмена\«јя¬ »\mag04_skl3.xls*
+copy /y/z d:\1mag_zayv\pochta\4\ostat5.xls* "\\169.26.9.100\папка обмена\«јя¬ »\mag04_skl5.xls*
+
+del d:\1mag_zayv\pochta\4\*.xls*
+
 :continue04
 if not exist zayv05.arj goto continue05
-arj e zayv05.arj d:\1mag_zayv\pochta\1
-copy d:\1mag_zayv\pochta\1\ostat3.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag05_skl3.xls
-copy d:\1mag_zayv\pochta\1\ostat5.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag05_skl5.xls
+arj e zayv05.arj d:\1mag_zayv\pochta\5\
+copy /y/z d:\1mag_zayv\pochta\5\ostat3.xls* "\\169.26.9.100\папка обмена\«јя¬ »\mag05_skl3.xls*
+copy /y/z d:\1mag_zayv\pochta\5\ostat5.xls* "\\169.26.9.100\папка обмена\«јя¬ »\mag05_skl5.xls*
 
-del d:\1mag_zayv\pochta\1\*.xls
+del d:\1mag_zayv\pochta\5\*.xls*
 
 :continue05
 if not exist zayv06.arj goto continue06
-arj e zayv06.arj d:\1mag_zayv\pochta\1
-copy d:\1mag_zayv\pochta\1\ostat3.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag06_skl3.xls
-copy d:\1mag_zayv\pochta\1\ostat5.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag06_skl5.xls
+arj e zayv06.arj d:\1mag_zayv\pochta\6\
+copy /y/z d:\1mag_zayv\pochta\6\ostat3.xls* "\\169.26.9.100\папка обмена\«јя¬ »\mag06_skl3.xls*
+copy /y/z d:\1mag_zayv\pochta\6\ostat5.xls* "\\169.26.9.100\папка обмена\«јя¬ »\mag06_skl5.xls*
 
-del d:\1mag_zayv\pochta\1\*.xls
+del d:\1mag_zayv\pochta\6\*.xls*
 
 :continue06
 if not exist zayv07.arj goto continue07
-arj e zayv07.arj d:\1mag_zayv\pochta\1
-copy d:\1mag_zayv\pochta\1\ostat3.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag07_skl3.xls
-copy d:\1mag_zayv\pochta\1\ostat5.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag07_skl5.xls
+arj e zayv07.arj d:\1mag_zayv\pochta\7\
+copy /y/z d:\1mag_zayv\pochta\7\ostat3.xls* "\\169.26.9.100\папка обмена\«јя¬ »\mag07_skl3.xls*
+copy /y/z d:\1mag_zayv\pochta\7\ostat5.xls* "\\169.26.9.100\папка обмена\«јя¬ »\mag07_skl5.xls*
 
-del d:\1mag_zayv\pochta\1\*.xls
+del d:\1mag_zayv\pochta\7\*.xls*
 
 :continue07
 if not exist zayv08.arj goto continue08
-arj e zayv08.arj d:\1mag_zayv\pochta\1
-copy d:\1mag_zayv\pochta\1\ostat3.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag08_skl3.xls
-copy d:\1mag_zayv\pochta\1\ostat5.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag08_skl5.xls
+arj e zayv08.arj d:\1mag_zayv\pochta\8\
+copy /y/z d:\1mag_zayv\pochta\8\ostat3.xls* "\\169.26.9.100\папка обмена\«јя¬ »\mag08_skl3.xls*
+copy /y/z d:\1mag_zayv\pochta\8\ostat5.xls* "\\169.26.9.100\папка обмена\«јя¬ »\mag08_skl5.xls*
 
-del d:\1mag_zayv\pochta\1\*.xls
+del d:\1mag_zayv\pochta\8\*.xls*
 
 :continue08
 if not exist zayv09.arj goto continue09
-arj e zayv09.arj d:\1mag_zayv\pochta\1
-copy d:\1mag_zayv\pochta\1\ostat3.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag09_skl3.xls
-copy d:\1mag_zayv\pochta\1\ostat5.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag09_skl5.xls
+arj e zayv09.arj d:\1mag_zayv\pochta\9\
+copy /y/z d:\1mag_zayv\pochta\9\ostat3.xls* "\\169.26.9.100\папка обмена\«јя¬ »\mag09_skl3.xls*
+copy /y/z d:\1mag_zayv\pochta\9\ostat5.xls* "\\169.26.9.100\папка обмена\«јя¬ »\mag09_skl5.xls*
 
-del d:\1mag_zayv\pochta\1\*.xls
+del d:\1mag_zayv\pochta\9\*.xls*
 
 :continue09
 if not exist zayv10.arj goto continue10
-arj e zayv10.arj d:\1mag_zayv\pochta\1
-copy d:\1mag_zayv\pochta\1\ostat3.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag10_skl3.xls
-copy d:\1mag_zayv\pochta\1\ostat5.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag10_skl5.xls
+arj e zayv10.arj d:\1mag_zayv\pochta\10\
+copy /y/z d:\1mag_zayv\pochta\10\ostat3.xls* "\\169.26.9.100\папка обмена\«јя¬ »\mag10_skl3.xls*
+copy /y/z d:\1mag_zayv\pochta\10\ostat5.xls* "\\169.26.9.100\папка обмена\«јя¬ »\mag10_skl5.xls*
 
-del d:\1mag_zayv\pochta\1\*.xls
+del d:\1mag_zayv\pochta\10\*.xls*
 
 :continue10
 if not exist zayv11.arj goto continue11
-arj e zayv11.arj d:\1mag_zayv\pochta\1
-copy d:\1mag_zayv\pochta\1\ostat3.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag11_skl3.xls
-copy d:\1mag_zayv\pochta\1\ostat5.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag11_skl5.xls
+arj e zayv11.arj d:\1mag_zayv\pochta\11\
+copy /y/z d:\1mag_zayv\pochta\11\ostat3.xls* "\\169.26.9.100\папка обмена\«јя¬ »\mag11_skl3.xls*
+copy /y/z d:\1mag_zayv\pochta\11\ostat5.xls* "\\169.26.9.100\папка обмена\«јя¬ »\mag11_skl5.xls*
 
-del d:\1mag_zayv\pochta\1\*.xls
+del d:\1mag_zayv\pochta\11\*.xls*
 
 :continue11
 if not exist zayv12.arj goto continue12
-arj e zayv12.arj d:\1mag_zayv\pochta\1
-copy d:\1mag_zayv\pochta\1\ostat3.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag12_skl3.xls
-copy d:\1mag_zayv\pochta\1\ostat5.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag12_skl5.xls
+arj e zayv12.arj d:\1mag_zayv\pochta\12\
+copy /y/z d:\1mag_zayv\pochta\12\ostat3.xls* "\\169.26.9.100\папка обмена\«јя¬ »\mag12_skl3.xls*
+copy /y/z d:\1mag_zayv\pochta\12\ostat5.xls* "\\169.26.9.100\папка обмена\«јя¬ »\mag12_skl5.xls*
 
-del d:\1mag_zayv\pochta\1\*.xls
+del d:\1mag_zayv\pochta\12\*.xls*
 
 :continue12
-if not exist zayv15.arj goto continue14
-arj e zayv15.arj d:\1mag_zayv\pochta\1
-copy d:\1mag_zayv\pochta\1\ostat3.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag15_skl3.xls
-copy d:\1mag_zayv\pochta\1\ostat5.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag15_skl5.xls
+if not exist zayv15.arj goto continue15
+arj e zayv15.arj d:\1mag_zayv\pochta\15\
+copy /y/z d:\1mag_zayv\pochta\15\ostat3.xls* "\\169.26.9.100\папка обмена\«јя¬ »\mag15_skl3.xls*
+copy /y/z d:\1mag_zayv\pochta\15\ostat5.xls* "\\169.26.9.100\папка обмена\«јя¬ »\mag15_skl5.xls*
 
-del d:\1mag_zayv\pochta\1\*.xls
-
-:continue14
-if not exist zayv15_.arj goto continue15
-arj e zayv15_.arj d:\1mag_zayv\pochta\1
-copy d:\1mag_zayv\pochta\1\ostat3.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag15_skl3.xls
-copy d:\1mag_zayv\pochta\1\ostat5.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag15_skl5.xls
-
-del d:\1mag_zayv\pochta\1\*.xls
+del d:\1mag_zayv\pochta\15\*.xls*
 
 :continue15
 if not exist zayv16.arj goto continue16
-arj e zayv16.arj d:\1mag_zayv\pochta\1
-copy d:\1mag_zayv\pochta\1\ostat3.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag16_skl3.xls
-copy d:\1mag_zayv\pochta\1\ostat5.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag16_skl5.xls
+arj e zayv16.arj d:\1mag_zayv\pochta\16\
+copy /y/z d:\1mag_zayv\pochta\16\ostat3.xls* "\\169.26.9.100\папка обмена\«јя¬ »\mag16_skl3.xls*
+copy /y/z d:\1mag_zayv\pochta\16\ostat5.xls* "\\169.26.9.100\папка обмена\«јя¬ »\mag16_skl5.xls*
 
-del d:\1mag_zayv\pochta\1\*.xls
+del d:\1mag_zayv\pochta\16\*.xls*
 
 :continue16
 if not exist zayv17.arj goto continue17
-arj e zayv17.arj d:\1mag_zayv\pochta\1
-copy d:\1mag_zayv\pochta\1\ostat3.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag17_skl3.xls
-copy d:\1mag_zayv\pochta\1\ostat5.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag17_skl5.xls
+arj e zayv17.arj d:\1mag_zayv\pochta\17\
+copy /y/z d:\1mag_zayv\pochta\17\ostat3.xls* "\\169.26.9.100\папка обмена\«јя¬ »\mag17_skl3.xls*
+copy /y/z d:\1mag_zayv\pochta\17\ostat5.xls* "\\169.26.9.100\папка обмена\«јя¬ »\mag17_skl5.xls*
 
-del d:\1mag_zayv\pochta\1\*.xls
+del d:\1mag_zayv\pochta\17\*.xls*
 
 :continue17
 if not exist zayv18.arj goto continue18
-arj e zayv18.arj d:\1mag_zayv\pochta\1
-copy d:\1mag_zayv\pochta\1\ostat3.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag18_skl3.xls
-copy d:\1mag_zayv\pochta\1\ostat5.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag18_skl5.xls
+arj e zayv18.arj d:\1mag_zayv\pochta\18\
+copy /y/z d:\1mag_zayv\pochta\18\ostat3.xls* "\\169.26.9.100\папка обмена\«јя¬ »\mag18_skl3.xls*
+copy /y/z d:\1mag_zayv\pochta\18\ostat5.xls* "\\169.26.9.100\папка обмена\«јя¬ »\mag18_skl5.xls*
 
-del d:\1mag_zayv\pochta\1\*.xls
+del d:\1mag_zayv\pochta\18\*.xls*
 
 :continue18
 if not exist zayv19.arj goto continue19
-arj e zayv19.arj d:\1mag_zayv\pochta\1
-copy d:\1mag_zayv\pochta\1\zayvka3.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag19_skl3.xls
-copy d:\1mag_zayv\pochta\1\zayvka5.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag19_skl5.xls
+arj e zayv19.arj d:\1mag_zayv\pochta\19\
+copy /y/z d:\1mag_zayv\pochta\19\zayvka3.xls* "\\169.26.9.100\папка обмена\«јя¬ »\mag19_skl3.xls*
+copy /y/z d:\1mag_zayv\pochta\19\zayvka5.xls* "\\169.26.9.100\папка обмена\«јя¬ »\mag19_skl5.xls*
 
-del d:\1mag_zayv\pochta\1\*.xls
+del d:\1mag_zayv\pochta\19\*.xls*
 
 :continue19
 if not exist zayv20.arj goto continue20
-arj e zayv20.arj d:\1mag_zayv\pochta\1
-copy d:\1mag_zayv\pochta\1\ostat3.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag20_skl3.xls
-copy d:\1mag_zayv\pochta\1\ostat5.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag20_skl5.xls
+arj e zayv20.arj d:\1mag_zayv\pochta\20\
+copy /y/z d:\1mag_zayv\pochta\20\ostat3.xls* "\\169.26.9.100\папка обмена\«јя¬ »\mag20_skl3.xls*
+copy /y/z d:\1mag_zayv\pochta\20\ostat5.xls* "\\169.26.9.100\папка обмена\«јя¬ »\mag20_skl5.xls*
 
-del d:\1mag_zayv\pochta\1\*.xls
+del d:\1mag_zayv\pochta\20\*.xls*
 
 :continue20
 if not exist zayv21.arj goto continue21
-arj e zayv21.arj d:\1mag_zayv\pochta\1
-copy d:\1mag_zayv\pochta\1\ostat3.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag21_skl3.xls
-copy d:\1mag_zayv\pochta\1\ostat5.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag21_skl5.xls
+arj e zayv21.arj d:\1mag_zayv\pochta\21\
+copy /y/z d:\1mag_zayv\pochta\21\ostat3.xls* "\\169.26.9.100\папка обмена\«јя¬ »\mag21_skl3.xls*
+copy /y/z d:\1mag_zayv\pochta\21\ostat5.xls* "\\169.26.9.100\папка обмена\«јя¬ »\mag21_skl5.xls*
 
-del d:\1mag_zayv\pochta\1\*.xls
+del d:\1mag_zayv\pochta\21\*.xls*
 
 :continue21
 if not exist zayv22.arj goto continue22
-arj e zayv22.arj d:\1mag_zayv\pochta\1
-copy d:\1mag_zayv\pochta\1\ostat3.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag22_skl3.xls
-copy d:\1mag_zayv\pochta\1\ostat5.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag22_skl5.xls
+arj e zayv22.arj d:\1mag_zayv\pochta\22\
+copy /y/z d:\1mag_zayv\pochta\22\ostat3.xls* "\\169.26.9.100\папка обмена\«јя¬ »\mag22_skl3.xls*
+copy /y/z d:\1mag_zayv\pochta\22\ostat5.xls* "\\169.26.9.100\папка обмена\«јя¬ »\mag22_skl5.xls*
 
-del d:\1mag_zayv\pochta\1\*.xls
+del d:\1mag_zayv\pochta\22\*.xls*
 
 :continue22
 if not exist zayv23.arj goto continue23
-arj e zayv23.arj d:\1mag_zayv\pochta\1
-copy d:\1mag_zayv\pochta\1\ostat3.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag23_skl3.xls
-copy d:\1mag_zayv\pochta\1\ostat5.xls "\\169.26.9.100\папка обмена\«јя¬ »\mag23_skl5.xls
+arj e zayv23.arj d:\1mag_zayv\pochta\23\
+copy /y/z d:\1mag_zayv\pochta\23\ostat3.xls* "\\169.26.9.100\папка обмена\«јя¬ »\mag23_skl3.xls*
+copy /y/z d:\1mag_zayv\pochta\23\ostat5.xls* "\\169.26.9.100\папка обмена\«јя¬ »\mag23_skl5.xls*
 
-del d:\1mag_zayv\pochta\1\*.xls
+del d:\1mag_zayv\pochta\23\*.xls*
 
 :continue23
 if not exist skl09.arj goto continue24
-arj e skl09.arj d:\1mag_zayv\pochta\1
-copy d:\1mag_zayv\pochta\1\zayvka3.xls "\\169.26.9.100\папка обмена\«јя¬ »\skl09_skl3.xls
-copy d:\1mag_zayv\pochta\1\zayvka5.xls "\\169.26.9.100\папка обмена\«јя¬ »\skl09_skl5.xls
+arj e skl09.arj d:\1mag_zayv\pochta\skl09\
+copy /y/z d:\1mag_zayv\pochta\skl09\zayvka3.xls* "\\169.26.9.100\папка обмена\«јя¬ »\skl09_skl3.xls*
+copy /y/z d:\1mag_zayv\pochta\skl09\zayvka5.xls* "\\169.26.9.100\папка обмена\«јя¬ »\skl09_skl5.xls*
 
-del d:\1mag_zayv\pochta\1\*.xls
+del d:\1mag_zayv\pochta\skl09\*.xls*
 
 :continue24
-REM color A0
-REM chcp 1251
-REM @echo *****************************************************************************
-REM @echo *****************************************************************************
-REM @echo *****************************************************************************
-REM @echo *****************************************************************************
-REM @echo *****************************************************************************
-REM @echo *****************************************************************************
-REM @echo *****************************************************************************
-REM @echo *****************************************************************************
-REM @echo *****************************************************************************
-REM @echo *****************************************************************************
-REM @echo *****************************************************************************
-REM @echo *****************************************************************************
-REM @echo *****************************************************************************
-REM @echo *****************************************************************************
-REM @echo *****************************************************************************
-@echo *****************************************************************************
-@echo *****************************************************************************
-@echo *****************************************************************************
-@echo ѕ–≈∆ƒ≈ „≈ћ ѕ–ќƒќЋ∆»“№, ѕ–ќ¬≈–№“≈ ѕјѕ ” "«јя¬ »" Ќј ЌјЋ»„»≈ Ќќ¬џ’ «јя¬ќ !!!
-@echo *****************************************************************************
-@echo *****************************************************************************
-@echo *****************************************************************************
+
 chcp 866
 REM pause
 ping -n 5 -w 1000 192.168.0.40
