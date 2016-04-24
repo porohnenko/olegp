@@ -113,14 +113,17 @@ public class ComputerGuessTheNumber {
                 System.out.printf("Attempt #%d\n", i + 1);
 
                 PCNumber = getRandomNumber(rangeUpLimit);
+                int temp = PCNumber;
 
                 mas[i] = PCNumber;
 
                 if (i > 0) {
-                    for (int j = 0; j < mas.length; j++) {
-                        if (mas[j] == PCNumber) {
-                            PCNumber = getRandomNumber(rangeUpLimit);
-                            k++;
+                    while (PCNumber == temp) {
+                        for (int j = 0; j < mas.length; j++) {
+                            if (mas[j] == PCNumber) {
+                                PCNumber = getRandomNumber(rangeUpLimit);
+                                k++;
+                            }
                         }
                     }
                 }
