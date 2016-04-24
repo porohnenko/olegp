@@ -33,4 +33,18 @@ public class GameLogic {
         }
         return false;
     }
+
+    public static int getNewUpLimit(int number, int upLimit) {
+        if (number > ComputerGuessTheNumber.getHiddenNumber()) {
+            upLimit = number;
+        }
+        return upLimit;
+    }
+
+    public static int getNewDownLimit(int number, int downLimit) {
+        if (number < ComputerGuessTheNumber.getHiddenNumber()) {
+            downLimit = number;
+        }
+        return downLimit;
+    }
 }
