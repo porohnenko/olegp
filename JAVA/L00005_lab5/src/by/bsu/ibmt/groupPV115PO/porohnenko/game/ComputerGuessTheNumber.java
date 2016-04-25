@@ -15,12 +15,12 @@ import java.util.Scanner;
 public class ComputerGuessTheNumber {
 
     private static int rangeUpLimit;    //user's number upper limit of range  
-    private static int rangeDownLimit;
-    private static int PCNumber;        //any PC's input number
+    private static int rangeDownLimit;  //down limit of range  
+    private static int PCNumber;        //random PC's input number
     private static int attempt;         //PC's number of attempt
-    private static int hiddenNumber;    //any random number
+    private static int hiddenNumber;    //any user's number
     private static Random randomNum;
-    private static int k = 0;           //timer for matches
+    private static int k = 0;           //counter of matches
     private static int timeStart;       //time of start of calculation
     private static int timeEnd;         //time of end of calculation
 
@@ -104,6 +104,7 @@ public class ComputerGuessTheNumber {
             System.out.println("********************************************************");
 
             timeStart = (int) System.currentTimeMillis();
+
             PCNumber = getRandomNumber(rangeDownLimit, rangeUpLimit);
 
             int mas[] = new int[(int) attempt];
@@ -115,8 +116,6 @@ public class ComputerGuessTheNumber {
 
                 System.out.printf("Attempt #%d\n", i + 1);
 
-                mas[i] = PCNumber;
-                PCNumber = getRandomNumber(GameLogic.getNewDownLimit(PCNumber, rangeDownLimit), GameLogic.getNewUpLimit(PCNumber, rangeUpLimit));
                 if (i > 0) {
 
                     for (int j = 0; j < mas.length; j++) {
@@ -128,7 +127,7 @@ public class ComputerGuessTheNumber {
                         }
                     }
                 }
-
+                mas[i] = PCNumber;
                 System.out.println("PC's number: " + PCNumber);
 
                 if (GameLogic.getGameResult(PCNumber, rangeUpLimit)) {
@@ -141,6 +140,14 @@ public class ComputerGuessTheNumber {
                     System.out.println("Try again...\n");
                 }
 
+                if (GameLogic.getLimitResult(PCNumber)) {
+                    rangeUpLimit = GameLogic.getNewUpLimit(PCNumber, rangeUpLimit);
+                    PCNumber = getRandomNumber(rangeDownLimit, GameLogic.getNewDownLimit(PCNumber, rangeUpLimit));
+                } else {
+                    rangeDownLimit = GameLogic.getNewDownLimit(PCNumber, rangeDownLimit);
+                    PCNumber = getRandomNumber(GameLogic.getNewDownLimit(PCNumber, rangeDownLimit), rangeUpLimit);
+                }
+
                 if (i == (attempt - 1)) {
                     System.out.println("********************************************************");
                     System.out.println("                       Game over!");
@@ -151,15 +158,15 @@ public class ComputerGuessTheNumber {
             timeEnd = (int) System.currentTimeMillis();
             double runtime = (double) (timeEnd - timeStart) / 1000;
             System.out.printf("Run time: %.3f sec\n", runtime);
-            
+
             System.out.println("The number of processed matches: " + k);
-            /*
+
             System.out.print("\nPC's numbers of attemts: ");
             for (int j = 0; j < mas.length; j++) {
                 if (mas[j] != 0) {
                     System.out.print(mas[j] + ", ");
                 }
-            }*/
+            }
 
             System.out.print("\nDo you want to play again? (Y/N?): ");
             Scanner sc = new Scanner(System.in);
@@ -176,14 +183,7 @@ public class ComputerGuessTheNumber {
 
     public static int getRandomNumber(int min, int max) {
         int number;
-        number = 1 + randomNum.nextInt(max + 1) + min;
+        number = 1 + min + randomNum.nextInt(max - min + 1);
         return number;
-    }
-
-    public static int getMassiveUsedNumbers(int number, int limit, int cell) {
-        int mas[] = new int[limit];
-        mas[cell] = number;
-
-        return mas[limit];
     }
 }

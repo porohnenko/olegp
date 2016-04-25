@@ -47,4 +47,11 @@ public class GameLogic {
         }
         return downLimit;
     }
+
+    public static boolean getLimitResult(int number) {
+        if (number > ComputerGuessTheNumber.getHiddenNumber()) {
+            return true;
+        }
+        return false;
+    }
 }
