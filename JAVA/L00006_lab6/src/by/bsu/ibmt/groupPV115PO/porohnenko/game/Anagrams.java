@@ -8,12 +8,14 @@
  */
 package by.bsu.ibmt.groupPV115PO.porohnenko.game;
 
-import by.bsu.ibmt.groupPV115PO.porohnenko.controller.GameController;
-import by.bsu.ibmt.groupPV115PO.porohnenko.model.logic.GameLogic;
 
 public class Anagrams {
 
-    GameLogic model = new GameLogic();
-    GameController controller = new GameController();
+    public static void mainer(String[] args) {
+        
+      
+        
+        
+    }
 
 }

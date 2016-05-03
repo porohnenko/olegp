@@ -8,10 +8,11 @@
  */
 package by.bsu.ibmt.groupPV115PO.porohnenko.model.util;
 
-public class ArrayInitialiser {
+public class WordSelector {
 
-    public static char init(int wordIndex, int i) {
-        char array[][] = {
+    public static char[] init(int wordIndex) {
+
+        char[][] array = {
             {'a', 'b', 'e', 'n', 'd'},
             {'a', 'c', 'c', 'e', 's', 's'},
             {'a', 'd', 'v', 'a', 'n', 'c', 'e', 'd'},
@@ -65,5 +66,15 @@ public class ArrayInitialiser {
 
         };
 
-        return array[wordIndex][i];
+        char[] arr = new char[20];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = 0;
+        }
+
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = array[i][wordIndex];
+        }
+
+        return arr;
     }
+}
