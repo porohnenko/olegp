@@ -10,8 +10,7 @@ package by.bsu.ibmt.groupPV115PO.porohnenko.model.util;
 
 public class ArrayInitialiser {
 
-    @SuppressWarnings("empty-statement")
-    public static void init() {
+    public static char init(int wordIndex, int i) {
         char array[][] = {
             {'a', 'b', 'e', 'n', 'd'},
             {'a', 'c', 'c', 'e', 's', 's'},
@@ -63,8 +62,8 @@ public class ArrayInitialiser {
             {'v', 'i', 'e', 'w'},
             {'w', 'e', 'i', 'g', 'h', 't'},
             {'w', 'r', 'i', 't', 'e'}
+
         };
 
+        return array[wordIndex][i];
     }
-
-}

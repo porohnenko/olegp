@@ -10,7 +10,7 @@ package by.bsu.ibmt.groupPV115PO.porohnenko.view;
 
 import java.util.Arrays;
 
-public class GameConsolePrint {
+public class ConsoleView {
 
     public static void arrayPrint(char[] array) {
         System.out.println(Arrays.toString(array));

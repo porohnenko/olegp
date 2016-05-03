@@ -6,7 +6,7 @@
  * Date: Apr 24, 2016
  * Version: 1.0
  */
-package by.bsu.ibmt.groupPV115PO.porohnenko.logic;
+package model.logic;
 
 import by.bsu.ibmt.groupPV115PO.porohnenko.game.ComputerGuessTheNumber;
 

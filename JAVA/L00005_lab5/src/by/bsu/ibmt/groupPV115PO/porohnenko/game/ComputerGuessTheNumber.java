@@ -8,7 +8,7 @@
  */
 package by.bsu.ibmt.groupPV115PO.porohnenko.game;
 
-import by.bsu.ibmt.groupPV115PO.porohnenko.logic.GameLogic;
+import model.logic.GameLogic;
 import java.util.Random;
 import java.util.Scanner;
 

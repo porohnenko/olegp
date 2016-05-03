@@ -10,9 +10,9 @@ package by.bsu.ibmt.groupPV115PO.porohnenko.model.util;
 
 import java.util.Random;
 
-public class Randomiser {
+public class ArrayMixer {
 
-    public static void randomiser(char[] array) {
+    public static void ArrayMixer(char[] array) {
 
         Random r = new Random();
         r.nextInt();
