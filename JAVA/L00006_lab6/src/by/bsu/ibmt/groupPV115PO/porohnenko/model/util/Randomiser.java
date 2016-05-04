@@ -14,7 +14,7 @@ public class Randomiser {
 
     public static int randomIndex(int wordsNumber) {
         Random random = new Random();
-        int number = random.nextInt(wordsNumber + 1) - 1;
+        int number = random.nextInt(wordsNumber - 1) + 1;
 
         return number;
     }

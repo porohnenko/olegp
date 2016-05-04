@@ -12,7 +12,7 @@ import java.util.Random;
 
 public class ArrayMixer {
 
-    public static void ArrayMixer(char[] array) {
+    public static char[] Mixer(char[] array) {
 
         Random r = new Random();
         r.nextInt();
@@ -21,6 +21,7 @@ public class ArrayMixer {
             int newIndex = i + r.nextInt(array.length - i);
             swap(array, i, newIndex);
         }
+        return array;
     }
 
     public static void swap(char[] arr, int index, int change) {
