@@ -87,5 +87,4 @@ public class WordSelector {
     public static char[] getSimpleArray() {
         return arr;
     }
-
 }

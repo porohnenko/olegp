@@ -1,6 +1,6 @@
 /**
- * Lab work №
- * Theme:
+ * Lab work №6
+ * Theme: class WordsCounter
  * Group: PV1-15PO
  * Author: Oleg Porohnenko
  * Date: May 3, 2016

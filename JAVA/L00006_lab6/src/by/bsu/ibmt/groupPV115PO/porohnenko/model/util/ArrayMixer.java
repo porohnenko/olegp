@@ -1,6 +1,6 @@
 /**
- * Lab work №
- * Theme:
+ * Lab work №6
+ * Theme: class ArrayMixer
  * Group: PV1-15PO
  * Author: Oleg Porohnenko
  * Date: Apr 27, 2016
