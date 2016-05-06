@@ -32,12 +32,6 @@ public class ArrayCleaner {
         }
     }
 
-    public static void ClearSimpleArray() {
-        for (int i = 0; i < clearArr.length; i++) {
-            clearArr[i] = 0;
-        }
-    }
-
     public static char[] getClearArr() {
         return clearArr;
     }

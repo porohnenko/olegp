@@ -9,12 +9,14 @@
 package by.bsu.ibmt.groupPV115PO.porohnenko.model.logic;
 
 import by.bsu.ibmt.groupPV115PO.porohnenko.controller.Anagrams;
+import by.bsu.ibmt.groupPV115PO.porohnenko.model.util.ArrayCleaner;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.util.WordSelector;
 import by.bsu.ibmt.groupPV115PO.porohnenko.view.ConsoleView;
 
 public class GameLogic {
 
-    public static char[] array = WordSelector.getSimpleArray();
+    private static char[] array;
+    private static int attempt = 2;
 
     public static boolean Checker(char[] userWord) {
 
@@ -27,18 +29,35 @@ public class GameLogic {
     }
 
     public static void logic() {
-        for (int i = 0; i <= 2; i++) {
+        for (int i = 0; i <= attempt; i++) {
+
             //message for user
             ConsoleView.MessageInsertWord();
             ConsoleView.inputData();
 
-            if (GameLogic.Checker(ConsoleView.getUserWord())) {
-                ConsoleView.MessageWin();
-                break;
+            ArrayCleaner.cleaner(WordSelector.getSimpleArray());
+            array = ArrayCleaner.getClearArr();
+
+            if (ConsoleView.getUserArray().length != 0) {
+                if (ConsoleView.getUserArray().length == array.length) {
+                    if (GameLogic.Checker(ConsoleView.getUserWord())) {
+                        ConsoleView.MessageWin();
+                        break;
+                    }
+                } else {
+                    if (i < attempt) {
+                        ConsoleView.printMessage("   Sorry, it's wrong! Try again!\n");
+                    } else {
+                        ConsoleView.printMessage("   Sorry, it's wrong!\n");
+                    }
+                    System.out.printf("   Attempts left: %d", attempt - i);
+                }
             } else {
-                ConsoleView.printMessage("   Sorry, it's wrong! Try again!\n");
+                ConsoleView.printMessage("The input field can not be empty!\n");
+                System.out.printf("   Attempts left: %d", attempt - i);
             }
-            if (i == 2) {
+
+            if (i == attempt) {
                 ConsoleView.MessageLose();
                 ConsoleView.printMessage("Correct word: ");
                 ConsoleView.printMassiv(WordSelector.init(Anagrams.getIndex()));

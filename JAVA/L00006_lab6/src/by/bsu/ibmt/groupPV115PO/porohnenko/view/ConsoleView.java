@@ -13,7 +13,8 @@ import java.util.Scanner;
 
 public class ConsoleView {
 
-    public static char[] userArray;
+    private static char[] userArray;
+    private static String line;
 
     public static void printNumber(int number) {
         System.out.println("\n\nWord number: " + number);
@@ -26,9 +27,13 @@ public class ConsoleView {
     public static char[] inputData() {
 
         Scanner sc = new Scanner(System.in);
-        String line = sc.nextLine();
+        line = sc.nextLine();
         userArray = line.toCharArray();
 
+        return userArray;
+    }
+
+    public static char[] getUserArray() {
         return userArray;
     }
 
@@ -47,7 +52,7 @@ public class ConsoleView {
     public static void MessageAnagram() {
         System.out.print("Anagram: ");
     }
-    
+
     public static void StartMessage() {
         System.out.println("\n**************************************");
         System.out.println("        Game ***ANAGRAMS***");
@@ -72,22 +77,4 @@ public class ConsoleView {
         }
         System.out.print("\n");
     }
-
-    /*public static void printUserWord(char[] array) {
-        ConsoleView.printMessage("User word: ");
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i]);
-        }
-        System.out.print("\n");
-    }*/
-
- /*public static char outputChar(char[] userWord) {
-
-        char letter = 0;
-        for (int i = 0; i < userWord.length; i++) {
-            letter = userWord[i];
-            System.out.println("letter " + (i + 1) + ": " + letter);
-        }
-        return letter;
-    }*/
 }

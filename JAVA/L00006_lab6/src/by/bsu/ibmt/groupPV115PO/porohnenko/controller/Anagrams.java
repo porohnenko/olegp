@@ -23,12 +23,12 @@ public class Anagrams {
     private static int index; //generate random word position in word's array
 
     public static void main(String[] args) {
-        
+
         ConsoleView.StartMessage();
-        
+        size = WordsCounter.count(WordSelector.getMainArray());
+
         while (true) {
 
-            size = WordsCounter.count(WordSelector.getMainArray());
             index = Randomiser.randomIndex(size);
 
             //view number of random selected word
