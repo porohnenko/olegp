@@ -71,7 +71,7 @@ header {
 
 header h1 {
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
-    padding: 0 0 10px 0;
+    padding: 0 0 20px 0;
     font-size: 1.7em;
     border-bottom: 1px solid rgba(0, 0, 0, 0.8);
 }
@@ -115,7 +115,7 @@ overflow: hidden;
 /*     width: auto;
  */    margin: 2em;
     padding-left: 2em;
-    padding: 2em;
+    padding: 3em;
     background: rgba(50,50,50,0.8);
 	
 }
