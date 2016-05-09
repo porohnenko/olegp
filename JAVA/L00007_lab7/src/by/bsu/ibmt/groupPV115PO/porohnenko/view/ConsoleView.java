@@ -1,5 +1,5 @@
 /**
- * Lab work №6 additional task
+ * Lab work №7
  * Theme: class ConsoleView
  * Group: PV1-15PO
  * Author: Oleg Porohnenko
@@ -14,47 +14,67 @@ public class ConsoleView {
 
     private static int rangeUpLimit;    //user's number upper limit of range  
     private static int rangeDownLimit;  //down limit of range  
-    private static int arraySize;
+    private static int numberOfRows;
+    private static int numberOfColumns;
 
-    public static void viewOnedimensionalArray(double[] array) {
+    public static void viewOnedimensionalArray(float[] array) {
         System.out.print("Array = { ");
-        for (int i = 0; i < array.length - 1; i++) {
-            System.out.printf("%.2f; ", array[i]);
+        for (int i = 0; i < getNumberOfColumns(); i++) {
+            System.out.printf("%.2f  ", array[i]);
         }
-        System.out.printf("%.2f ", array[array.length - 1]);
         System.out.println("}");
     }
-
-    public static void viewMultidimensionalArray(double[][] array) {
-        System.out.println("Array:");
-        for (double[] array1 : array) {
-            for (int j = 0; j < array.length; j++) {
-                System.out.printf("\t%.2f", array1[j]);
+    
+    public static void viewMatrix(float[][] array) {
+        System.out.printf("Matrix [%d][%d]:\n",getNumberOfRows(),getNumberOfColumns());
+        for (int i = 0; i < getNumberOfRows(); i++) {
+            for (int j = 0; j < getNumberOfColumns(); j++) {
+                System.out.printf("%.2f\t", array[i][j]);
             }
             System.out.print("\n");
         }
         //System.out.println("\t}");
     }
 
-    public static void ViewMessage(String mes, double value) {
+    public static void ViewMessage(String mes, float value) {
         System.out.printf("%s: %.2f\n", mes, value);
     }
 
     public static void inputData() {
         rangeUpLimit = 0;
         rangeDownLimit = 0;
-        arraySize = 0;
+        numberOfRows = 0;
+        numberOfColumns = 0;
 
         while (true) {
             Scanner sc = new Scanner(System.in);
-            System.out.print("Please, insert size of array: ");
+            System.out.print("Please, insert number of rows of the matrix: ");
             String line = sc.nextLine();
 
             try {
-                arraySize = Integer.parseInt(line);
-                if (arraySize < 0) {
+                numberOfRows = Integer.parseInt(line);
+                if (numberOfRows < 0) {
                     System.out.println("*****Sorry, you entered must be positive!*****");
-                } else if (arraySize == 0) {
+                } else if (numberOfRows == 0) {
+                    System.out.println("*****Sorry, you entered must be non zero!*****");
+                } else {
+                    break;
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("*****Sorry, you entered is not an integer!*****");
+            }
+        }
+
+        while (true) {
+            Scanner sc = new Scanner(System.in);
+            System.out.print("Please, insert number of columns of the matrix: ");
+            String line = sc.nextLine();
+
+            try {
+                numberOfColumns = Integer.parseInt(line);
+                if (numberOfColumns < 0) {
+                    System.out.println("*****Sorry, you entered must be positive!*****");
+                } else if (numberOfColumns == 0) {
                     System.out.println("*****Sorry, you entered must be non zero!*****");
                 } else {
                     break;
@@ -100,11 +120,7 @@ public class ConsoleView {
     }
 
     public static void GraphicDelimiter() {
-        System.out.println("****************************************************************************************************************************************************");
-    }
-
-    public static int getArraySize() {
-        return arraySize;
+        System.out.println("***********************************************************************************************************************");
     }
 
     public static int getRangeUpLimit() {
@@ -113,5 +129,13 @@ public class ConsoleView {
 
     public static int getRangeDownLimit() {
         return rangeDownLimit;
+    }
+
+    public static int getNumberOfRows() {
+        return numberOfRows;
+    }
+
+    public static int getNumberOfColumns() {
+        return numberOfColumns;
     }
 }

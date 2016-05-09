@@ -1,5 +1,5 @@
 /**
- * Lab work №6 additional task
+ * Lab work №7
  * Theme: class ArrayInitialiser
  * Group: PV1-15PO
  * Author: Oleg Porohnenko
@@ -8,24 +8,17 @@
  */
 package by.bsu.ibmt.groupPV115PO.porohnenko.model.util;
 
+import by.bsu.ibmt.groupPV115PO.porohnenko.view.ConsoleView;
 import java.util.Random;
 
 public class ArrayInitialiser {
 
-    public static void initOnedimensionalArray(double[] array, int min, int max) {
-        Random random = new Random();
+    public static void initMultidimensionalArray(float[][] array, int min, int max) {
+        Random random = new Random(System.currentTimeMillis());
 
-        for (int i = 0; i < array.length; i++) {
-            array[i] = min + random.nextInt(max - min) + random.nextDouble();
-        }
-    }
-    
-    public static void initMultidimensionalArray (double[][] array, int min, int max) {
-        Random random = new Random();
-
-        for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array.length; j++) {
-                array[i][j] = min + random.nextInt(max - min) + random.nextDouble();
+        for (int i = 0; i < ConsoleView.getNumberOfRows(); i++) {
+            for (int j = 0; j < ConsoleView.getNumberOfColumns(); j++) {
+                array[i][j] = min + random.nextInt(Math.abs(max - min)) + random.nextFloat();
             }
         }
     }

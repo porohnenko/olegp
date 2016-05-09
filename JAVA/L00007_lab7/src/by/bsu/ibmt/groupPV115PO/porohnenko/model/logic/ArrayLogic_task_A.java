@@ -1,8 +1,6 @@
 /**
- * Lab work №6 additional task
- * Task: В одномерном массиве, состоящем из n вещественных элементов, вычислить:
- *       сумму отрицательных элементов массива и произведение элементов массива,
- *       расположенных между максимальным и минимальным элементами.
+ * Lab work №7: individual task A (number 19)
+ * Task: 
  * Group: PV1-15PO
  * Author: Oleg Porohnenko
  * Date: May 5, 2016
@@ -12,7 +10,7 @@ package by.bsu.ibmt.groupPV115PO.porohnenko.model.logic;
 
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.util.Searcher;
 
-public class ArrayLogic_task1 {
+public class ArrayLogic_task_A {
 
     private static String message1 = "Sum of negative elements: ";
     private static String message2 = "Multiplication of elements between Min and Max: ";
