@@ -115,7 +115,7 @@ overflow: hidden;
 /*     width: auto;
  */    margin: 2em;
     padding-left: 2em;
-    padding: 3em;
+    padding: 2em;
     background: rgba(50,50,50,0.8);
 	
 }
@@ -140,7 +140,7 @@ overflow: hidden;
 
 .intro-belief {
     -webkit-font-smoothing: antialiased;
-    font: 400 17px "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font: 400 16px "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #fff;
     margin: 30px 20 0px;
     padding: 15px 30px;
@@ -160,3 +160,69 @@ overflow: hidden;
     background: #242424 url('/img/global-sec8c63282a.png') 0 -235px no-repeat;
     background: rgba(36,36,36,0.9) url('/img/global-sec8c63282a.png') 0 -235px no-repeat;
 }
+
+
+/*Сбросим отступы*/
+.droplink ul,.droplink h3,.droplink h3 a{
+padding:0;margin:0
+}
+/*Базовая обертка*/
+.droplink {
+width:200px;
+position:absolute;
+margin:10px 0 0 25px
+}
+/*Стиль блока при наведении*/
+.droplink:hover{
+height:auto;
+background-color:#3E403D;
+border:solid 0px #3A3C39
+}
+/*Заголовок в обычном состоянии*/
+.droplink h3 a{
+text-align:left;
+width:100%;
+display:block;
+padding:12px 0px;
+color:#999;
+text-decoration:none
+}
+.droplink h3 a img{border:none}
+/*Стиль для заголовка при наведении*/
+.droplink:hover h3 a {
+color:#FFF;
+font-weight:bold;
+position:absolute
+}
+
+/*Скрываем список без наведения*/
+.droplink ul{
+list-style:none;
+display:none
+}
+/*Отображаем список при наведении*/
+.droplink:hover ul{
+display:block;
+margin-top:40px
+}
+.droplink li{display:block}
+
+/*Стиль элемента списка*/
+.droplink li a{
+padding:5px 12px 4px 10px;
+margin:1px;
+background-color:#484A47;
+display:block;
+color:#FFF;
+text-decoration:none;
+font-size:15px;
+background-repeat:no-repeat;
+background-position: 10px 3px
+}
+/*Стиль элемента при наведении*/
+.droplink li a:hover{
+background-color:#999
+}
+
+
+
