@@ -1,6 +1,6 @@
 /**
  * Lab work №6 additional task
- * Theme: Arrays and MVS Pattern.
+ * Theme:
  * Group: PV1-15PO
  * Author: Oleg Porohnenko
  * Date: May 5, 2016

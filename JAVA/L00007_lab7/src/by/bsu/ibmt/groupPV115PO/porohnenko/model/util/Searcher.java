@@ -1,6 +1,6 @@
 /**
- * Lab work №6 additional task
- * Theme: class Searcher
+ * Lab work №
+ * Theme:
  * Group: PV1-15PO
  * Author: Oleg Porohnenko
  * Date: May 8, 2016
