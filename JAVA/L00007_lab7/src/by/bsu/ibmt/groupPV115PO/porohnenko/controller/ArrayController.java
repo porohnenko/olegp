@@ -34,6 +34,9 @@ public class ArrayController {
 
         ArrayRowSorting.sort(Array, row);
         ConsoleView.viewMatrix(ArrayRowSorting.getSortedArray());
+        
+        ConsoleView.GraphicDelimiter();
+        
         System.out.println("Selected row: " + row);
         ConsoleView.viewOnedimensionalArray(ArrayRowSorting.getSortedRow());
     }

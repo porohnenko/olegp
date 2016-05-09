@@ -28,6 +28,7 @@ public class ConsoleView {
     public static void viewMatrix(float[][] array) {
         System.out.printf("Matrix [%d][%d]:\n",getNumberOfRows(),getNumberOfColumns());
         for (int i = 0; i < getNumberOfRows(); i++) {
+            System.out.print(i + ")->\t");
             for (int j = 0; j < getNumberOfColumns(); j++) {
                 System.out.printf("%.2f\t", array[i][j]);
             }
@@ -120,7 +121,7 @@ public class ConsoleView {
     }
 
     public static void GraphicDelimiter() {
-        System.out.println("***********************************************************************************************************************");
+        System.out.println("*******************************************************************************************************************************");
     }
 
     public static int getRangeUpLimit() {
