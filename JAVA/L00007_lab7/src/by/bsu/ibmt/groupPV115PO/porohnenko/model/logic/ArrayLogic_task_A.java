@@ -1,6 +1,7 @@
 /**
  * Lab work №7: individual task A (number 19)
- * Task: 
+ * Task: Найти максимальный среди всех элементов тех строк заданной матрицы, 
+ *       которые упорядочены (либо по возрастанию, либо по убыванию).
  * Group: PV1-15PO
  * Author: Oleg Porohnenko
  * Date: May 5, 2016
