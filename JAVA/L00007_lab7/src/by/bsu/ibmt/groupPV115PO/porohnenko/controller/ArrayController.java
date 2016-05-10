@@ -8,7 +8,7 @@
  */
 package by.bsu.ibmt.groupPV115PO.porohnenko.controller;
 
-import by.bsu.ibmt.groupPV115PO.porohnenko.model.logic.ArrayLogic_task_A;
+import by.bsu.ibmt.groupPV115PO.porohnenko.model.logic.ArrayLogic_taskA;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.util.ArrayCreator;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.util.ArrayInitialiser;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.util.ArrayRowSorting;
@@ -20,7 +20,7 @@ public class ArrayController {
     public static void main(String[] args) {
 
         ConsoleView.inputData();
-        
+
         int row = RowsRandomaiser.randomaiser(ConsoleView.getNumberOfRows());
         float[][] Array = ArrayCreator.createMatrix(ConsoleView.getNumberOfRows(), ConsoleView.getNumberOfColumns());
 
@@ -34,10 +34,11 @@ public class ArrayController {
 
         ArrayRowSorting.sort(Array, row);
         ConsoleView.viewMatrix(ArrayRowSorting.getSortedArray());
-        
+
         ConsoleView.GraphicDelimiter();
-        
+
         System.out.println("Selected row: " + row);
         ConsoleView.viewOnedimensionalArray(ArrayRowSorting.getSortedRow());
+        System.out.println("Max: " + ArrayLogic_taskA.StoreSortedRow(Array));
     }
 }
