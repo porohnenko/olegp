@@ -10,26 +10,31 @@ package by.bsu.ibmt.groupPV115PO.porohnenko.model.util;
 
 public class Searcher {
 
+    private static int k;
+    private static int sortedRow = 0;
+
     public static int FindSortedRow(float[][] array, int rows, int columns) {
-        int k = 0;
-        int sortedRow = 0;
+
         for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < columns; j++) {
+            //k = 0;                                  //reset counter
+            for (int j = 0; j < columns - 1; j++) {
                 if (array[i][j] < array[i][j + 1]) {
-                    k++;
-                }
-                if (k == (columns - 1)) {
-                    sortedRow = i;
+                    k = j;
+                } else {
                     break;
                 }
+            }
+            if (k == (columns - 2)) {
+                sortedRow = i;
+                break;
             }
         }
         return sortedRow;
     }
-
-    public static float FindMax(float[] array) {
+    
+    public static float FindMax(float[] array, int lenght) {
         float maxElement = -10000;
-        for (int i = 0; i < array.length; i++) {
+        for (int i = 0; i < lenght; i++) {
             if (array[i] > maxElement) {
                 maxElement = array[i];
             }

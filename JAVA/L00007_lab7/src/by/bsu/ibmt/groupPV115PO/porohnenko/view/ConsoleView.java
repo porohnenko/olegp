@@ -14,32 +14,8 @@ public class ConsoleView {
 
     private static int rangeUpLimit;    //user's number upper limit of range  
     private static int rangeDownLimit;  //down limit of range  
-    private static int numberOfRows;
-    private static int numberOfColumns;
-
-    public static void viewOnedimensionalArray(float[] array) {
-        System.out.print("Array = { ");
-        for (int i = 0; i < getNumberOfColumns(); i++) {
-            System.out.printf("%.2f  ", array[i]);
-        }
-        System.out.println("}");
-    }
-    
-    public static void viewMatrix(float[][] array) {
-        System.out.printf("Matrix [%d][%d]:\n",getNumberOfRows(),getNumberOfColumns());
-        for (int i = 0; i < getNumberOfRows(); i++) {
-            System.out.print(i + ")->\t");
-            for (int j = 0; j < getNumberOfColumns(); j++) {
-                System.out.printf("%.2f\t", array[i][j]);
-            }
-            System.out.print("\n");
-        }
-        //System.out.println("\t}");
-    }
-
-    public static void ViewMessage(String mes, float value) {
-        System.out.printf("%s: %.2f\n", mes, value);
-    }
+    private static int numberOfRows;    //store number of rows of user array
+    private static int numberOfColumns; //tore number of columns of user array
 
     public static void inputData() {
         rangeUpLimit = 0;
@@ -120,8 +96,32 @@ public class ConsoleView {
         }
     }
 
-    public static void GraphicDelimiter() {
-        System.out.println("*******************************************************************************************************************************");
+    public static void viewOnedimensionalArray(String mes, float[] array) {
+        System.out.print(mes + " = { ");
+        for (int i = 0; i < getNumberOfColumns(); i++) {
+            System.out.printf("%.2f ", array[i]);
+        }
+        System.out.println("}");
+    }
+
+    public static void viewMatrix(String mes, float[][] array) {
+        System.out.printf("%s [%d][%d]:\n", mes, getNumberOfRows(), getNumberOfColumns());
+        for (int i = 0; i < getNumberOfRows(); i++) {
+            System.out.print(i + ")->\t");
+            for (int j = 0; j < getNumberOfColumns(); j++) {
+                System.out.printf("%.2f\t", array[i][j]);
+            }
+            System.out.print("\n");
+        }
+        //System.out.println("\t}");
+    }
+
+    public static void ViewMessageFloat(String mes, float value) {
+        System.out.printf("%s: %.2f\n", mes, value);
+    }
+
+    public static void ViewMessageInt(String mes, int value) {
+        System.out.printf("%s: %d\n", mes, value);
     }
 
     public static int getRangeUpLimit() {
@@ -138,5 +138,9 @@ public class ConsoleView {
 
     public static int getNumberOfColumns() {
         return numberOfColumns;
+    }
+
+    public static void GraphicDelimiter() {
+        System.out.println("********************************************************************************************************************************");
     }
 }

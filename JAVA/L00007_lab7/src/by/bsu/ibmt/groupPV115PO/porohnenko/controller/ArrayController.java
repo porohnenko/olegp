@@ -28,17 +28,20 @@ public class ArrayController {
 
         ConsoleView.GraphicDelimiter();
 
-        ConsoleView.viewMatrix(Array);
+        ConsoleView.viewMatrix("Base array", Array);
 
         ConsoleView.GraphicDelimiter();
 
         ArrayRowSorting.sort(Array, row);
-        ConsoleView.viewMatrix(ArrayRowSorting.getSortedArray());
+        ConsoleView.viewMatrix("Partially sorted array",ArrayRowSorting.getSortedArray());
 
         ConsoleView.GraphicDelimiter();
+        ConsoleView.ViewMessageInt("Random row number", row);
+        ConsoleView.viewOnedimensionalArray("This random row", ArrayRowSorting.getSortedRow());
+        ConsoleView.GraphicDelimiter();
 
-        System.out.println("Selected row: " + row);
-        ConsoleView.viewOnedimensionalArray(ArrayRowSorting.getSortedRow());
-        System.out.println("Max: " + ArrayLogic_taskA.StoreSortedRow(Array));
+        ArrayLogic_taskA.StoreSortedRow(Array, ConsoleView.getNumberOfRows(), ConsoleView.getNumberOfColumns());
+        ConsoleView.ViewMessageInt("Number of the found sorted row:", ArrayLogic_taskA.getK());
+        ConsoleView.ViewMessageFloat("Max element in sorted row: ", ArrayLogic_taskA.getMaxElement());
     }
 }

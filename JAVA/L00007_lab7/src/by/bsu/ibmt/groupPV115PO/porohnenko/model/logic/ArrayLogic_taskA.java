@@ -10,36 +10,34 @@
 package by.bsu.ibmt.groupPV115PO.porohnenko.model.logic;
 
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.util.Searcher;
-import by.bsu.ibmt.groupPV115PO.porohnenko.view.ConsoleView;
 
 public class ArrayLogic_taskA {
 
-    private static String message1 = "Sum of negative elements: ";
-    private static String message2 = "Multiplication of elements between Min and Max: ";
-    float[] SortedRow = new float[columns];
-    private static int rows = ConsoleView.getNumberOfRows();
-    private static int columns = ConsoleView.getNumberOfColumns();
+    //private static int rows = ConsoleView.getNumberOfRows();
+    //private static int columns = ConsoleView.getNumberOfColumns();
+    private static float[] sortRow;
+    private static int k = 0;
+    private static float maxElement = 0;
 
-    public static float StoreSortedRow(float[][] array) {
-        int k = Searcher.FindSortedRow(array, rows, columns);
-        float[] SortedRow = new float[columns];
-        for (int i = 0; i < columns; i++) {
-            SortedRow[i] = array[k][i];
-        }
-        return Searcher.FindMax(SortedRow);
-    }
-    
-    
-
-    public float[] getSortedRow() {
-        return SortedRow;
-    }
-    
-    public static String getMessage1() {
-        return message1;
+    public static void StoreSortedRow(float[][] array, int rows, int columns) {
+        float[] sortRow = new float[columns];
+        k = Searcher.FindSortedRow(array, rows, columns);
+        /*for (int i = 0; i < columns; i++) {
+            sortRow[i] = array[k][i];
+        }*/
+        System.arraycopy(array[k], 0, sortRow, 0, columns);
+        maxElement = Searcher.FindMax(sortRow, columns);
     }
 
-    public static String getMessage2() {
-        return message2;
+    public static float[] getSortRow() {
+        return sortRow;
+    }
+
+    public static float getMaxElement() {
+        return maxElement;
+    }
+
+    public static int getK() {
+        return k;
     }
 }
