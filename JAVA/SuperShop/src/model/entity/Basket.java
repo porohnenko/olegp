@@ -12,13 +12,33 @@ public class Basket {
         list.add(p);
     }
 
+//    @Override
+//    public String toString() {
+//        String str = "";
+//
+//        for (Product p : list) {
+//            str += p.toString() + "\n";
+//        }
+//        return str;
+//    }
+
     @Override
     public String toString() {
-        String str = "";
+        StringBuilder str = new StringBuilder();
 
         for (Product p : list) {
-            str += p.toString() + "\n";
+            str.append(p.toString()).append("\n");
         }
-        return str;
+        return str.toString();
     }
+    
+//    @Override
+//    public String toString() {
+//        StringBuffer str = new StringBuffer();
+//
+//        for (Product p : list) {
+//            str.append(p.toString()).append("\n");
+//        }
+//        return str.toString();
+//    }
 }
