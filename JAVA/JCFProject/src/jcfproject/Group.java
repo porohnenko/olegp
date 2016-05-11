@@ -1,14 +1,13 @@
 /**
- * Lab work №
- * Theme:
+ * Theme: JCF Project
  * Group: PV1-15PO
  * Author: Oleg Porohnenko
- * Date: May 4, 2016
+ * Date: May 11, 2016
  * Version: 1.0
  */
+
 package jcfproject;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -40,6 +39,7 @@ public class Group {
     public String toString() {
         String string = "Group:\n";
         for (Student student : list) {
+            string +=student.toString() + "\n";
         }
         return "Group{" + "list=" + list + '}';
     }

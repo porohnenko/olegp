@@ -1,41 +1,34 @@
-/**
- * Theme: JCF Project
- * Group: PV1-15PO
- * Author: Oleg Porohnenko
- * Date: May 11, 2016
- * Version: 1.0
- */
+
 package jcfproject;
 
 public class Student extends Object implements Comparable<Student> {
-    
     private String name;
     private int mark;
-    
-    public Student() {
-    }
-    
-    public String getName() {
-        return name;
-    }
-    
-    public void setName(String name) {
-        this.name = name;
-    }
-    
-    public int getMark() {
-        return mark;
-    }
-    
-    public void setMark(int mark) {
-        this.mark = mark;
-    }
-    
+
     public Student(String name, int mark) {
         this.name = name;
         this.mark = mark;
     }
-    
+
+    public Student() {
+    }
+
+    public int getMark() {
+        return mark;
+    }
+
+    public void setMark(int mark) {
+        this.mark = mark;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     @Override
     public int hashCode() {
         int hash = 7;
@@ -43,11 +36,9 @@ public class Student extends Object implements Comparable<Student> {
         hash = 31 * hash + this.mark;
         return hash;
     }
-    
+
     @Override
     public boolean equals(Object obj) {
-        //return super.equals(obj); //To change body of generated methods, choose Tools | Templates.
-
         System.out.println("equals");
         if (obj == null) {
             return false;
@@ -64,11 +55,11 @@ public class Student extends Object implements Comparable<Student> {
     
     @Override
     public String toString() {
-        return "Student{" + "name = " + name + ", mark = " + mark + '}';
+        return "Student{" + "name=" + name + ", mark=" + mark + '}';
     }
 
     @Override
     public int compareTo(Student o) {
         return name.compareTo(o.name);
-    }
+    }     
 }
