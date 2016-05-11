@@ -1,14 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package zooproject.entity;
+package zooproject.entity.animal;
 
-/**
- *
- * @author olegp
- */
-public abstract class Animal {
-    
+import zooproject.abstraction.Eatable;
+
+public abstract class Animal implements Eatable {
+
 }

@@ -1,10 +1,10 @@
-package zooproject.entity;
+package zooproject.entity.animal;
 
-import zooproject.entity.Animal;
+import zooproject.abstraction.Eatable;
 
 public class Monkey extends Animal {
 
-    private abstract void eat() {
+    public void eat() {
         System.out.println("Monkey is eating...");
     }
 }
