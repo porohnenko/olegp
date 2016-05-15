@@ -1,0 +1,56 @@
+<html>
+<body>
+<head>
+<script type="text/javascript">
+function Menu(id)
+{
+var menu = document.getElementById('menu_' + id).style;
+if (menu.display == 'none')
+{
+menu.display = 'block';
+}
+else
+{
+menu.display = 'none';
+}
+}
+</script>
+</head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<link rel="stylesheet" type="text/css" href="d:\MY\Git\olegp\WEB\drop_list.css">
+
+<ul>
+<li onclick="javascript:Menu('1')">News</li>
+<ul id="menu_1" style="display:none;">
+<li><a href="#">Новости Центра</a></li>
+<li><a href="#">Новости сертифицированного обучения</a></li>
+<li><a href="#">События</a></li>
+<li><a href="#">Новости сервера Online тестирование и сертификация «SPECIALIST»</a></li>
+<li><a href="#">Новости дистанционного обучения</a></li>
+</ul>
+
+<li onclick="javascript:Menu('2')">Скидки и акции</li>
+<ul id="menu_2" style="display:none;">
+<li><a href="#">Группы со скидками</a></li>
+<li><a href="#">Акции</a></li>
+<li><a href="#">Спецпредложения</a></li>
+<li><a href="#">Настоящий Специалист</a></li>
+<li><a href="#">Налоговые льготы</a></li>
+</ul>
+
+<li onclick="javascript:Menu('3')">Виды обучения</li>
+<ul id="menu_3" style="display:none;">
+<li><a href="#">Безлимитное обучение</a></li>
+<li><a href="#">Открытое обучение</a></li>
+<li><a href="#">Очно-заочное обучение</a></li>
+<li><a href="#">Вебинары</a></li>
+</ul>
+
+
+
+
+</html>
+</body>
+
