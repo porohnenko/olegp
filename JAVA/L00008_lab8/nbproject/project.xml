@@ -11,23 +11,5 @@
                 <root id="test.src.dir"/>
             </test-roots>
         </data>
-        <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
-            <word>вещественных</word>
-            <word>вычислить</word>
-            <word>из</word>
-            <word>максимальным</word>
-            <word>массива</word>
-            <word>массиве</word>
-            <word>между</word>
-            <word>минимальным</word>
-            <word>одномерном</word>
-            <word>отрицательных</word>
-            <word>произведение</word>
-            <word>расположенных</word>
-            <word>состоящем</word>
-            <word>сумму</word>
-            <word>элементами</word>
-            <word>элементов</word>
-        </spellchecker-wordlist>
     </configuration>
 </project>
