@@ -3,24 +3,17 @@
  * Theme:
  * Group: PV1-15PO
  * Author: Oleg Porohnenko
- * Date: May 15, 2016
+ * Date: May 16, 2016
  * Version: 1.0
  */
-package by.bsu.ibmt.groupPV115PO.porohnenko.controller;
+package by.bsu.ibmt.groupPV115PO.porohnenko.model.util;
 
-//import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.PassengerAircraft;
-import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.AircraftHangar;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.PassengerAircraft;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.TransportAircraft;
-import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abs.Aircraft;
-import by.bsu.ibmt.groupPV115PO.porohnenko.model.util.FleetCreator;
 
-public class AustrianAirlines {
+public class FleetCreator {
 
-    public static void main(String[] args) {
-        
-        /*PassengerAircraft P = new PassengerAircraft(124, "Boeing 737-200", 2000, 20000, 15, 2);
-        System.out.println(P);*/
+    public static void create() {
         PassengerAircraft P1 = new PassengerAircraft(124, "Airbus A319-100", 6800, 17900, 9, 2);
         PassengerAircraft P2 = new PassengerAircraft(220, "Airbus A320-200", 5550, 18600, 12, 2);
         PassengerAircraft P3 = new PassengerAircraft(142, "Airbus A321-100", 5550, 23400, 19, 2);
@@ -30,19 +23,5 @@ public class AustrianAirlines {
         PassengerAircraft P7 = new PassengerAircraft(78, "Fokker F70", 3740, 10890, 19, 2);
         PassengerAircraft P8 = new PassengerAircraft(107, "Fokker F100", 3100, 12000, 21, 2);
         TransportAircraft T1 = new TransportAircraft(77500, 102, "Boeing C-17 Globemaster III", 4445, 265350, 20, 4);
-        
-        //FleetCreator.create();
-        AircraftHangar hangar= new AircraftHangar();
-        
-        hangar.add(P1);
-        hangar.add(P2);
-        hangar.add(P3);
-        hangar.add(P4);
-        hangar.add(P5);
-        hangar.add(P6);
-        hangar.add(P7);
-        hangar.add(P8);
-        
-        System.out.println(hangar);        
     }
 }

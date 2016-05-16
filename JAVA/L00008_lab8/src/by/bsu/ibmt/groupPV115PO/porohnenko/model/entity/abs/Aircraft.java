@@ -66,9 +66,9 @@ public class Aircraft {
 
     @Override
     public String toString() {
-        return "Model: " + model + "Flying range, km: " + flyingRange
-                + "Max takeoff weight, kg: " + maxTakeoffWeight + "Age, years"
-                + age + "Number of engines"
+        return "Model: " + model + " | Flying range, km: " + flyingRange
+                + " | Max takeoff weight, kg: " + maxTakeoffWeight + " | Age, years: "
+                + age + " | Number of engines: "
                 + numberOfEngines;
     }
 }
