@@ -1,11 +1,11 @@
-DECLARE @a INT, @b numeric(10,2)
+DECLARE @a float, @b float
 SET @a = 20
+--SET @b =1.5
 SET @b = (@a+@a)/15
 SELECT @b --вывод на экран результата
 
-
 DECLARE @a INT
-SELECT @a = COUNT(*) FROM Authors
+SELECT @a=COUNT(*) FROM Authors
 
 --В данном примере в переменную поместится последнее значение из результата запроса.
 DECLARE @str CHAR(30)
@@ -18,23 +18,23 @@ SET @a = (SELECT COUNT(*) FROM Authors)
 --Работа с датой и временем
 --Оператор SET DATEFORMAT dmy | ymd | mdy задает порядок следования компонентов даты.
 
-SET DATEFORMAT dmy
+SET DATEFORMAT dmy --ymd --mdy
 DECLARE @d DateTime
-SET @d = '31.01.2005 13:23:15'
+SET @d = '16.05.2016 20:30:15'
 SET @d = @d+1
-SELECT @d [Дата]
+SELECT @d [Дата, время]
 
 
 --Создание временной таблицы через переменную типа TABLE
 --Объявляется через DECLARE с указанием в скобках столбцов таблицы, их типов, размеров, 
 --значений по умолчанию, а также индексов типа PRIMARY KEY или UNIQUE.
 
-DECLARE @mytable TABLE(id INT, myname CHAR(20) DEFAULT 'Введите имя')
-INSERT INTO @mytable(id) VALUES (1)
+DECLARE @mytable TABLE(id INT, myname CHAR(20) DEFAULT 'Олег Порохненко')
+INSERT INTO @mytable(id) VALUES (51951651)
 SELECT * FROM @mytable
 
 use DB_BOOKS
-DECLARE @mytable TABLE(id INT, myname CHAR(20) DEFAULT 'Введите имя')
+DECLARE @mytable TABLE(id INT, myname CHAR(20) DEFAULT 'Олег Порохненко')
 INSERT @mytable SELECT Code_publish, City FROM Publishing_house
 SELECT * FROM @mytable
 
@@ -45,14 +45,14 @@ SELECT * FROM @mytable
 DECLARE @d DateTime, @str char(20)
 SET @d = '02.05.2016 19:28:00'
 SET @str = CAST(@d AS Char(20))
-SELECT @str
+SELECT @str [Дата, время]
 
 DECLARE @a INT
 DECLARE @str CHAR(30)
 SET @a = (SELECT COUNT(*) FROM Authors)
-IF @a >10
+IF @a > 5
 BEGIN
-SET @str = 'Количество авторов больше 10'
+SET @str = 'Количество авторов больше 5'
 SELECT @str
 END
 ELSE
