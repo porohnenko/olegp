@@ -10,6 +10,6 @@
 package by.bsu.ibmt.groupPV115PO.porohnenko.model.entity;
 
 
-public class Boeing_777_200 {
+public class ShortHaulFleet {
 
 }

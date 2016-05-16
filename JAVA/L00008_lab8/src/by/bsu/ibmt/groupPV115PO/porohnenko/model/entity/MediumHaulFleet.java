@@ -10,6 +10,6 @@
 package by.bsu.ibmt.groupPV115PO.porohnenko.model.entity;
 
 
-public class Airbus_A320_200 {
+public class MediumHaulFleet {
 
 }

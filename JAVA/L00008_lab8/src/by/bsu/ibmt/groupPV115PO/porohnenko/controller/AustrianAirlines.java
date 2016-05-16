@@ -7,9 +7,9 @@
  * Version: 1.0
  */
 
-package by.bsu.ibmt.groupPV115PO.porohnenko.model.entity;
+package by.bsu.ibmt.groupPV115PO.porohnenko.controller;
 
 
-public class DeHavillandCanada_DHC_8_400 {
+public class AustrianAirlines {
 
 }
