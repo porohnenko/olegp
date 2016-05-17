@@ -11,64 +11,70 @@ package by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abs;
 public class Aircraft {
 
     private String model;
+    private String boardNumber;
     private int flyingRange;
     private int maxTakeoffWeight;
     private int age;
     private int numberOfEngines;
+    private int passengerCapacity;
+    private int loadingCapacity;
 
-    public Aircraft(String model, int flyingRange, int maxTakeoffWeight, int age, int numberOfEngines) {
+    public Aircraft(
+            String model,
+            String boardNumber,
+            int flyingRange,
+            int maxTakeoffWeight,
+            int age,
+            int numberOfEngines,
+            int passengerCapacity,
+            int loadingCapacity) {
         this.model = model;
+        this.boardNumber = boardNumber;
         this.flyingRange = flyingRange;
         this.maxTakeoffWeight = maxTakeoffWeight;
         this.age = age;
         this.numberOfEngines = numberOfEngines;
+        this.passengerCapacity = passengerCapacity;
+        this.loadingCapacity = loadingCapacity;
     }
 
-    public String getName() {
+    public String getModel() {
         return model;
     }
 
-    public void setName(String name) {
-        this.model = name;
+    public String getBoardNumber() {
+        return boardNumber;
     }
 
     public int getFlyingRange() {
         return flyingRange;
     }
 
-    public void setFlyingRange(int flyingRange) {
-        this.flyingRange = flyingRange;
-    }
-
     public int getMaxTakeoffWeight() {
         return maxTakeoffWeight;
-    }
-
-    public void setMaxTakeoffWeight(int maxTakeoffWeight) {
-        this.maxTakeoffWeight = maxTakeoffWeight;
     }
 
     public int getAge() {
         return age;
     }
 
-    public void setAge(int age) {
-        this.age = age;
-    }
-
     public int getNumberOfEngines() {
         return numberOfEngines;
     }
 
-    public void setNumberOfEngines(int numberOfEngines) {
-        this.numberOfEngines = numberOfEngines;
+    public int getPassengerCapacity() {
+        return passengerCapacity;
+    }
+
+    public int getLoadingCapacity() {
+        return loadingCapacity;
     }
 
     @Override
     public String toString() {
-        return "Model: " + model + " | Flying range, km: " + flyingRange
-                + " | Max takeoff weight, kg: " + maxTakeoffWeight + " | Age, years: "
-                + age + " | Number of engines: "
-                + numberOfEngines;
+        return "Model: " + model + " | Board number: " + boardNumber + " | Flying range, km: "
+                + flyingRange + " | Max takeoff weight, kg: " + maxTakeoffWeight + " | Age, years: "
+                + age + " | Number of engines: " + numberOfEngines + " | Passenger capacity: "
+                + passengerCapacity + " | Loading capacity: " + loadingCapacity;
     }
 }

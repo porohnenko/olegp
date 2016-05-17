@@ -12,37 +12,58 @@ package by.bsu.ibmt.groupPV115PO.porohnenko.controller;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.AircraftHangar;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.PassengerAircraft;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.TransportAircraft;
-import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abs.Aircraft;
-import by.bsu.ibmt.groupPV115PO.porohnenko.model.util.FleetCreator;
+import by.bsu.ibmt.groupPV115PO.porohnenko.model.logic.LogistikTerminal;
 
 public class AustrianAirlines {
 
     public static void main(String[] args) {
-        
-        /*PassengerAircraft P = new PassengerAircraft(124, "Boeing 737-200", 2000, 20000, 15, 2);
-        System.out.println(P);*/
-        PassengerAircraft P1 = new PassengerAircraft(124, "Airbus A319-100", 6800, 17900, 9, 2);
-        PassengerAircraft P2 = new PassengerAircraft(220, "Airbus A320-200", 5550, 18600, 12, 2);
-        PassengerAircraft P3 = new PassengerAircraft(142, "Airbus A321-100", 5550, 23400, 19, 2);
-        PassengerAircraft P4 = new PassengerAircraft(185, "Airbus A321-200", 5550, 23400, 14, 2);
-        PassengerAircraft P5 = new PassengerAircraft(261, "Boeing 767-300", 11000, 43800, 14, 2);
-        PassengerAircraft P6 = new PassengerAircraft(357, "Boeing 777-200", 17450, 50850, 8, 2);
-        PassengerAircraft P7 = new PassengerAircraft(78, "Fokker F70", 3740, 10890, 19, 2);
-        PassengerAircraft P8 = new PassengerAircraft(107, "Fokker F100", 3100, 12000, 21, 2);
-        TransportAircraft T1 = new TransportAircraft(77500, 102, "Boeing C-17 Globemaster III", 4445, 265350, 20, 4);
-        
-        //FleetCreator.create();
-        AircraftHangar hangar= new AircraftHangar();
-        
+
+        PassengerAircraft P1 = new PassengerAircraft(true, "Airbus A319-100", "OE-LDG", 6800, 75000, 9, 2, 124, 0);
+        PassengerAircraft P2 = new PassengerAircraft(true, "Airbus A320-200", "OE-LBL", 5550, 77000, 12, 2, 220, 0);
+        PassengerAircraft P3 = new PassengerAircraft(true, "Airbus A321-100", "OE-LBC", 5550, 93500, 19, 2, 142, 0);
+        PassengerAircraft P4 = new PassengerAircraft(true, "Airbus A321-200", "OE-LAE", 5550, 93500, 14, 2, 185, 0);
+        PassengerAircraft P5 = new PassengerAircraft(true, "Boeing 767-300", "OE-LAE", 11000, 158760, 14, 2, 261, 0);
+        PassengerAircraft P6 = new PassengerAircraft(true, "Boeing 777-200", "OE-LPD", 17450, 247210, 8, 2, 357, 0);
+        PassengerAircraft P7 = new PassengerAircraft(false, "Fokker F70", "OE-LFR", 3740, 36740, 19, 2, 80, 0);
+        PassengerAircraft P8 = new PassengerAircraft(true, "Fokker F100", "OE-LVD", 3100, 12000, 21, 2, 100, 11563);
+        TransportAircraft T1 = new TransportAircraft(true, "Boeing C-17 Globemaster III", "98-0057", 4445, 265350, 20, 4, 102, 77500);
+
+        AircraftHangar hangar = new AircraftHangar();
+
         hangar.add(P1);
+        hangar.add(P1);
+        hangar.add(P1);
+
         hangar.add(P2);
+        hangar.add(P2);
+        hangar.add(P2);
+        hangar.add(P2);
+        hangar.add(P2);
+
         hangar.add(P3);
+        hangar.add(P3);
+        hangar.add(P3);
+        hangar.add(P3);
+
         hangar.add(P4);
+        hangar.add(P4);
+        hangar.add(P4);
+        hangar.add(P4);
+        hangar.add(P4);
+        hangar.add(P4);
+
         hangar.add(P5);
         hangar.add(P6);
         hangar.add(P7);
         hangar.add(P8);
-        
-        System.out.println(hangar);        
+        hangar.add(T1);
+
+        System.out.println(hangar);
+
+        double totalPassengerCapacity = LogistikTerminal.CalculateTotalPassengerCapacity(hangar);
+        double totalLoad = LogistikTerminal.CalculateTotalLoad(hangar);
+
+        System.out.println("Total passenger capacity: " + totalPassengerCapacity);
+        System.out.println("Total load capacity: " + totalLoad);
     }
 }
