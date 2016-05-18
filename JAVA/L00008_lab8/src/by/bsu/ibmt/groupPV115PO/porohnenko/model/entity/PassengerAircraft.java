@@ -1,6 +1,6 @@
 /**
- * Lab work №
- * Theme:
+ * Lab work №8 Basics OOP, principles GRASP, SOLID. Pattern MVS
+ * Theme: class PassengerAircraft
  * Group: PV1-15PO
  * Author: Oleg Porohnenko
  * Date: May 15, 2016

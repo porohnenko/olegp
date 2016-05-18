@@ -1,6 +1,6 @@
 /**
- * Lab work №
- * Theme:
+ * Lab work №8 Basics OOP, principles GRASP, SOLID. Pattern MVS
+ * Theme: individual task 9. AIRLINE
  * Group: PV1-15PO
  * Author: Oleg Porohnenko
  * Date: May 15, 2016
@@ -26,7 +26,7 @@ public class AustrianAirlines {
 
         System.out.println("Total passenger capacity: " + totalPassengerCapacity + " passengers");
         System.out.printf("Total load capacity: %.2f tonnes\n", totalLoad / 1000);
-        
-        //ViewReport.SelectAircraft();
+
+        ViewReport.SelectAircraft();
     }
 }
