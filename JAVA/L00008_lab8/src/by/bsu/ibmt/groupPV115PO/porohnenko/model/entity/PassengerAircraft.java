@@ -15,14 +15,14 @@ public class PassengerAircraft extends Aircraft {
     private boolean businessClass;
 
     public PassengerAircraft(
-            boolean businessClass, 
-            String model, 
-            String boardNumber, 
-            int flyingRange, 
-            int maxTakeoffWeight, 
-            int age, 
-            int numberOfEngines, 
-            int passengerCapacity, 
+            boolean businessClass,
+            String model,
+            String boardNumber,
+            int flyingRange,
+            int maxTakeoffWeight,
+            int age,
+            int numberOfEngines,
+            int passengerCapacity,
             int loadingCapacity) {
         super(model, boardNumber, flyingRange, maxTakeoffWeight, age, numberOfEngines, passengerCapacity, loadingCapacity);
         this.businessClass = businessClass;

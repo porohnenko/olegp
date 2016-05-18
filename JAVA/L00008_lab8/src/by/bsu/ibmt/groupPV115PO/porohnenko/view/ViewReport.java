@@ -36,11 +36,11 @@ public class ViewReport {
     }
 
     public static void viewTotalPassengerCapacity(int value) {
-    System.out.println("Total passenger capacity: " + value + " passengers");
+        System.out.println("Total passenger capacity: " + value + " passengers");
     }
-    
+
     public static void viewTotalLoadCapacity(double value) {
-    System.out.printf("Total load capacity: %.2f tonnes\n", value / 1000);
+        System.out.printf("Total load capacity: %.2f tonnes\n", value / 1000);
     }
 
     public static void SelectAircraft() {
