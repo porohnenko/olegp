@@ -24,8 +24,8 @@ public class AustrianAirlines {
 
         ViewReport.printFleet();
 
-        System.out.println("Total passenger capacity: " + totalPassengerCapacity + " passengers");
-        System.out.printf("Total load capacity: %.2f tonnes\n", totalLoad / 1000);
+        ViewReport.viewTotalPassengerCapacity(totalPassengerCapacity);
+        ViewReport.viewTotalLoadCapacity(totalLoad);
 
         ViewReport.SelectAircraft();
     }

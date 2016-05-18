@@ -35,6 +35,14 @@ public class ViewReport {
         }
     }
 
+    public static void viewTotalPassengerCapacity(int value) {
+    System.out.println("Total passenger capacity: " + value + " passengers");
+    }
+    
+    public static void viewTotalLoadCapacity(double value) {
+    System.out.printf("Total load capacity: %.2f tonnes\n", value / 1000);
+    }
+
     public static void SelectAircraft() {
         while (true) {
             System.out.print("\nDo you want to select route? (Y/N?): ");
