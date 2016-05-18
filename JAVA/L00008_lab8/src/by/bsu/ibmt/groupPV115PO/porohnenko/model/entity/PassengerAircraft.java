@@ -34,6 +34,9 @@ public class PassengerAircraft extends Aircraft {
 
     @Override
     public String toString() {
-        return super.toString() + " | Business class: " + businessClass;
+        return super.toString() + " | Business class: " + businessClass
+                + "\n------------------------------------------------------------"
+                + "-----------------------------------------------------------------"
+                + "-----------------------------------------------------------------\n";
     }
 }

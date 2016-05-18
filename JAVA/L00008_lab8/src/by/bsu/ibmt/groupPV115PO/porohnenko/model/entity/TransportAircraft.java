@@ -34,6 +34,9 @@ public class TransportAircraft extends Aircraft {
 
     @Override
     public String toString() {
-        return super.toString() + "Existence of the transport equipment: " + transportEquipment;
+        return super.toString() + " |Existence of the transport equipment: " + transportEquipment
+                + "\n------------------------------------------------------------"
+                + "-----------------------------------------------------------------"
+                + "-----------------------------------------------------------------\n";
     }
 }

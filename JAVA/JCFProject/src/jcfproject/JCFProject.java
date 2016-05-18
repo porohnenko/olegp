@@ -52,7 +52,7 @@ public class JCFProject {
         Collections.sort(set, new SortStudentByMarkASC());
 
         for (Student student : set) {
-            System.out.println(student + " ");
+            System.out.println(student);
         }
     }
 }

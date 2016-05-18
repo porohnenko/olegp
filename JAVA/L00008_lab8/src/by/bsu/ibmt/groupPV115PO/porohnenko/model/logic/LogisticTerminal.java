@@ -11,10 +11,10 @@ package by.bsu.ibmt.groupPV115PO.porohnenko.model.logic;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.AircraftHangar;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abs.Aircraft;
 
-public class LogistikTerminal {
+public class LogisticTerminal {
 
-    public static double CalculateTotalPassengerCapacity(AircraftHangar hangar) {
-        double sumRange = 0;
+    public static int CalculateTotalPassengerCapacity(AircraftHangar hangar) {
+        int sumRange = 0;
 
         for (Aircraft A : hangar.list) {
             sumRange += A.getPassengerCapacity();
@@ -30,5 +30,4 @@ public class LogistikTerminal {
         }
         return sumLoad;
     }
-
 }

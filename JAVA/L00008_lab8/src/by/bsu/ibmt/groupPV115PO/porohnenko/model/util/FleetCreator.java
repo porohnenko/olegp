@@ -8,9 +8,14 @@
  */
 package by.bsu.ibmt.groupPV115PO.porohnenko.model.util;
 
+import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.AircraftHangar;
+
 public class FleetCreator {
 
-    public static void create() {
+    private static AircraftHangar hangar = new AircraftHangar();
 
+    public static AircraftHangar getHangar() {
+        return hangar;
     }
+
 }

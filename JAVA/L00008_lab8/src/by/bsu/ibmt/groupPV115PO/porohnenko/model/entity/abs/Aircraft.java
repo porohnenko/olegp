@@ -8,7 +8,7 @@
  */
 package by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abs;
 
-public class Aircraft {
+public class Aircraft implements Comparable<Aircraft> {
 
     private String model;
     private String boardNumber;
@@ -18,6 +18,9 @@ public class Aircraft {
     private int numberOfEngines;
     private int passengerCapacity;
     private int loadingCapacity;
+
+    public Aircraft() {
+    }
 
     public Aircraft(
             String model,
@@ -72,9 +75,14 @@ public class Aircraft {
 
     @Override
     public String toString() {
-        return "Model: " + model + " | Board number: " + boardNumber + " | Flying range, km: "
-                + flyingRange + " | Max takeoff weight, kg: " + maxTakeoffWeight + " | Age, years: "
-                + age + " | Number of engines: " + numberOfEngines + " | Passenger capacity: "
+        return "Model: " + model + "\tBoard number: " + boardNumber + "\nFlying range, km: "
+                + flyingRange + " | Max takeoff weight, kg: " + maxTakeoffWeight + "| Age, years: "
+                + age + " | Number of engines: " + numberOfEngines + "| Passenger capacity: "
                 + passengerCapacity + " | Loading capacity: " + loadingCapacity;
+    }
+
+    @Override
+    public int compareTo(Aircraft A) {
+        return model.compareTo(A.model);
     }
 }
