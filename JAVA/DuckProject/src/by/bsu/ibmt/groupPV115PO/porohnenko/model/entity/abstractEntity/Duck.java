@@ -25,8 +25,13 @@ public abstract class Duck {
         quackable.quack();
     }
 
+    public void fly() {
+        flyable.fly();
+    }
+
     public void swim() {
         System.out.println("I'm swimming...");
     }
+
     public abstract void display();
 }

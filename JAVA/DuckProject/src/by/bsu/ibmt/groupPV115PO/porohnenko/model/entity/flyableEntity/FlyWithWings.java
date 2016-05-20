@@ -8,6 +8,12 @@
  */
 package by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.flyableEntity;
 
-public class FlyWithWings {
+import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity.Flyable;
 
+public class FlyWithWings implements Flyable {
+
+    @Override
+    public void fly() {
+        System.out.println("I'm flying with wings...");
+    }
 }

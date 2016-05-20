@@ -12,6 +12,7 @@ import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.DuffyDuck;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.MallardDuck;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity.Duck;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.flyableEntity.FlyWithRocket;
+import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.flyableEntity.FlyWithWings;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.quackAlg.Pisk;
 
 public class DuckProject {
@@ -29,9 +30,11 @@ public class DuckProject {
         duffy.quack();
         duffy.swim();
         duffy.fly();
-        
-        duffy.setFlyable(new FlyWithRocket());
-        duffy.
-    }
 
+        duffy.setFlyable(new FlyWithRocket());
+        duffy.fly();
+
+        duffy.setFlyable(new FlyWithWings());
+        duffy.fly();
+    }
 }
