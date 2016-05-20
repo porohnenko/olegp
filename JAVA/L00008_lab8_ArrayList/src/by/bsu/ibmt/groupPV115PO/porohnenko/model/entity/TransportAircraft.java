@@ -24,7 +24,8 @@ public class TransportAircraft extends Aircraft {
             int numberOfEngines,
             int passengerCapacity,
             int loadingCapacity) {
-        super(model, boardNumber, flyingRange, maxTakeoffWeight, age, numberOfEngines, passengerCapacity, loadingCapacity);
+        super(model, boardNumber, flyingRange, maxTakeoffWeight, age,
+                numberOfEngines, passengerCapacity, loadingCapacity);
         this.transportEquipment = transportEquipment;
     }
 
