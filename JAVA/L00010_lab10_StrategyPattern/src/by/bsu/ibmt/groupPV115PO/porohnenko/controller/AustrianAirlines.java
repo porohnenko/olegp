@@ -15,12 +15,15 @@ import by.bsu.ibmt.groupPV115PO.porohnenko.view.ViewReport;
 
 public class AustrianAirlines {
 
+    private static int totalPassengerCapacity;
+    private static double totalLoad;
+
     public static void main(String[] args) {
 
         AircraftHangar.create();
 
-        int totalPassengerCapacity = LogisticTerminal.CalculateTotalPassengerCapacity(FleetCreator.getHangar());
-        double totalLoad = LogisticTerminal.CalculateTotalLoad(FleetCreator.getHangar());
+        totalPassengerCapacity = LogisticTerminal.CalculateTotalPassengerCapacity(FleetCreator.getHangar());
+        totalLoad = LogisticTerminal.CalculateTotalLoad(FleetCreator.getHangar());
 
         ViewReport.printFleet();
 
