@@ -2,7 +2,7 @@
  * Lab work №8 Basics OOP, principles GRASP, SOLID. Pattern MVS
  * Theme: class LogisticTerminal
  * Group: PV1-15PO
- * Author: Oleg Porohnenko
+ * @author: Oleg Porohnenko
  * Date: May 16, 2016
  * Version: 1.0
  */
@@ -10,6 +10,7 @@ package by.bsu.ibmt.groupPV115PO.porohnenko.model.logic;
 
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.AircraftHangar;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abs.Aircraft;
+
 
 public class LogisticTerminal {
 
