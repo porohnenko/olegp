@@ -1,6 +1,26 @@
-<html>
+﻿<html>
 <body>
 <head>
+<!-- ///////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- <dialog id="dialog">
+  <h3>Hello!!!</h3>
+<p>Go on, I dare you.................................
+  <div>
+  <button id="okay">Ok, continue</button>
+  <button id="cancel">Cancel</button>
+</div>
+</dialog>
+
+<script>
+var dialog = document.getElementById('dialog');
+dialog.show();
+document.getElementById("cancel").onclick = function() {
+      dialog.close();}
+document.getElementById("okay").onclick = function() {
+      dialog.close();
+}
+</script> -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
 <script type="text/javascript">
 function Menu(id)
 {
@@ -16,6 +36,9 @@ menu.display = 'none';
 }
 </script>
 </head>
+
+
+
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -48,9 +71,75 @@ menu.display = 'none';
 <li><a href="#">Вебинары</a></li>
 </ul>
 
+<!-- <img src="image.gif" onerror="myFunction()"> -->
+<img id="image" src="http://yandex.st/weather/1.1.82/i/1april/ruchka.gif" onerror="myFunction()" onload="updateCounter()" style="
+    padding-top: 35px;
+">
 
+<script>
+function myFunction() {
+    alert('АААААААААААААААА!!!Ошибка загрузки изображения!');
+}
+</script>
 
+<script language="JavaScript">
+var count = -1;
+function updateCounter() {
+   count ++;
+   document.myForm.loops.value = count;
+}
+</script>
+<form name="myForm">
+Количество циклов анимации: <input type="text" name="loops">
+</form>
 
+<script language="JavaScript">
+document.getElementById('image').onclick = function()
+{
+   this.src = this.src;        
+}
+</script>
+
+<!-- window.open('test.htm','width=100,height=200,toolbar=1', fullscreen = 0)   -->
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- <dialog id="dialog">
+  <h3>Hello!!!</h3>
+<p>Go on, I dare you.................................
+  <div>
+  <button id="okay">Ok, continue</button>
+  <button id="cancel">Cancel</button>
+</div>
+</dialog>
+
+<script>
+var dialog = document.getElementById('dialog');
+dialog.show();
+document.getElementById("cancel").onclick = function() {
+      dialog.close();}
+document.getElementById("okay").onclick = function() {
+      dialog.close();
+}
+</script> -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
+<script>
+function submitQuery() {
+// Это текст вопроса, который выводится перед пользователем.
+// Форматирование выполнено только с помощью символов
+// подчеркивания и перевода строки.
+var message = "\n\n\n\n" +
+"_________________________________________________\n\n" +
+"На исполнение такого сложного запроса, как ваш,\n" +
+"может потребоваться минута или более.\n" +
+"_________________________________________________\n\n\n" +
+"Щелкните на кнопке OK, чтобы продолжить,\n" +
+"или Отмена, чтобы отменить операцию.";
+// Запросить разрешение на выполнение операции
+// и прервать ее, если разрешение не будет получено
+if (!confirm(message)) return;
+/* Здесь находится программный код, выполняющий запрос */
+}
+</script>
 </html>
 </body>
 
