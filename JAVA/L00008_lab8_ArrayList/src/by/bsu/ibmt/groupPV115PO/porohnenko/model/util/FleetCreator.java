@@ -12,14 +12,13 @@ import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.AircraftHangar;
 
 public class FleetCreator {
 
-    private static AircraftHangar hangar;
+    private static AircraftHangar Angar;
 
-    public static void FleetCreator() {
-        AircraftHangar Angar = new AircraftHangar();
+//    public static void FleetCreator() {
+//        AircraftHangar Angar = new AircraftHangar();
+//    }
+
+    public static AircraftHangar getAngar() {
+        return Angar;
     }
-
-    public static AircraftHangar getHangar() {
-        return hangar;
-    }
-
 }

@@ -22,8 +22,8 @@ public class AustrianAirlines {
 
         AircraftHangar.create();
 
-        totalPassengerCapacity = LogisticTerminal.CalculateTotalPassengerCapacity(FleetCreator.getHangar());
-        totalLoad = LogisticTerminal.CalculateTotalLoad(FleetCreator.getHangar());
+        totalPassengerCapacity = LogisticTerminal.CalculateTotalPassengerCapacity(FleetCreator.getAngar());
+        totalLoad = LogisticTerminal.CalculateTotalLoad(FleetCreator.getAngar());
 
         ViewReport.printFleet();
 
