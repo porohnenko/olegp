@@ -4,16 +4,17 @@ SET @a = 20
 SET @b = (@a+@a)/15
 SELECT @b --вывод на экран результата
 
-DECLARE @a INT
-SELECT @a=COUNT(*) FROM Authors
+use Students_progress
+DECLARE @value INT
+SELECT @value=COUNT(*) FROM Studenе
 
 --В данном примере в переменную поместится последнее значение из результата запроса.
 DECLARE @str CHAR(30)
 SELECT @str = name_author FROM Authors
 
 --Сочетание ключевых слов SET и SELECT
-DECLARE @a INT
-SET @a = (SELECT COUNT(*) FROM Authors)
+DECLARE @value1 INT
+SET @value1 = (SELECT COUNT(*) FROM Authors)
 
 --Работа с датой и временем
 --Оператор SET DATEFORMAT dmy | ymd | mdy задает порядок следования компонентов даты.
