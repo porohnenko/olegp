@@ -14,10 +14,17 @@ import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity.Duck;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.flyableEntity.FlyWithRocket;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.flyableEntity.FlyWithWings;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.quackAlg.Pisk;
+import java.util.logging.Logger;
+
 
 public class DuckProject {
 
+    private static Logger LOG = null;
+
     public static void main(String[] args) {
+        
+        //LOG = Logger.getLogger(DuckProject.class);
+                
         Duck mallard = new MallardDuck();
         mallard.quack();
         mallard.swim();
