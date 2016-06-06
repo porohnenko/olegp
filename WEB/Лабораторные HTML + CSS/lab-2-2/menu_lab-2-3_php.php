@@ -1,0 +1,146 @@
+<html><head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<link rel="stylesheet" type="text/css" href="d:\MY\Git\olegp\WEB\Лабораторные HTML + CSS\lab-2-2\style.css">
+		<script src="d:\MY\Git\olegp\WEB\Лабораторные HTML + CSS\lab-2-2\script.js">
+  </script>
+<title>Навигация между файлами</title><script src="d:\MY\Git\olegp\WEB\Лабораторные HTML + CSS\lab-2-2\script.js"></script></head>
+
+<!-- <body background="./menu_lab-2-3_files/fon.gif" bgproperties="fixed"> -->
+
+
+
+<body><div class="overlay"></div>
+<video id="video_background" preload="auto" autoplay="true" loop="loop">&gt;
+<!-- <source src="d:\MY\Git\WEB\Лабораторные HTML + CSS\lab-2-2\kino\cloud.mp4" type="video/mp4" />
+<source src="d:\MY\Git\WEB\Лабораторные HTML + CSS\lab-2-2\kino\cloud.webm" type="video/webm" />
+ -->
+ <source src="d:\MY\Git\olegp\WEB\Лабораторные HTML + CSS\lab-2-2\kino\office.webm" type="video/mp4">
+<!-- <source src="d:\MY\Git\WEB\Лабораторные HTML + CSS\lab-2-2\kino\MillennialV2.mp4" type="video/mp4" />
+ -->
+</video>
+
+<?php
+include('d:/MY/Git/olegp/WEB/text1.php');
+echo '$text1';
+?>
+
+
+<!-- <a href="http://specialist.by/"><img src="./menu_lab-2-3_files/logo.gif" align="top"></a> -->
+
+<!-- курсы валют -->
+<!-- <iframe style="position:absolute;top:10px;left:920px;" 
+src="http://www.nbrb.by/publications/wmastersd.asp?bgcolor=87CEFA" 
+width=237 height=90 frameborder=0 scrolling=no></iframe> -->
+
+<!-- погода -->
+<!-- <div style="width: 200px; height: 400px; float: right; margin: 0 0 0 10px;"><script src="./menu_lab-2-3_files/external_box_small.js"></script> -->
+
+<noscript>&amp;amp;amp;lt;a href="http://www.yr.no/place/Belarus/Minsk/Minsk/"&amp;amp;amp;gt;yr.no: Forecast for Minsk&amp;amp;amp;lt;/a&amp;amp;amp;gt;</noscript>
+<h1 align="center">
+<div>
+
+</div>
+<a name="Head"></a><a href="http://specialist.ru/"><font face="Calibri">Специалист — лучший в Беларуси компьютерный учебный центр</font></a></h1>
+
+
+
+
+<div class="card" style="opacity: 1;width: 300px;">
+<div class="mobilebg" style="background-image: url('/img/home/bkwld-mm.png');"></div>
+<div class="card-content" style="
+    width: 600px;
+    height: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-top-width: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+">
+<div class="card-center">
+<div class="subtitle">
+<div class="intro-belief" style="
+    margin-top: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 130px;
+    width: 610px;
+    border-top-width: 3px;
+    margin-bottom: 5px;
+    padding-top: 0px;
+    padding-left: 0px;
+">
+
+<div class="droplink"><h3><a href="#" style="
+    width: 0px;
+    height: 0px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    
+    border-bottom-width: 10px;
+">News</a></h3>
+<ul>
+            <li><a href="centernews.html#M1"><!-- <font size="4" color="blue" face="Calibri"> -->Новости Центра</a></li>
+			<li><a href="certificat.html#M2"><!-- <font size="4" color="blue" face="Calibri"> -->Новости сертифицированного обучения</a></li>
+			<li><a href="events.html#M3"><!-- <font size="4" color="blue" face="Calibri"> -->События</a></li>
+			<li><a href="test.html#M4">Новости сервера Online тестирование и сертификация «SPECIALIST»</a></li>
+			<li><a href="distance.html#M5">Новости дистанционного обучения</a></li>
+</ul>
+</div>
+</div>
+
+
+
+
+    
+
+
+
+</div>
+</div>
+</div>
+
+
+
+<div class="overlay"></div>
+<div class="overlay"></div>
+
+<div class="card" style="opacity: 1;width: 620px;">
+<div class="mobilebg" style="background-image: url('/img/home/bkwld-mm.png');"></div>
+<div class="card-content" style="margin-left: 650px;margin-top: 0px;margin-bottom: 0px;padding-bottom: -30;margin-right: 95px;border-bottom-width: 10px;height: 500px;width: 620px;padding-left: 30px;border-left-width: 10px;padding-bottom: -50;padding-right: 30px;top: -82;">
+<div class="card-center">
+<div class="line"></div>
+<div class="social-wrap">
+<i class="shim"></i>
+
+
+<!-- <p>Центр компьютерного обучения «Специалист» — ведущий центр Беларуси в области IT-обучения, являющийся сертифицированным центром обучения Microsoft, Золотым партнером Microsoft, авторизованным центром Microsoft Business Solutions и авторизованным центром тестирования Microsoft Office Specialist. Учебный центр предлагает подготовку на статусы CCNA ®, CCNP ® и CCDA ® по продуктам и решениям компании Cisco ®; является ведущим учебным центром по Linux и FreeBSD технологиям в Беларуси.</p>
+<p>«Специалист» — первый в Беларуси Linux Professional Institute Training Partner (LATP) и Novell Certified Linux Engineer, авторизованный учебный центр ASPLinux; имеет 4 авторизации ведущих фирм: Autodesk, SolidWorks, Grafisoft и Ascon. Лучший учебный центр Autodesk в 2006 году, позволяет пройти обучение на сертифицированных курсах Autodesk по всем продуктам компании (AutoCad, Inventor Series, VIZ и др.).</p>
+<p style="
+    height: 90px;
+    margin-bottom: 0px;
+">Центр предлагает курсы по всем популярным продуктам Adobe — Photoshop, Illustrator, InDesign, Acrobat, Premiere, PageMaker и др. Здесь можно записаться на курсы Photoshop, курсы Cisco , курсы Microsoft, курсы Linux, курсы AutoCad и др.</p> -->
+<p>E-mail: <a href="mailto:webmaster@specialist.by">webmaster@specialist.by</a></p>
+<div class="line" style="
+    margin-bottom: 0px;
+    height: 1px;
+    margin-top: 10px;
+"></div>
+</div>
+</div>
+</div>
+
+
+
+
+</div></div>
+
+
+
+
+
+
+
+
+
+</body></html>
