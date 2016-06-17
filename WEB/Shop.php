@@ -95,7 +95,7 @@
 <hr />
 <p>&nbsp;</p>
 
-<script type="text/javascript" src="http://tecdoc.api.iauto.by/newby.js"></script>
-<script type="text/javascript">
-NEWBY.init('6129823fa98b32ec17b4c2402a52dd6f', 'Идет загрузка каталога...');
-</script>
+// <script type="text/javascript" src="http://tecdoc.api.iauto.by/newby.js"></script>
+// <script type="text/javascript">
+// NEWBY.init('6129823fa98b32ec17b4c2402a52dd6f', 'Идет загрузка каталога...');
+// </script>
