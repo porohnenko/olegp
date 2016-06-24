@@ -6,7 +6,7 @@ SELECT @b --вывод на экран результата
 
 use Students_progress
 DECLARE @value INT
-SELECT @value=COUNT(*) FROM Studenе
+SELECT @value=COUNT(*) FROM Student
 
 --В данном примере в переменную поместится последнее значение из результата запроса.
 DECLARE @str CHAR(30)
