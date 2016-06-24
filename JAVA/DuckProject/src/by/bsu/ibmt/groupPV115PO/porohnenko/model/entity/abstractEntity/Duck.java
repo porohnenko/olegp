@@ -8,10 +8,10 @@
  */
 package by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity;
 
-public abstract class Duck {
+        public abstract class Duck {
 
-    private Flyable flyable;
-    private Quackable quackable;
+            private Flyable flyable;
+            private Quackable quackable;
 
     public void setFlyable(Flyable flyable) {
         this.flyable = flyable;

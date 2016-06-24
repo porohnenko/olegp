@@ -17,7 +17,7 @@ public class LogisticTerminal {
     public static int CalculateTotalPassengerCapacity(AircraftHangar value) {
         int sumRange = 0;
 
-        for (Aircraft A : value.hangar) {
+        for (Aircraft A : value.getHangar()) {
             sumRange += A.getPassengerCapacity();
         }
         return sumRange;
@@ -26,19 +26,11 @@ public class LogisticTerminal {
     public static double CalculateTotalLoad(AircraftHangar value) {
         double sumLoad = 0;
 
-        for (Aircraft A : value.hangar) {
+        for (Aircraft A : value.getHangar()) {
             sumLoad += A.getLoadingCapacity();
         }
         return sumLoad;
     }
 
-    public static void SelectDesiredAircraft(int range) {
-        System.out.println("\nThe Austrian Airlines can provide next planes: ");
-
-        for (int i = 0; i < AircraftHangar.getHangar().size(); i++) {
-            if (AircraftHangar.getRange(i) > range) {
-                System.out.println(AircraftHangar.getAircraft(i));
-            }
-        }
-    }
+    
 }

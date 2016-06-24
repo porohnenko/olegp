@@ -1,21 +1,21 @@
- /**
- * Lab work №8 Basics OOP, principles GRASP, SOLID. Pattern MVS
- * Theme: class TransportAircraft
+/**
+ * Lab work №
+ * Theme:
  * Group: PV1-15PO
  * Author: Oleg Porohnenko
- * Date: May 15, 2016
+ * Date: Jun 19, 2016
  * Version: 1.0
  */
 package by.bsu.ibmt.groupPV115PO.porohnenko.model.entity;
 
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abs.Aircraft;
 
-public class TransportAircraft extends Aircraft {
+public class BusinesJet extends Aircraft {
 
-    private boolean transportEquipment;
+    private boolean vipSalon;
 
-    public TransportAircraft(
-            boolean transportEquipment,
+    public BusinesJet(
+            boolean vipSalon,
             String model,
             String boardNumber,
             int flyingRange,
@@ -24,18 +24,17 @@ public class TransportAircraft extends Aircraft {
             int numberOfEngines,
             int passengerCapacity,
             int loadingCapacity) {
-        super(model, boardNumber, flyingRange, maxTakeoffWeight, age,
-                numberOfEngines, passengerCapacity, loadingCapacity);
-        this.transportEquipment = transportEquipment;
+        super(model, boardNumber, flyingRange, maxTakeoffWeight, age, numberOfEngines, passengerCapacity, loadingCapacity);
+        this.vipSalon = vipSalon;
     }
 
-    public boolean isTransportEquipment() {
-        return transportEquipment;
+    public boolean isvipSalon() {
+        return vipSalon;
     }
 
     @Override
     public String toString() {
-        return super.toString() + " |Existence of the transport equipment: " + transportEquipment
+        return super.toString() + " | VIP salon: " + vipSalon
                 + "\n------------------------------------------------------------"
                 + "-----------------------------------------------------------------"
                 + "-----------------------------------------------------------------\n";

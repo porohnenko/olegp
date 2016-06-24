@@ -10,11 +10,11 @@ package by.bsu.ibmt.groupPV115PO.porohnenko.model.entity;
 
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abs.Aircraft;
 
-public class PassengerAircraft extends Aircraft {
+public class BigPassengerAircraft extends Aircraft {
 
     private boolean businessClass;
 
-    public PassengerAircraft(
+    public BigPassengerAircraft(
             boolean businessClass,
             String model,
             String boardNumber,
