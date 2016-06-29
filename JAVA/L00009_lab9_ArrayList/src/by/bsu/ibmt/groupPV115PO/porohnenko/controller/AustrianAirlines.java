@@ -35,6 +35,6 @@ public class AustrianAirlines {
         PrintReport.viewTotalLoadCapacity(totalLoad);
         PrintReport.SelectAircraft(hangar);
 
-        LOG.info("test logging INFO message of Runner");
+        LOG.info("test info...");
     }
 }
