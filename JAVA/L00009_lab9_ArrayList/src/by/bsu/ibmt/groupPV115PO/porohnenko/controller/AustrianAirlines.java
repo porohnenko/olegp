@@ -12,11 +12,14 @@ import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.AircraftHangar;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.logic.LogisticTerminal;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.util.FleetCreator;
 import by.bsu.ibmt.groupPV115PO.porohnenko.view.PrintReport;
+import java.util.logging.Logger;
 
 public class AustrianAirlines {
 
     private static int totalPassengerCapacity;
     private static double totalLoad;
+
+    private static final Logger LOG = Logger.getGlobal();
 
     public static void main(String[] args) {
 
@@ -31,5 +34,7 @@ public class AustrianAirlines {
         PrintReport.viewTotalPassengerCapacity(totalPassengerCapacity);
         PrintReport.viewTotalLoadCapacity(totalLoad);
         PrintReport.SelectAircraft(hangar);
+
+        LOG.info("test logging INFO message of Runner");
     }
 }

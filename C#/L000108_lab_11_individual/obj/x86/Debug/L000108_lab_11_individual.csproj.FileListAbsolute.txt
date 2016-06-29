@@ -12,3 +12,10 @@ D:\MY\Git\C#\L000108_lab_11_individual\obj\x86\Debug\L000108_lab_11_individual.c
 D:\MY\Git\C#\L000108_lab_11_individual\bin\Debug\L000108_lab_11_individual.exe
 D:\MY\Git\C#\L000108_lab_11_individual\bin\Debug\L000108_lab_11_individual.pdb
 D:\MY\Git\C#\L000108_lab_11_individual\obj\x86\Debug\L000108_lab_11_individual.Num.resources
+D:\Study\Git\olegp\C#\L000108_lab_11_individual\bin\Debug\L000108_lab_11_individual.exe
+D:\Study\Git\olegp\C#\L000108_lab_11_individual\bin\Debug\L000108_lab_11_individual.pdb
+D:\Study\Git\olegp\C#\L000108_lab_11_individual\obj\x86\Debug\L000108_lab_11_individual.Num.resources
+D:\Study\Git\olegp\C#\L000108_lab_11_individual\obj\x86\Debug\L000108_lab_11_individual.Properties.Resources.resources
+D:\Study\Git\olegp\C#\L000108_lab_11_individual\obj\x86\Debug\L000108_lab_11_individual.csproj.GenerateResource.Cache
+D:\Study\Git\olegp\C#\L000108_lab_11_individual\obj\x86\Debug\L000108_lab_11_individual.exe
+D:\Study\Git\olegp\C#\L000108_lab_11_individual\obj\x86\Debug\L000108_lab_11_individual.pdb

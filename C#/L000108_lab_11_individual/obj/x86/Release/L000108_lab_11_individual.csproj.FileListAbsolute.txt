@@ -12,3 +12,5 @@ D:\MY\Git\C#\L000108_lab_11_individual\obj\x86\Release\L000108_lab_11_individual
 D:\MY\Git\C#\L000108_lab_11_individual\obj\x86\Release\L000108_lab_11_individual.csproj.GenerateResource.Cache
 D:\MY\Git\C#\L000108_lab_11_individual\obj\x86\Release\L000108_lab_11_individual.exe
 D:\MY\Git\C#\L000108_lab_11_individual\obj\x86\Release\L000108_lab_11_individual.pdb
+D:\Study\Git\olegp\C#\L000108_lab_11_individual\obj\x86\Release\L000108_lab_11_individual.exe
+D:\Study\Git\olegp\C#\L000108_lab_11_individual\obj\x86\Release\L000108_lab_11_individual.pdb

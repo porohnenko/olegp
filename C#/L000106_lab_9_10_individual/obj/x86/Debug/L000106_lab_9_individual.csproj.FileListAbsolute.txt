@@ -8,3 +8,11 @@ D:\MY\Git\C#\L000106_lab_9_individual\obj\x86\Debug\L000106_lab_9_individual.pdb
 D:\MY\Git\C#\L000106_lab_9_individual\obj\x86\Debug\L000106_lab_9_individual.csprojResolveAssemblyReference.cache
 D:\MY\Git\C#\L000106_lab_9_10_individual\obj\x86\Debug\L000106_lab_9_individual.exe
 D:\MY\Git\C#\L000106_lab_9_10_individual\obj\x86\Debug\L000106_lab_9_individual.pdb
+D:\Study\Git\olegp\C#\L000106_lab_9_10_individual\obj\x86\Debug\L000106_lab_9_individual.exe
+D:\Study\Git\olegp\C#\L000106_lab_9_10_individual\obj\x86\Debug\L000106_lab_9_individual.pdb
+D:\Study\Git\olegp\C#\L000106_lab_9_10_individual\bin\Debug\L000106_lab_9_individual.exe
+D:\Study\Git\olegp\C#\L000106_lab_9_10_individual\bin\Debug\L000106_lab_9_individual.pdb
+D:\Study\Git\olegp\C#\L000106_lab_9_10_individual\obj\x86\Debug\L000106_lab_9_individual.csprojResolveAssemblyReference.cache
+D:\Study\Git\olegp\C#\L000106_lab_9_10_individual\obj\x86\Debug\L000106_lab_9_individual.Form1.resources
+D:\Study\Git\olegp\C#\L000106_lab_9_10_individual\obj\x86\Debug\L000106_lab_9_individual.Properties.Resources.resources
+D:\Study\Git\olegp\C#\L000106_lab_9_10_individual\obj\x86\Debug\L000106_lab_9_individual.csproj.GenerateResource.Cache
