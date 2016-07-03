@@ -2,7 +2,7 @@
 
 CREATE TRIGGER ProgressTerm
    ON Progress
-   FOR INSERT, UPDATE, DELETE
+   FOR UPDATE, DELETE
 AS
    IF  EXISTS
 ( SELECT 'TRUE'      
@@ -10,13 +10,14 @@ AS
 	WHERE (DATEPART(mm,getDATE())<>'01' AND NTerm  %2=1)
               OR (DATEPART(mm,getDATE())<>'06' AND  NTerm  %2=0))
 BEGIN       
-RAISERROR('Нельзя исправлять оценку!!!',20,1)
+RAISERROR('Нельзя исправлять оценку!!!',16,1)
 /*-- Откат транзакции в случае возникновения ошибки*/
 	ROLLBACK TRAN
 END
 ------------
-UPDATE Progress SET mark=2 WHERE NRecordBook='133'
-INSERT INTO Progress VALUES ('133',1,2,1,4,5)
+
+UPDATE Progress SET mark=9 WHERE NRecordBook='133'
+DELETE FROM Progress WHERE NRecordBook='133'
 --------------------------------------------------------------------------------------------
 --Написать триггер, удаляющий строки в таблице Progress относящиеся к записям удаляемым из 
 --отношения Student.
@@ -39,7 +40,7 @@ IF @COUNT>0
 --------------------------------------------------------------------------------------------
 --Создать триггер, запрещающий исправлять оценку в отношении Progress на более высокую. 
 
-CREATE TRIGGER Update1Progress
+CREATE TRIGGER UpdateProgress
    ON PROGRESS   FOR  UPDATE
   AS
    IF  EXISTS
@@ -56,5 +57,5 @@ END
 
 
 UPDATE Progress 
-SET mark=4 
+SET mark=10
 WHERE NRecordBook='135'
