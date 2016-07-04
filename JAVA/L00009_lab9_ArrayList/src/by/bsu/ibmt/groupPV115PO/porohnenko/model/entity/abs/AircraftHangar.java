@@ -14,11 +14,14 @@ import java.util.List;
 
 public class AircraftHangar {
 
+    private Sortable sortable;
+
     private List<Aircraft> hangar = new ArrayList<Aircraft>();
 
     public void add(Aircraft aircraft) {
         hangar.add(aircraft);
     }
+
 
     public List<Aircraft> getHangar() {
         return hangar;
@@ -30,5 +33,9 @@ public class AircraftHangar {
 
     public int getRange(int index) {
         return hangar.get(index).getFlyingRange();
+    }
+
+    public void setSortable(Sortable sortable) {
+        this.sortable = sortable;
     }
 }
