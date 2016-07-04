@@ -1,4 +1,4 @@
-
+EXEC SP_HELP SalaryCosts
 -----------------------------------------------------------------------------------------
 -- Задание 1
 alter table [TeachersOfHighSchool].[dbo].[SalaryCosts]
@@ -9,29 +9,42 @@ alter table [TeachersOfHighSchool].[dbo].[SalaryCosts] drop constraint CheckTeac
 -- Создайте внешние ключи во всех таблицах, используя опцию
 -- FOREIGN KEY, при этом установите опцию каскадного удаления там, где
 -- это необходимо.
-alter table [SalaryCosts]
-WITH NOCHECK 
-add CONSTRAINT SalaryCosts1 
-FOREIGN KEY ([TeachName]) REFERENCES [Departments]([NameDepartment]) 
+alter table dbo.SalaryCosts
+add CONSTRAINT SalaryCostsForeign 
+FOREIGN KEY (Department) REFERENCES dbo.Departments(NameDepartment) 
 ON DELETE CASCADE
-alter table [TeachersOfHighSchool].[dbo].[SalaryCosts] drop constraint SalaryCosts1;
+alter table dbo.SalaryCosts drop constraint SalaryCostsForeign;
 
 -----------------------------------------------------------------------------------------
 -- Задание 3
 -- Проследите за изменением ограничения FOREIGN KEY в отношениях,
 -- связанных с отношением Student. Еще раз восстановите все удаленные
 -- ограничения.
+ALTER TABLE SalaryCosts
+with check
+CHECK CONSTRAINT ALL
 
-
+EXEC SP_HELP SalaryCosts
 -----------------------------------------------------------------------------------------
 -- Задание 4
--- Отключите ограничения внешнего ключа в таблице Student. Введите в
--- таблицу Student студента Васькина В.В. из несуществующей группы.
+-- Отключите ограничения внешнего ключа в таблице SalaryCosts. Введите в
+-- таблицу SalaryCosts нового преподавателя.
 -- Попытайтесь подключить ранее отключенное ограничение.
 -- Выполните все необходимые действия для того, чтобы вновь
 -- подключить ограничение, а все данные в отношении Student соответствовали
 -- условиям целостности базы данных.
+ALTER TABLE dbo.SalaryCosts
+NOCHECK CONSTRAINT SalaryCostsForeign
+ALTER TABLE dbo.SalaryCosts
+NOCHECK CONSTRAINT SalaryCostsTeachName
+ALTER TABLE dbo.SalaryCosts
+NOCHECK CONSTRAINT SalaryCostsNameDepartment
 
+insert into SalaryCosts (TeacherName,Department,DateOfIssue,SalaryMonth,FullTimer,SalaryRate)
+	values ('Лапицкая Н.В.***','ИЭФ****', 2016-03-05,2016-02-01 ,168,12000000)
+	
+ALTER TABLE dbo.SalaryCosts
+CHECK CONSTRAINT ALL
 
 -----------------------------------------------------------------------------------------
 -- Задание 5
@@ -45,7 +58,8 @@ alter table [TeachersOfHighSchool].[dbo].[SalaryCosts] drop constraint SalaryCos
 -- Задание 6
 -- Добавить в таблицу Student столбец Single, тип данных VARCHAR(3),
 -- назначив значение по умолчанию “Да”. Удалить столбец.
-
+ALTER TABLE dbo.Teachers
+ADD Smoke VARCHAR(3) NOT NULL DEFAULT 'No';
 
 -----------------------------------------------------------------------------------------
 -- Задание 7
@@ -56,7 +70,8 @@ alter table [TeachersOfHighSchool].[dbo].[SalaryCosts] drop constraint SalaryCos
 -- обусловлено наличием этого избыточного столбца. Отсюда вывод - такие
 -- столбцы, содержащие расчетные данные, полученные на основании уже
 -- хранящихся в таблице данных, не следует включать в таблицы.
-
+ALTER TABLE dbo.Departments
+ADD AVGSalary NUMERIC (10,2) NOT NULL DEFAULT 0;
 
 -----------------------------------------------------------------------------------------
 -- Задание 8
@@ -64,18 +79,34 @@ alter table [TeachersOfHighSchool].[dbo].[SalaryCosts] drop constraint SalaryCos
 -- Выполнить анализ - почему не удалось выполнить заданные операции с
 -- некоторыми столбцами? Что необходимо предпринять, чтобы эти изменения всё
 -- же произвести?
+ALTER TABLE dbo.Departments
+ALTER COLUMN Head VARCHAR(100)
 
+ALTER TABLE dbo.Departments
+ALTER COLUMN AVGSalary NUMERIC (5,3)
 
+EXEC SP_HELP SalaryCosts
+
+ALTER TABLE dbo.Departments
+ADD AVGtime NUMERIC (10,2) NOT NULL DEFAULT 0;
+
+alter table dbo.Employees
+add CONSTRAINT checkId check (Id <= 999999);
+ 
+alter table dbo.Employees
+ALTER COLUMN Name VARCHAR(100)
+
+ALTER TABLE dbo.SalaryCosts
+ALTER COLUMN SalaryMonth date
 -----------------------------------------------------------------------------------------
 -- Задание 9
 -- Переименовать таблицу Progress в таблицу Uspev.
-
-
+EXEC SP_RENAME 'SalaryCosts','SalaryCosts***';
 -----------------------------------------------------------------------------------------
 -- Задание 10
 -- Восстановить прежнее название переименованной в предыдущем
 -- задании таблицы (см.Задание 9) (Progress).
-
+EXEC SP_RENAME 'SalaryCosts***','SalaryCosts';
 
 
 

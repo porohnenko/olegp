@@ -16,6 +16,14 @@ WHERE T.TeachName = S.TeachName and S.Department = D1.NameDepartment
 
 SELECT * FROM TeachersViewSalary
 --------------------------------------------------------------------------------------
---Создать представление для вывода информации о предметах, изучаемых в 3 семестре 
---студентами специальности  ИСТ.
-CREATE VIEW TeachersViewSalary----- 
+--Создать представление для вывода информации о преподавателях, имеющих звание 
+--"д.т.н., профессор" и работающих по адресу "Платонова 39".
+CREATE VIEW TeachersViewInfo
+as select TeachName [Имя преподавателя], Post[Должность], AcademicTitleDegree [Звание],
+EmployeeNumber [Личный номер], Department [Факультет]
+FROM Teachers T INNER JOIN Departments D
+ON T.Adress = D.Adress INNER JOIN SalaryCosts S
+ON T.TeachName = S.TeacherName
+where T.AcademicTitleDegree = 'д.т.н., профессор' and D.Adress = 'Платонова 39'
+
+SELECT * FROM TeachersViewInfo 
