@@ -8,8 +8,6 @@
  */
 package by.bsu.ibmt.groupPV115PO.porohnenko.model.entity;
 
-import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abs.Aircraft;
-
 public class TransportAircraft extends Aircraft {
 
     private boolean transportEquipment;

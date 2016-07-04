@@ -8,7 +8,7 @@
  */
 package by.bsu.ibmt.groupPV115PO.porohnenko.model.util;
 
-import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.AircraftHangar;
+import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abs.AircraftHangar;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.BigPassengerAircraft;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.BusinesJet;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.TransportAircraft;

@@ -8,9 +8,9 @@
  */
 package by.bsu.ibmt.groupPV115PO.porohnenko.model.logic;
 
-import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.AircraftHangar;
+import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abs.AircraftHangar;
 
-public class UserInterface {
+public class LogicForUserInterface {
 
     public static void SelectDesiredAircraft(AircraftHangar a, int range) {
 

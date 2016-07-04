@@ -6,9 +6,9 @@
  * Date: May 16, 2016
  * Version: 1.0
  */
-package by.bsu.ibmt.groupPV115PO.porohnenko.model.entity;
+package by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abs;
 
-import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abs.Aircraft;
+import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.Aircraft;
 import java.util.ArrayList;
 import java.util.List;
 

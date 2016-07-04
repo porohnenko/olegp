@@ -8,8 +8,6 @@
  */
 package by.bsu.ibmt.groupPV115PO.porohnenko.model.entity;
 
-import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abs.Aircraft;
-
 public class BusinesJet extends Aircraft {
 
     private boolean vipSalon;

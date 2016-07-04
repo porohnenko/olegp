@@ -8,14 +8,13 @@
  */
 package by.bsu.ibmt.groupPV115PO.porohnenko.comparator;
 
-import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abs.Aircraft;
+import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.Aircraft;
 import java.util.Comparator;
 
-public class SortByRangeASC implements Comparator<Aircraft> {
+public class Sorting implements Comparator<Aircraft> {
 
     @Override
     public int compare(Aircraft o1, Aircraft o2) {
-        return o1.getFlyingRange() - o2.getFlyingRange();
+        return 0;
     }
-    
 }

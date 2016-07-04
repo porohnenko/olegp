@@ -8,30 +8,30 @@
  */
 package by.bsu.ibmt.groupPV115PO.porohnenko.view;
 
-import by.bsu.ibmt.groupPV115PO.porohnenko.comparator.SortByRangeASC;
-import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.AircraftHangar;
-import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abs.Aircraft;
-import by.bsu.ibmt.groupPV115PO.porohnenko.model.logic.UserInterface;
+import by.bsu.ibmt.groupPV115PO.porohnenko.comparator.Sorting;
+import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abs.AircraftHangar;
+import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.Aircraft;
+import by.bsu.ibmt.groupPV115PO.porohnenko.model.logic.LogicForUserInterface;
+import by.bsu.ibmt.groupPV115PO.porohnenko.model.logic.Sorter;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.util.InitSelectByRange;
-import java.util.Collections;
 import java.util.Scanner;
 
 public class PrintReport {
 
     private static int select;
 
-    public static void printFleet(AircraftHangar aircraftHangar) {
-        System.out.println("Company: Austrian Airlines");
-        System.out.println("\nList of aircraft: \tsorted by flying range"
+    public static void printFleet(AircraftHangar aircraftHangar, Sorting sort) {
+        System.out.println("\n********************************");
+        System.out.println("** Company: Austrian Airlines **");
+        System.out.println("********************************");
+        System.out.println("\nList of aircraft:\t" + sort.toString()
                 + "\n------------------------------------------------------------"
                 + "-----------------------------------------------------------------"
                 + "-----------------------------------------------------------------");
-
-        
-        Collections.sort(aircraftHangar.getHangar(), new SortByRangeASC());
+        Sorter.sort(aircraftHangar, sort);
 
         for (Aircraft aircraft : aircraftHangar.getHangar()) {
-            System.out.println(aircraft);
+            System.out.print(aircraft);
         }
     }
 
@@ -45,11 +45,11 @@ public class PrintReport {
 
     public static void SelectAircraft(AircraftHangar aircraftHangar) {
         while (true) {
-            
+
             System.out.print("\nDo you want to select route? (Y/N?): ");
-            
+
             Scanner sc1 = new Scanner(System.in);
-            
+
             if (sc1.next().equalsIgnoreCase("n")) {
                 System.out.println("\n\n");
                 break;
@@ -65,13 +65,13 @@ public class PrintReport {
                 System.out.print("\nSelect route: ");
 
                 Scanner sc2 = new Scanner(System.in);
-                
+
                 String line = sc2.nextLine();
                 select = Integer.parseInt(line);
 
                 int range = InitSelectByRange.init(select);
-                
-                UserInterface.SelectDesiredAircraft(aircraftHangar, range);
+
+                LogicForUserInterface.SelectDesiredAircraft(aircraftHangar, range);
             }
         }
     }

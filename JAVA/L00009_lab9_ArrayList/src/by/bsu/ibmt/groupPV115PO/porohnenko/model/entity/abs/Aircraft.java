@@ -6,9 +6,9 @@
  * Date: May 15, 2016
  * Version: 1.0
  */
-package by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abs;
+package by.bsu.ibmt.groupPV115PO.porohnenko.model.entity;
 
-public class Aircraft implements Comparable<Aircraft> {
+public class Aircraft {
 
     private String model;
     private String boardNumber;
@@ -65,8 +65,8 @@ public class Aircraft implements Comparable<Aircraft> {
                 + passengerCapacity + " | Loading capacity: " + loadingCapacity;
     }
 
-    @Override
+    /*@Override
     public int compareTo(Aircraft A) {
         return model.compareTo(A.model);
-    }
+    }*/
 }
