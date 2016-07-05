@@ -9,10 +9,11 @@
 package by.bsu.ibmt.groupPV115PO.porohnenko.view;
 
 import by.bsu.ibmt.groupPV115PO.porohnenko.comparator.Sorting;
+import by.bsu.ibmt.groupPV115PO.porohnenko.comparator.Sorting1;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abs.AircraftHangar;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.Aircraft;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.logic.LogicForUserInterface;
-import by.bsu.ibmt.groupPV115PO.porohnenko.model.logic.Sorter;
+
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.util.InitSelectByRange;
 import java.util.Scanner;
 
@@ -20,15 +21,15 @@ public class PrintReport {
 
     private static int select;
 
-    public static void printFleet(AircraftHangar aircraftHangar, Sorting sort) {
+    public static void printFleet(AircraftHangar aircraftHangar, String title) {
         System.out.println("\n********************************");
         System.out.println("** Company: Austrian Airlines **");
         System.out.println("********************************");
-        System.out.println("\nList of aircraft:\t" + sort.toString()
+        System.out.println("\nList of aircraft:\t" + title
                 + "\n------------------------------------------------------------"
                 + "-----------------------------------------------------------------"
                 + "-----------------------------------------------------------------");
-        Sorter.sort(aircraftHangar, sort);
+        
 
         for (Aircraft aircraft : aircraftHangar.getHangar()) {
             System.out.print(aircraft);

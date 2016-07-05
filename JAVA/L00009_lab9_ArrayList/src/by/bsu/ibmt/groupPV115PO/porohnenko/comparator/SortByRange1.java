@@ -9,19 +9,18 @@
 package by.bsu.ibmt.groupPV115PO.porohnenko.comparator;
 
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.Aircraft;
-import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abs.AircraftHangar;
-import java.util.Comparator;
+import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abs.Sortable;
+import java.util.Collections;
 
-public class SortByRange1 extends Sorting1{
+public class SortByRange1 implements Sortable{
 
-    public SortByRange1(AircraftHangar hangar, Comparator<Aircraft> comparator) {
-        super(hangar, comparator);
-    }
-
-
-    @Override
     public int compare(Aircraft o1, Aircraft o2) {
         return o1.getFlyingRange() - o2.getFlyingRange();
+    }
+    
+    @Override
+    public void sort() {
+    Collections.sort(hangar.getHangar(), this);
     }
 
     @Override

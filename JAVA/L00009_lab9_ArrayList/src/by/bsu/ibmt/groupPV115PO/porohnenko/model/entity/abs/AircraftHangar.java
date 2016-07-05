@@ -22,6 +22,9 @@ public class AircraftHangar {
         hangar.add(aircraft);
     }
 
+    public void sort() {
+        sortable.sort();
+    }
 
     public List<Aircraft> getHangar() {
         return hangar;
