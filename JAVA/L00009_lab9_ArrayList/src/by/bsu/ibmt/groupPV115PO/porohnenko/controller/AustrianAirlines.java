@@ -8,10 +8,12 @@
  */
 package by.bsu.ibmt.groupPV115PO.porohnenko.controller;
 
-import by.bsu.ibmt.groupPV115PO.porohnenko.comparator.SortByRange1;
-import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abs.AircraftHangar;
+import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.FirstHangar;
+import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.sortableEntity.SortByRange;
+import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity.AircraftHangar;
+import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.comparator.CompareByRange;
+import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.units.Aircraft;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.logic.LogisticTerminal;
-import by.bsu.ibmt.groupPV115PO.porohnenko.model.logic.Sorter;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.util.FleetCreator;
 import by.bsu.ibmt.groupPV115PO.porohnenko.view.PrintReport;
 import java.util.logging.Logger;
@@ -20,32 +22,43 @@ public class AustrianAirlines {
 
     private static int totalPassengerCapacity;
     private static double totalLoad;
-
     private static final Logger LOG = Logger.getGlobal();
 
     public static void main(String[] args) {
 
-        AircraftHangar hangar = FleetCreator.create(10);
-//        AircraftHangar hangar1 = FleetCreator.create(10);
-//        AircraftHangar hangar2 = FleetCreator.create(10);
+        AircraftHangar hangar = new AircraftHangar();
 
-        //Calculation total passenger and load capacity if aircarft in current hangar
+        hangar = FleetCreator.create(3);
+
+        /**
+         * Calculation total passenger and load capacity if aircarft in current
+         * hangar
+         */
         totalPassengerCapacity = LogisticTerminal.CalculateTotalPassengerCapacity(hangar);
         totalLoad = LogisticTerminal.CalculateTotalLoad(hangar);
-       
-        SortByRange1 sort1 = new SortByRange1();
-//        Sorter s  = new Sorter();
 
-        hangar.setSortable(sort1);
+        CompareByRange s1 = new CompareByRange();
 
-        //Output report and user dialog block
-//        PrintReport.printFleet(hangar, new SortByRange());
-//        PrintReport.printFleet(hangar1, new SortByPassengerCapacity());
-//        PrintReport.printFleet(hangar2, new SortByLoadingCapacity());
-        PrintReport.printFleet(hangar, sort1.toString());
+        FirstHangar first = new FirstHangar();
+        first.sort(hangar);
+
+        first.setSortable(new SortByRange());
+        //first.sort(hangar);
+        
+        for (Aircraft aircraft : hangar.getHangar()) {
+            System.out.print(aircraft);
+        }
+
+        /**
+         * Output report and user dialog block
+         */
+        //PrintReport.printFleet(hangar, s1.toString());
+
         PrintReport.viewTotalPassengerCapacity(totalPassengerCapacity);
         PrintReport.viewTotalLoadCapacity(totalLoad);
-        //PrintReport.SelectAircraft(hangar);
+
         LOG.info("test info...");
+        System.out.println(hangar);
     }
+
 }

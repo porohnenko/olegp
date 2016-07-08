@@ -6,11 +6,12 @@
  * Date: Jun 18, 2016
  * Version: 1.0
  */
-package by.bsu.ibmt.groupPV115PO.porohnenko.comparator;
+package by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.comparator;
 
-import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.Aircraft;
+import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.units.Aircraft;
+import java.util.Comparator;
 
-public class SortByPassengerCapacity extends Sorting {
+public class CompareByPassengerCapacity implements Comparator<Aircraft>{
 
     @Override
     public int compare(Aircraft o1, Aircraft o2) {

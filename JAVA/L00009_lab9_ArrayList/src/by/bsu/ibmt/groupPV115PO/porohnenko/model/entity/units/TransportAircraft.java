@@ -6,7 +6,7 @@
  * Date: May 15, 2016
  * Version: 1.0
  */
-package by.bsu.ibmt.groupPV115PO.porohnenko.model.entity;
+package by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.units;
 
 public class TransportAircraft extends Aircraft {
 

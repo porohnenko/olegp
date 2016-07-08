@@ -8,10 +8,13 @@
  */
 package by.bsu.ibmt.groupPV115PO.porohnenko.model.util;
 
-import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abs.AircraftHangar;
-import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.BigPassengerAircraft;
-import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.BusinesJet;
-import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.TransportAircraft;
+import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity.AircraftHangar;
+import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.units.Aircraft;
+import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.units.BigPassengerAircraft;
+import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.units.BusinesJet;
+import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.units.TransportAircraft;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class FleetCreator {
@@ -20,7 +23,7 @@ public class FleetCreator {
 
     public static AircraftHangar create(int count) {
 
-        AircraftHangar typesOfAircraft = new AircraftHangar();
+        List<Aircraft> typesOfAircraft = new ArrayList<Aircraft>();
 
         typesOfAircraft.add(new BigPassengerAircraft(true, "Airbus A319-100", "OE-LDG", 6850, 75000, 9, 2, 124, 13200));
         typesOfAircraft.add(new BigPassengerAircraft(false, "Airbus A320-200", "OE-LBL", 6100, 78000, 12, 2, 220, 16600));
@@ -38,10 +41,10 @@ public class FleetCreator {
         Random random = new Random(System.currentTimeMillis());
 
         for (int i = 0; i < count; i++) {
-            select = random.nextInt(typesOfAircraft.getHangar().size());
-            currentHangar.getHangar().add(typesOfAircraft.getHangar().get(select));
+            select = random.nextInt(typesOfAircraft.size());
+            currentHangar.getHangar().add(typesOfAircraft.get(select));
+            System.out.println("select = " + select);
         }
-
         return currentHangar;
     }
 }

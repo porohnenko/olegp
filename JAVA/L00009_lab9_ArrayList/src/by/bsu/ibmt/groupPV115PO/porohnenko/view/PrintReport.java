@@ -8,12 +8,9 @@
  */
 package by.bsu.ibmt.groupPV115PO.porohnenko.view;
 
-import by.bsu.ibmt.groupPV115PO.porohnenko.comparator.Sorting;
-import by.bsu.ibmt.groupPV115PO.porohnenko.comparator.Sorting1;
-import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abs.AircraftHangar;
-import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.Aircraft;
+import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity.AircraftHangar;
+import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.units.Aircraft;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.logic.LogicForUserInterface;
-
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.util.InitSelectByRange;
 import java.util.Scanner;
 
@@ -30,7 +27,6 @@ public class PrintReport {
                 + "-----------------------------------------------------------------"
                 + "-----------------------------------------------------------------");
         
-
         for (Aircraft aircraft : aircraftHangar.getHangar()) {
             System.out.print(aircraft);
         }

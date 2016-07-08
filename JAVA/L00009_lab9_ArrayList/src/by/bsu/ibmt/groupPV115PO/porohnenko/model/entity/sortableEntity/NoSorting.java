@@ -6,19 +6,14 @@
  * Date: May 18, 2016
  * Version: 1.0
  */
-package by.bsu.ibmt.groupPV115PO.porohnenko.comparator;
+package by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.sortableEntity;
 
-import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.Aircraft;
+import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity.AircraftHangar;
+import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity.SortBehavior;
 
-public class SortByRange extends Sorting {
-
-    @Override
-    public int compare(Aircraft o1, Aircraft o2) {
-        return o1.getFlyingRange() - o2.getFlyingRange();
-    }
+public class NoSorting implements SortBehavior {
 
     @Override
-    public String toString() {
-        return "sorted by flying range";
+    public void sort(AircraftHangar hangar) {
     }
 }

@@ -8,7 +8,7 @@
  */
 package by.bsu.ibmt.groupPV115PO.porohnenko.model.logic;
 
-import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abs.AircraftHangar;
+import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity.AircraftHangar;
 
 public class LogicForUserInterface {
 

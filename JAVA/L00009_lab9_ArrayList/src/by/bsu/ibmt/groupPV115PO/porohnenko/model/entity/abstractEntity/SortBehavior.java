@@ -6,12 +6,9 @@
  * Date: Jul 3, 2016
  * Version: 1.0
  */
-package by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abs;
+package by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity;
 
-import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.Aircraft;
-import java.util.Comparator;
+public interface SortBehavior{
 
-public interface Sortable extends Comparator<Aircraft> {
-
-    public void sort();
+    public void sort(AircraftHangar hangar);
 }
