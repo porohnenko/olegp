@@ -8,6 +8,7 @@
  */
 package by.bsu.ibmt.groupPV115PO.porohnenko.controller;
 
+import by.bsu.ibmt.groupPV115PO.porohnenko.exceptions.LogicException;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.FirstHangar;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.sortableEntity.SortByRange;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity.AircraftHangar;
@@ -27,7 +28,7 @@ public class AustrianAirlines {
     private static double totalLoad;
     private static final Logger LOG = Logger.getGlobal();
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws LogicException {
 
         AircraftHangar firstHangar = new FirstHangar();
 
@@ -64,7 +65,7 @@ public class AustrianAirlines {
          */
         PrintReport.viewTotalPassengerCapacity(totalPassengerCapacity);
         PrintReport.viewTotalLoadCapacity(totalLoad);
-        
+
         PrintReport.SelectAircraft(firstHangar);
 
         LOG.info("test info...");
