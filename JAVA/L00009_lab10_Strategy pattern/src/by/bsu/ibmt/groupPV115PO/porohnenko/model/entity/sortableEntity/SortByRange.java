@@ -17,7 +17,7 @@ public class SortByRange implements SortBehavior {
 
     @Override
     public void sort(AircraftHangar hangar) {
-        System.out.println("SortByRange...");
+//        System.out.println("SortByRange...");
         Sorter.sort(hangar, new CompareByRange());
     }
 }

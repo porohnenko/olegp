@@ -14,19 +14,19 @@ import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.units.Aircraft;
 
 public class LogisticTerminal {
 
-    public static int CalculateTotalPassengerCapacity(AircraftHangar value) {
+    public static int CalculateTotalPassengerCapacity(AircraftHangar hangar) {
         int sumRange = 0;
 
-        for (Aircraft A : value.getHangar()) {
+        for (Aircraft A : hangar.getHangar()) {
             sumRange += A.getPassengerCapacity();
         }
         return sumRange;
     }
 
-    public static double CalculateTotalLoad(AircraftHangar value) {
+    public static double CalculateTotalLoad(AircraftHangar hangar) {
         double sumLoad = 0;
 
-        for (Aircraft A : value.getHangar()) {
+        for (Aircraft A : hangar.getHangar()) {
             sumLoad += A.getLoadingCapacity();
         }
         return sumLoad;

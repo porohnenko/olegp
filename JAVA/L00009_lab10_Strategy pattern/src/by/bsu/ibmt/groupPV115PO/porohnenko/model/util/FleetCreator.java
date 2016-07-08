@@ -44,7 +44,7 @@ public class FleetCreator extends FirstHangar{
         for (int i = 0; i < count; i++) {
             select = random.nextInt(typesOfAircraft.size());
             currentHangar.getHangar().add(typesOfAircraft.get(select));
-            System.out.println("select = " + select);
+//            System.out.println("select = " + select);
         }
         return currentHangar;
     }

@@ -45,7 +45,7 @@ public class AustrianAirlines {
         CompareByPassengerCapacity s3 = new CompareByPassengerCapacity();
 
         firstHangar.sort(firstHangar);
-        PrintReport.printFleet(firstHangar, s1.toString());
+        PrintReport.printFleet(firstHangar, " ");
 
         firstHangar.setSortable(new SortByRange());
         firstHangar.sort(firstHangar);
