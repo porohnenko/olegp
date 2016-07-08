@@ -9,12 +9,16 @@
 package by.bsu.ibmt.groupPV115PO.porohnenko.comparator;
 
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.Aircraft;
-import java.util.Comparator;
 
-public class Sorting implements Comparator<Aircraft> {
+public class SortByRange extends Sorting {
 
     @Override
     public int compare(Aircraft o1, Aircraft o2) {
-        return 0;
+        return o1.getFlyingRange() - o2.getFlyingRange();
+    }
+
+    @Override
+    public String toString() {
+        return "sorted by flying range";
     }
 }
