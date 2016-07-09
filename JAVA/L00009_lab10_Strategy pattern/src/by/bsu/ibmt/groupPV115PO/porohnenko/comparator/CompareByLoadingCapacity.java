@@ -6,7 +6,7 @@
  * Date: Jun 18, 2016
  * Version: 1.0
  */
-package by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.comparator;
+package by.bsu.ibmt.groupPV115PO.porohnenko.comparator;
 
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.units.Aircraft;
 import java.util.Comparator;

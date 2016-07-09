@@ -10,7 +10,7 @@ package by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.sortableEntity;
 
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity.AircraftHangar;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity.SortBehavior;
-import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.comparator.CompareByLoadingCapacity;
+import by.bsu.ibmt.groupPV115PO.porohnenko.comparator.CompareByLoadingCapacity;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.logic.Sorter;
 
 public class SortByLoad implements SortBehavior {
