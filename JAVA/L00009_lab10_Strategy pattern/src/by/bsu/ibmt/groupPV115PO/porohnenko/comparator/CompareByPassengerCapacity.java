@@ -6,20 +6,20 @@
  * Date: Jun 18, 2016
  * Version: 1.0
  */
-package by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.comparator;
+package by.bsu.ibmt.groupPV115PO.porohnenko.comparator;
 
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.units.Aircraft;
 import java.util.Comparator;
 
-public class CompareByLoadingCapacity implements Comparator<Aircraft> {
+public class CompareByPassengerCapacity implements Comparator<Aircraft>{
 
     @Override
     public int compare(Aircraft o1, Aircraft o2) {
-        return o1.getLoadingCapacity() - o2.getLoadingCapacity();
+        return o1.getPassengerCapacity() - o2.getPassengerCapacity();
     }
 
     @Override
     public String toString() {
-        return "sorted by loading capasity";
+        return "sorted by passenger capacity";
     }
 }
