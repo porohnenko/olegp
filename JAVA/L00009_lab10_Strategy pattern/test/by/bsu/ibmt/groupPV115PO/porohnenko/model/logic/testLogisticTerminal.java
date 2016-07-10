@@ -37,13 +37,13 @@ public class testLogisticTerminal {
         testList.add(new BigPassengerAircraft(true, "Test4", "Test4", 4000, 1, 1, 1, 1, 1));
         testList.add(new BigPassengerAircraft(true, "Test5", "Test5", 5000, 1, 1, 1, 1, 1));
 
-        AircraftHangar testHangar = new FirstHangar();
+//        AircraftHangar testHangar = new FirstHangar();
+//
+//        for (Aircraft A : testList) {
+//            sumRange += A.getPassengerCapacity();
+//        }
 
-        for (Aircraft A : testList) {
-            sumRange += A.getPassengerCapacity();
-        }
-
-        assertEquals(result, sumRange);
+        assertEquals(result, LogisticTerminal.CalculateTotalLoad(testList));
 
     }
 
