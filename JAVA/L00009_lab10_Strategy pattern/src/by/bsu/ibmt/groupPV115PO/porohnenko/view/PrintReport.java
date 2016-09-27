@@ -8,6 +8,7 @@
  */
 package by.bsu.ibmt.groupPV115PO.porohnenko.view;
 
+import by.bsu.ibmt.groupPV115PO.porohnenko.exceptions.OutOfBandException;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity.AircraftHangar;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.units.Aircraft;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.logic.LogicForUserInterface;
@@ -45,7 +46,7 @@ public class PrintReport {
         System.out.printf("Total load capacity: %.2f tonnes\n", value / 1000);
     }
 
-    public static void SelectAircraft(AircraftHangar aircraftHangar) {
+    public static void SelectAircraft(AircraftHangar aircraftHangar) throws OutOfBandException {
         while (true) {
 
             System.out.print("\nDo you want to select route? (Y/N?): ");

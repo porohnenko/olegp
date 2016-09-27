@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class FleetCreator extends FirstHangar{
+public class FleetCreator extends FirstHangar {
 
     private static int select = 0;
 

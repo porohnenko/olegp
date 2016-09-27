@@ -8,7 +8,7 @@
  */
 package by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity;
 
-public interface SortBehavior{
+public interface SortBehavior {
 
     public void sort(AircraftHangar hangar);
 }

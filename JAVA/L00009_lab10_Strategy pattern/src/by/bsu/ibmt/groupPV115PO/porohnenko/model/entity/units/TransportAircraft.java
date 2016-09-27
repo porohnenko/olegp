@@ -1,4 +1,4 @@
- /**
+/**
  * Lab work №8 Basics OOP, principles GRASP, SOLID. Pattern MVS
  * Theme: class TransportAircraft
  * Group: PV1-15PO

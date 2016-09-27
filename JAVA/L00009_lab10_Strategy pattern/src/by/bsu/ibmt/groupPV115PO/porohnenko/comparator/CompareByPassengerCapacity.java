@@ -11,7 +11,7 @@ package by.bsu.ibmt.groupPV115PO.porohnenko.comparator;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.units.Aircraft;
 import java.util.Comparator;
 
-public class CompareByPassengerCapacity implements Comparator<Aircraft>{
+public class CompareByPassengerCapacity implements Comparator<Aircraft> {
 
     @Override
     public int compare(Aircraft o1, Aircraft o2) {

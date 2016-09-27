@@ -15,6 +15,7 @@ import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity.AircraftH
 import by.bsu.ibmt.groupPV115PO.porohnenko.comparator.CompareByLoadingCapacity;
 import by.bsu.ibmt.groupPV115PO.porohnenko.comparator.CompareByPassengerCapacity;
 import by.bsu.ibmt.groupPV115PO.porohnenko.comparator.CompareByRange;
+import by.bsu.ibmt.groupPV115PO.porohnenko.exceptions.OutOfBandException;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.sortableEntity.SortByLoad;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.sortableEntity.SortByPassenger;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.logic.LogisticTerminal;
@@ -28,7 +29,7 @@ public class AustrianAirlines {
     private static double totalLoad;
     private static final Logger LOG = Logger.getGlobal();
 
-    public static void main(String[] args) throws LogicException {
+    public static void main(String[] args) throws LogicException, OutOfBandException {
 
         AircraftHangar firstHangar = new FirstHangar();
 
@@ -38,8 +39,8 @@ public class AustrianAirlines {
          * Calculation total passenger and load capacity if aircarft in current
          * hangar
          */
-        totalPassengerCapacity = LogisticTerminal.CalculateTotalPassengerCapacity(firstHangar);
-        totalLoad = LogisticTerminal.CalculateTotalLoad(firstHangar);
+        totalPassengerCapacity = LogisticTerminal.calculateTotalPassengerCapacity(firstHangar);
+        totalLoad = LogisticTerminal.calculateTotalLoad(firstHangar);
 
         CompareByRange s1 = new CompareByRange();
         CompareByLoadingCapacity s2 = new CompareByLoadingCapacity();

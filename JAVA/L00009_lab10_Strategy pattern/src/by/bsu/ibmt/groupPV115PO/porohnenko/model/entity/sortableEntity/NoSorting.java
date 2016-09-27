@@ -15,6 +15,5 @@ public class NoSorting implements SortBehavior {
 
     @Override
     public void sort(AircraftHangar hangar) {
-//        System.out.println("NoSorting...");
     }
 }

@@ -17,7 +17,6 @@ public class SortByPassenger implements SortBehavior {
 
     @Override
     public void sort(AircraftHangar hangar) {
-//        System.out.print("\n\nSortByPassenger...");
         Sorter.sort(hangar, new CompareByPassengerCapacity());
     }
 }

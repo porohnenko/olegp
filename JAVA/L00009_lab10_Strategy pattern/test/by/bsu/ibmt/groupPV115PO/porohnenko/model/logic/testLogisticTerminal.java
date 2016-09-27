@@ -7,6 +7,7 @@
  */
 package by.bsu.ibmt.groupPV115PO.porohnenko.model.logic;
 
+import by.bsu.ibmt.groupPV115PO.porohnenko.exceptions.LogicException;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.FirstHangar;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity.AircraftHangar;
 import by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.units.Aircraft;
@@ -19,41 +20,38 @@ import static org.junit.Assert.*;
 public class testLogisticTerminal {
 
     @Test
-    public void testCalculateTotalPassengerCapacity() {
+    public void testCalculateTotalPassengerCapacity() throws LogicException {
 
-        int a = 1000;
-        int b = 2000;
-        int c = 2000;
-        int d = 2000;
-        int e = 2000;
+        int a = 100;
+        int b = 110;
+        int c = 120;
+        int d = 130;
+        int e = 140;
         int result = a + b + c + d + e;
-        int sumRange = 0;
 
         List<Aircraft> testList = new ArrayList<Aircraft>();
 
-        testList.add(new BigPassengerAircraft(true, "Test1", "Test1", 1000, 1, 1, 1, 1, 1));
-        testList.add(new BigPassengerAircraft(true, "Test2", "Test2", 2000, 1, 1, 1, 1, 1));
-        testList.add(new BigPassengerAircraft(true, "Test3", "Test3", 3000, 1, 1, 1, 1, 1));
-        testList.add(new BigPassengerAircraft(true, "Test4", "Test4", 4000, 1, 1, 1, 1, 1));
-        testList.add(new BigPassengerAircraft(true, "Test5", "Test5", 5000, 1, 1, 1, 1, 1));
+        testList.add(new BigPassengerAircraft(true, "Test1", "Test1", 1, 1, 1, 100, 1, 1));
+        testList.add(new BigPassengerAircraft(true, "Test2", "Test2", 1, 1, 1, 110, 1, 1));
+        testList.add(new BigPassengerAircraft(true, "Test3", "Test3", 1, 1, 1, 120, 1, 1));
+        testList.add(new BigPassengerAircraft(true, "Test4", "Test4", 1, 1, 1, 130, 1, 1));
+        testList.add(new BigPassengerAircraft(true, "Test5", "Test5", 1, 1, 1, 140, 1, 1));
+       
+        AircraftHangar testHangar = new FirstHangar();
 
-//        AircraftHangar testHangar = new FirstHangar();
+        FirstHangar.setHangar(testList);
+
+        assertEquals(result, LogisticTerminal.calculateTotalLoad(testHangar));
+
+    }
+
+//    public static double testCalculateTotalLoad(AircraftHangar value) {
+//        double sumLoad = 0;
 //
-//        for (Aircraft A : testList) {
-//            sumRange += A.getPassengerCapacity();
+//        for (Aircraft A : value.getHangar()) {
+//            sumLoad += A.getLoadingCapacity();
 //        }
-
-        assertEquals(result, LogisticTerminal.CalculateTotalLoad(testList));
-
-    }
-
-    public static double testCalculateTotalLoad(AircraftHangar value) {
-        double sumLoad = 0;
-
-        for (Aircraft A : value.getHangar()) {
-            sumLoad += A.getLoadingCapacity();
-        }
-        return sumLoad;
-    }
+//        return sumLoad;
+//    }
 
 }

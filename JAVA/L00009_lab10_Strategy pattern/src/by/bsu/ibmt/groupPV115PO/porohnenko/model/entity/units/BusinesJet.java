@@ -26,7 +26,7 @@ public class BusinesJet extends Aircraft {
         this.vipSalon = vipSalon;
     }
 
-    public boolean isvipSalon() {
+    public boolean isVipSalon() {
         return vipSalon;
     }
 

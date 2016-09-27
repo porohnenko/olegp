@@ -8,7 +8,7 @@
  */
 package by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.units;
 
-public class BigPassengerAircraft extends Aircraft{
+public class BigPassengerAircraft extends Aircraft {
 
     private boolean businessClass;
 

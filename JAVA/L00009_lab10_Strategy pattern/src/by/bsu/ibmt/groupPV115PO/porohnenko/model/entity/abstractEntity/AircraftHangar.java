@@ -34,6 +34,10 @@ public abstract class AircraftHangar {
         return hangar;
     }
 
+    public static void setHangar(List<Aircraft> hangar) {
+        AircraftHangar.hangar = hangar;
+    }
+
     public String getAircraft(int index) {
         return hangar.get(index).getModel();
     }
