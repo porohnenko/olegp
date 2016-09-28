@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="DuckProject">
+  <ClassDiagramComponents>
+    <Class name="DuckProject" package="by.bsu.ibmt.groupPV115PO.porohnenko.controller" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="LOG" type="Logger" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Duck" package="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity" visibility="public" isAbstract="true" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="flyable" type="Flyable" visibility="private"/>
+        <Field name="quackable" type="Quackable" visibility="private"/>
+        <Field name="sortable" type="SortBehavior" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="setSortable" returnType="void" visibility="public">
+          <Argument type="SortBehavior" name="sortable"/>
+        </Method>
+        <Method name="setFlyable" returnType="void" visibility="public">
+          <Argument type="Flyable" name="flyable"/>
+        </Method>
+        <Method name="setQuackable" returnType="void" visibility="public">
+          <Argument type="Quackable" name="quackable"/>
+        </Method>
+        <Method name="quack" returnType="void" visibility="public"/>
+        <Method name="fly" returnType="void" visibility="public"/>
+        <Method name="sort" returnType="void" visibility="public"/>
+        <Method name="swim" returnType="void" visibility="public"/>
+        <Method name="display" returnType="void" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Interface name="Flyable" package="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Methods>
+        <Method name="fly" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="Quackable" package="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Methods>
+        <Method name="quack" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="SortBehavior" package="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Methods>
+        <Method name="sort" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Class name="DuffyDuck" package="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="display" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="FlyNoWay" package="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.flyableEntity" visibility="public" xPosition="1820.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="fly" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="FlyWithRocket" package="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.flyableEntity" visibility="public" xPosition="2120.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="fly" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="FlyWithWings" package="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.flyableEntity" visibility="public" xPosition="20.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="fly" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="SortByRange" package="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.flyableEntity" visibility="public" xPosition="320.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="sort" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="MallardDuck" package="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity" visibility="public" xPosition="620.0" yPosition="420.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="display" returnType="void" visibility="public"/>
+        <Method name="fly" returnType="void" visibility="public"/>
+        <Method name="sort" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Pisk" package="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.quackAlg" visibility="public" xPosition="920.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="quack" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="QuackNaturally" package="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.quackAlg" visibility="public" xPosition="1220.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="quack" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Sort1" package="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.quackAlg" visibility="public" xPosition="1520.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="sort" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="RedheadDuck" package="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity" visibility="public" xPosition="1820.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="TiredDuck" package="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity" visibility="public" xPosition="2120.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="WhiteDuck" package="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity" visibility="public" xPosition="20.0" yPosition="820.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="YellowDuck" package="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity" visibility="public" xPosition="320.0" yPosition="820.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Logic" package="by.bsu.ibmt.groupPV115PO.porohnenko.model.logic" visibility="public" xPosition="620.0" yPosition="820.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.quackAlg.Sort1" target="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity.SortBehavior"/>
+    <HasRelation name="quackable" source="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity.Duck" target="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity.Quackable" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.MallardDuck" target="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity.Duck"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.MallardDuck" target="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity.Flyable"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.flyableEntity.FlyWithRocket" target="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity.Flyable"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.flyableEntity.FlyWithWings" target="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity.Flyable"/>
+    <HasRelation name="flyable" source="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity.Duck" target="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity.Flyable" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.flyableEntity.SortByRange" target="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity.SortBehavior"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.DuffyDuck" target="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity.Flyable"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.quackAlg.QuackNaturally" target="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity.Quackable"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.quackAlg.Pisk" target="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity.Quackable"/>
+    <IsRelation name="is" source="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.DuffyDuck" target="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity.Duck"/>
+    <UseRelation source="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity.Duck" target="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity.SortBehavior" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity.Duck" target="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity.Flyable" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="sortable" source="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity.Duck" target="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity.SortBehavior" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity.Duck" target="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity.Quackable" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.flyableEntity.FlyNoWay" target="by.bsu.ibmt.groupPV115PO.porohnenko.model.entity.abstractEntity.Flyable"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
