@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ActionBarDemo</string>
+    <string name="opened">opened</string>
+    <string name="closed">closed</string>
+</resources>

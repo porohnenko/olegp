@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.bsu.sbmt.pv1_15po.oleg_porohnenko.mysql_demo.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hello World!" />
+
+            <Button
+                android:id="@+id/bSelectAll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scrollView"
+                android:layout_marginTop="10dp"
+                android:onClick="bSelectAllClick"
+                android:text="Select all" />
+
+            <Button
+                android:id="@+id/bSelectOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bSelectAll"
+                android:layout_marginTop="2dp"
+                android:onClick="bSelectOneClick"
+                android:text="Select one" />
+
+            <Button
+                android:id="@+id/bInsertOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bSelectOne"
+                android:layout_marginTop="2dp"
+                android:onClick="bInsertOneClick"
+                android:text="Insert one" />
+
+            <Button
+                android:id="@+id/bDeleteOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bInsertOne"
+                android:layout_marginTop="2dp"
+                android:onClick="bDeleteOneClick"
+                android:text="Delete one" />
+
+            <Button
+                android:id="@+id/bInsertMany"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bDeleteOne"
+                android:layout_marginTop="2dp"
+                android:onClick="bInsertManyClick"
+                android:text="Insert many" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
