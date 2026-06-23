@@ -11,7 +11,7 @@ from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 
 # ==================== НАСТРОЙКИ АГЕНТА ====================
-TELEGRAM_TOKEN = "8998460305:AAHaE5WlgPCavgiVUwhFcD3P2-MpUDwFt1U"
+TELEGRAM_TOKEN = "..."
 # ==========================================================
 
 bot = telebot.TeleBot(TELEGRAM_TOKEN)
